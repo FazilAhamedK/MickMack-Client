@@ -1,27 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap');
 
-body
+body,
+html
 {
     margin: 0;
-    height: 100vh;
-    background-image: url("./BackgroundImage.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.overlay
-{
+    padding: 0;
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.75);
+    position: relative;
 }
 
 .text-primary
@@ -69,4 +55,104 @@ img
 {
     height: 45%;
     aspect-ratio: 1 / 1;
+}
+
+.overlay
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.slider
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slides-container
+{
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide-group
+{
+    display: flex;
+}
+
+.slide
+{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 575px)
+{
+    .slides-container
+    {
+        width: 100%;
+    }
+
+    .slide-group
+    {
+        flex: 0 0 100%;
+    }
+
+    .slide
+    {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px)
+{
+    .slides-container
+    {
+        width: 200%;
+    }
+
+    .slide-group
+    {
+        flex: 0 0 50%;
+    }
+
+    .slide
+    {
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .slides-container
+    {
+        width: 300%;
+    }
+
+    .slide-group
+    {
+        flex: 0 0 33.33%;
+    }
+
+    .slide
+    {
+        max-width: 33.33%;
+    }
 }
