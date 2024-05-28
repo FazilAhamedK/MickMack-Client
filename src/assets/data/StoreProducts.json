@@ -1,0 +1,30 @@
+    [
+    {
+        "name": "Dark Chocolate - 80%",
+        "category": "Edible Goods",
+        "dietaryOption": "VEGETARIAN",
+        "imageFileName": "Goods.jpg"
+    },
+    {
+        "name": "Peach Puree",
+        "category": "Edible Goods",
+        "dietaryOption": "VEGETARIAN",
+        "imageFileName": "Goods.jpg"
+    },
+    {
+        "name": "Mayonnaise",
+        "category": "Edible Goods",
+        "dietaryOption": "EGG",
+        "imageFileName": "Goods.jpg"
+    },
+    {
+        "name": "Dining Plate - 6 Pieces",
+        "category": "Cutleries",
+        "imageFileName": "Cutlery.jpg"
+    },
+    {
+        "name": "Steak Knife",
+        "category": "Cutleries",
+        "imageFileName": "Cutlery.jpg"
+    }
+]
