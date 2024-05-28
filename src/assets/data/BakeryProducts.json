@@ -1,0 +1,212 @@
+    [
+    {
+        "name": "Gulab Jamun Cake",
+        "category": "Cakes",
+        "dietaryOptions": ["VEGAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Tres Leches Cake",
+        "category": "Cakes",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Hazelnut Cake",
+        "category": "Cakes",
+        "dietaryOptions": ["EGG"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Red Velvet Brownie",
+        "category": "Cakes",
+        "dietaryOptions": ["VEGAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Rose Milk Cake",
+        "category": "Cakes",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Strawberry Cake",
+        "category": "Cakes",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Orange Cake",
+        "category": "Cakes",
+        "dietaryOptions": ["VEGETARIAN", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Almond Blueberry Cake",
+        "category": "Cakes",
+        "dietaryOptions": ["VEGAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Lemon Blueberry Cake",
+        "category": "Cakes",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Tapioca Cake",
+        "category": "Cakes",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Pavlova",
+        "category": "Desserts",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Strawberry Cheesecake",
+        "category": "Desserts",
+        "dietaryOptions": ["VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Tender Coconut Pudding",
+        "category": "Desserts",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Kunafa",
+        "category": "Desserts",
+        "dietaryOptions": ["EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Strawberry Panna Cotta",
+        "category": "Desserts",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Tiramisu",
+        "category": "Desserts",
+        "dietaryOptions": ["EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Sweet Cigars",
+        "category": "Snacks",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Crispy Kebab Max",
+        "category": "Snacks",
+        "dietaryOptions": ["EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Chicken Cutlet",
+        "category": "Snacks",
+        "dietaryOptions": ["EGG"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Falafel",
+        "category": "Snacks",
+        "dietaryOptions": ["VEGETARIAN", "EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Chicken Samosa",
+        "category": "Snacks",
+        "dietaryOptions": ["VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Chicken Spring Roll",
+        "category": "Snacks",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Chicken Donut",
+        "category": "Snacks",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Kashmiri Chicken",
+        "category": "Mains",
+        "dietaryOptions": ["VEGAN", "EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Singapore Rice",
+        "category": "Mains",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Ramadan Porridge",
+        "category": "Mains",
+        "dietaryOptions": ["VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Burger",
+        "category": "Mains",
+        "dietaryOptions": ["VEGAN", "EGG"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Carrot Halwa Cake",
+        "category": "Cakes",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Almond Tea Cake",
+        "category": "Cakes",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Vanilla Muffin",
+        "category": "Cakes",
+        "dietaryOptions": ["VEGAN", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Brownie",
+        "category": "Cakes",
+        "dietaryOptions": ["EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Caramel Drops",
+        "category": "Snacks",
+        "dietaryOptions": ["VEGAN", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Raffaelo Pudding",
+        "category": "Desserts",
+        "dietaryOptions": ["EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Korean Cheese Bun",
+        "category": "Breads",
+        "dietaryOptions": ["VEGAN", "EGG", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    },
+    {
+        "name": "Cookies",
+        "category": "Cookies",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN", "NON_VEGETARIAN"],
+        "imageFileName": "BakeryProduct.jpg"
+    }
+]
