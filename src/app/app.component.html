@@ -1,0 +1,176 @@
+<nav
+  class="z-10 fixed top-0 left-0 border-b border-neutral flex w-full flex-col md:flex-row gap-y-3 md:gap-y-0 items-stretch md:items-center justify-between px-4 py-2 bg-primary text-neutral shadow-md"
+>
+  <a href="#" class="text-xl tracking-wide font-bold cursor-pointer">
+    <div>Mick Mack</div>
+  </a>
+
+  <div
+    *ngIf="!isMobileDevice || !isNavBarCollapsed"
+    class="flex flex-col md:flex-row gap-y-3 md:gap-x-6 md:pl-0"
+  >
+    <a
+      href="#"
+      (click)="isNavBarCollapsed = true"
+      class="flex cursor-pointer items-center"
+    >
+      <svg class="md:hidden mr-2 w-6 h-6 fill-neutral">
+        <use xlink:href="assets/sprite-sheet.svg#home"></use>
+      </svg>
+      <span class="mt-0.5 md:mt-0">Home</span>
+    </a>
+
+    <a
+      href="#homemade-indulgence"
+      (click)="isNavBarCollapsed = true"
+      class="flex cursor-pointer items-center"
+    >
+      <svg class="md:hidden mr-2 w-6 h-6 fill-neutral">
+        <use xlink:href="assets/sprite-sheet.svg#oven"></use>
+      </svg>
+      <span class="mt-0.5 md:mt-0">Products</span>
+    </a>
+
+    <a
+      href="#contact"
+      (click)="isNavBarCollapsed = true"
+      class="flex cursor-pointer items-center"
+    >
+      <svg class="md:hidden mr-2 w-6 h-6 fill-neutral">
+        <use xlink:href="assets/sprite-sheet.svg#call"></use>
+      </svg>
+      <span class="mt-0.5 md:mt-0">Contact</span>
+    </a>
+  </div>
+
+  <div class="fixed top-0 right-0 md:hidden pr-4 py-2">
+    <svg
+      *ngIf="isNavBarCollapsed"
+      (click)="isNavBarCollapsed = false"
+      class="md:hidden mr-2 w-6 h-6 fill-neutral"
+    >
+      <use xlink:href="assets/sprite-sheet.svg#menu"></use>
+    </svg>
+    <svg
+      *ngIf="!isNavBarCollapsed"
+      (click)="isNavBarCollapsed = true"
+      class="md:hidden mr-2 w-6 h-6 fill-neutral"
+    >
+      <use xlink:href="assets/sprite-sheet.svg#close"></use>
+    </svg>
+  </div>
+</nav>
+
+<span (click)="isNavBarCollapsed = true">
+  <section class="flex justify-center items-center h-[80vh] bg-[url('assets/media/Banner.jpg')] bg-cover bg-center">
+    <div class="flex flex-col lg:flex-row w-full h-full justify-center lg:justify-start items-center p-10 pt-20 lg:pt-10 bg-gradient-to-r from-primary">
+        <blockquote class=" text-neutral w-10/12 md:w-2/3 text-left">
+            <div class="text-2xl md:text-3xl xl:text-4xl leading-relaxed md:leading-relaxed xl:leading-relaxed text-center md:text-left">Indulge in the finest experience of the amalgamation of passion and
+              quality!</div>
+        </blockquote>
+    </div>
+  </section>
+
+  <section
+    id="homemade-indulgence"
+    class="p-4 scroll-mt-10 bg-primary text-neutral"
+  >
+    <h1>Our Products</h1>
+
+    <div
+      class="flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0 mx-6"
+    >
+      <div class="flex flex-col gap-y-2">
+        <div class="text-xs sm:text-sm uppercase">Indulgence Category</div>
+
+        <div class="flex flex-wrap gap-2 text-xs sm:text-base">
+          <button
+            *ngFor="let category of bakeryProductCategories"
+            (click)="selectedBakeryProductCategory = category"
+            class="border border-neutral px-2 py-1 rounded-md"
+            [ngClass]="
+              selectedBakeryProductCategory === category
+                ? 'bg-neutral text-primary'
+                : 'text-neutral'
+            "
+          >
+            {{ category }}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <ng-container
+      *ngIf="
+        bakeryProducts
+          | productFilter : 'category' : selectedBakeryProductCategory
+          | dietaryFilter : selectedBakeryProductDietaryOptions : 'Bakery';
+        let filteredProducts = $implicit
+      "
+    >
+      <ng-container
+        *ngIf="filteredProducts.length; else NoBakeryProductsAvailable"
+      >
+        <div
+          class="m-6 flex overflow-x-scroll sm:overflow-x-auto sm:grid sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-6"
+        >
+          <div
+            *ngFor="let product of filteredProducts"
+            class="w-1/2 shrink-0 sm:w-auto sm:col-span-1 flex flex-col bg-neutral p-3 mb-2 sm:mb-0"
+          >
+            <img
+              src="/assets/media/bakery-products/{{ product.imageFileName }}"
+              alt="A photo of the product: {{ product.name }}."
+              class="border border-secondary"
+            />
+            <div class="flex flex-col h-full text-primary">
+              <div class="text-base sm:text-lg font-semibold">
+                {{ product.name }}
+              </div>
+              <div class="flex justify-between items-center">
+                <div
+                  *ngIf="selectedBakeryProductCategory === 'All'"
+                  class="text-xs uppercase"
+                >
+                  {{ product.category }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </ng-container>
+  </section>
+
+  <section id="contact" class="p-4 scroll-mt-10 bg-secondary text-neutral">
+    <h1>Get In Touch</h1>
+
+    <div class="flex flex-row flex-wrap justify-around mt-6 gap-4">
+      <div class="flex flex-col">
+        <div class="font-semibold uppercase text-sm">Mobile Number</div>
+        <a href="tel:+917619491379" class="text-base md:text-lg"
+          >(+91) 76 1949 1379</a
+        >
+      </div>
+
+      <div class="flex flex-col">
+        <div class="font-semibold uppercase text-sm">Mobile Number</div>
+        <a href="tel:+917619241379" class="text-base md:text-lg"
+          >(+91) 76 1924 1379</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <ng-template #NoBakeryProductsAvailable>
+    <div class="text-neutral w-full m-6 text-center">
+      Sorry, no products are available under the current filter criteria!
+    </div>
+  </ng-template>
+
+  <ng-template #NoStoreProductsAvailable>
+    <div class="text-secondary w-full m-6 text-center">
+      Sorry, no products are available under the current filter criteria!
+    </div>
+  </ng-template>
+</span>
