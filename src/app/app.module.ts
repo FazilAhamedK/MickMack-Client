@@ -13,6 +13,7 @@ import { StoreComponent } from './store/store.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { StorePreviewComponent } from './modals/store-preview/store-preview.component';
+import { BakeryComponent } from './bakery/bakery.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { StorePreviewComponent } from './modals/store-preview/store-preview.comp
     StoreComponent,
     AboutUsComponent,
     ContactComponent,
-    StorePreviewComponent
+    StorePreviewComponent,
+    BakeryComponent
   ],
   imports: [
     BrowserModule,

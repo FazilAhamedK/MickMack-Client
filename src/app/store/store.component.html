@@ -1,4 +1,4 @@
-<section id="product-store" class="p-4 scroll-mt-10 bg-secondary text-neutral">
+<section id="product-store" class="p-4 mt-11 text-secondary">
     <h1>Product Store</h1>
 
     <div
@@ -11,9 +11,9 @@
           <button
             *ngFor="let category of storeProductCategories"
             (click)="selectedStoreProductCategory = category"
-            class="border border-neutral px-2 py-1 rounded-md"
+            class="border border-secondary px-2 py-1 rounded-md"
             [ngClass]="{
-              'bg-neutral text-secondary':
+              'bg-secondary text-neutral':
                 selectedStoreProductCategory === category
             }"
           >
@@ -32,10 +32,10 @@
           <button
             *ngFor="let dietaryOption of dietaryOptions"
             (click)="updateSelectedDietaryOptions(dietaryOption)"
-            class="border border-neutral px-2 py-1 rounded-md"
+            class="border border-secondary px-2 py-1 rounded-md"
             [ngClass]="{
               'text-neutral': isDietaryOptionSelected(dietaryOption),
-              'bg-neutral text-secondary': dietaryOption === 'All' && isDietaryOptionSelected('All'),
+              'bg-secondary text-neutral': dietaryOption === 'All' && isDietaryOptionSelected('All'),
               'bg-food-vegan': dietaryOption === DietaryOption.VEGAN && isDietaryOptionSelected(DietaryOption.VEGAN),
               'bg-food-vegetarian': dietaryOption === DietaryOption.VEGETARIAN && isDietaryOptionSelected(DietaryOption.VEGETARIAN),
               'bg-food-egg': dietaryOption === DietaryOption.EGG && isDietaryOptionSelected(DietaryOption.EGG),
@@ -67,14 +67,14 @@
         >
           <div
             *ngFor="let product of filteredProducts"
-            class="w-1/2 shrink-0 sm:w-auto sm:col-span-1 flex flex-col bg-neutral text-secondary p-3 mb-2 sm:mb-0"
+            class="w-1/2 shrink-0 sm:w-auto sm:col-span-1 flex flex-col bg-secondary text-neutral p-3 mb-2 sm:mb-0"
           >
             <img
               src="/assets/media/{{ product.imageFileName }}"
               alt="A photo of the product: {{ product.name }}."
-              class="border border-secondary"
+              class="border border-neutral"
             />
-            <div class="flex flex-col h-full text-secondary">
+            <div class="flex flex-col h-full text-neutral">
               <div class="text-base sm:text-lg font-semibold">
                 {{ product.name }}
               </div>
@@ -104,7 +104,7 @@
 </section>
 
 <ng-template #NoProductsAvailable>
-    <div class="text-neutral w-full m-6 text-center">
+    <div class="text-secondary w-full m-6 text-center">
       Sorry, no products are available under the current filter criteria!
     </div>
   </ng-template>
