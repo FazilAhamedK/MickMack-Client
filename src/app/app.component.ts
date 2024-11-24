@@ -10,9 +10,7 @@ import { Router } from '@angular/router';
 export class AppComponent
 {
   isMobileDevice: boolean = false;
-
   isNavBarCollapsed: boolean = true;
-  
   showStorePreviewModal: boolean = false;
 
   constructor(private router: Router)
