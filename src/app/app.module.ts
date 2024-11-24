@@ -14,7 +14,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { StorePreviewComponent } from './modals/store-preview/store-preview.component';
 import { BakeryComponent } from './bakery/bakery.component';
-import { LabelComponent } from './label/label.component';
+import { TextSliderComponent } from './text-slider/text-slider.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { LabelComponent } from './label/label.component';
     ContactComponent,
     StorePreviewComponent,
     BakeryComponent,
-    LabelComponent
+    TextSliderComponent
   ],
   imports: [
     BrowserModule,
