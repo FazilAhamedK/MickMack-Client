@@ -14,6 +14,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { StorePreviewComponent } from './modals/store-preview/store-preview.component';
 import { BakeryComponent } from './bakery/bakery.component';
+import { LabelComponent } from './label/label.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BakeryComponent } from './bakery/bakery.component';
     AboutUsComponent,
     ContactComponent,
     StorePreviewComponent,
-    BakeryComponent
+    BakeryComponent,
+    LabelComponent
   ],
   imports: [
     BrowserModule,

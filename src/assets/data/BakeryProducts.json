@@ -193,13 +193,13 @@
     },
     {
         "name": "Caramel Drops",
-        "category": "Snacks",
+        "category": "Cookies",
         "dietaryOptions": ["VEGAN", "NON_VEGETARIAN"],
         "imageFileName": "CaramelDrops.jpg"
     },
     {
         "name": "Sweet Cigars",
-        "category": "Snacks",
+        "category": "Desserts",
         "dietaryOptions": ["VEGAN", "VEGETARIAN"],
         "imageFileName": "SweetCigars.jpg"
     },
@@ -220,5 +220,11 @@
         "category": "Cookies",
         "dietaryOptions": ["VEGAN", "VEGETARIAN", "NON_VEGETARIAN"],
         "imageFileName": "Cookies.jpeg"
+    },
+    {
+        "name": "Creamy Crunch",
+        "category": "Desserts",
+        "dietaryOptions": ["VEGAN", "VEGETARIAN", "NON_VEGETARIAN"],
+        "imageFileName": "CreamyCrunch.jpg"
     }
 ]

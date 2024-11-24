@@ -1,0 +1,7 @@
+<div class="pt-10 marquee-container overflow-hidden whitespace-nowrap border-y border-secondary">
+    <div class="flex marquee-content animate-marquee h-20 w-max my-2">
+        <div *ngFor="let label of labels.concat(labels)" class="rounded-lg flex mx-2 justify-center items-center">
+            <img class="h-full w-full aspect-square" src="/assets/media/labels/{{label.imageFileName}}" alt="A label for the product: {{label.name}}." />
+        </div>
+    </div>
+</div>
