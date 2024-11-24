@@ -1,6 +1,4 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, HostListener } from '@angular/core';
-import { NavigationLink } from './types/navigation-link.type';
 import { Router } from '@angular/router';
 
 @Component
