@@ -3,22 +3,19 @@
         "name": "Gulab Jamun Cake",
         "category": "Cakes",
         "dietaryOptions": ["VEGAN"],
-        "imageFileName": "GulabJamunCake.jpg",
-        "textColor": "#FF0000"
+        "imageFileName": "GulabJamunCake.jpg"
     },
     {
         "name": "Tres Leches",
         "category": "Cakes",
         "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
-        "imageFileName": "TresLeches.jpg",
-        "textColor": "#00FF00"
+        "imageFileName": "TresLeches.jpg"
     },
     {
         "name": "Hazelnut Cake",
         "category": "Cakes",
         "dietaryOptions": ["EGG"],
-        "imageFileName": "HazelnutCake.jpg",
-        "textColor": "#0000FF"
+        "imageFileName": "HazelnutCake.jpg"
     },
     {
         "name": "Red Velvet Brownie",
