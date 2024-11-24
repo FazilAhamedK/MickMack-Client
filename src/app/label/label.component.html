@@ -1,7 +1,16 @@
-<div class="flex pt-11 marquee-container overflow-hidden whitespace-nowrap border-y border-secondary">
+<!-- <div class="flex pt-11 marquee-container overflow-hidden whitespace-nowrap border-y border-secondary">
     <div class="flex animate-marquee my-2">
-        <div *ngFor="let label of labels.concat(labels)" class="h-20 w-20 rounded-lg flex mx-2 justify-center items-center">
+        <div *ngFor="let label of labels.concat(labels)" class="h-20 w-20 flex mx-2 justify-center items-center">
             <img class="h-full w-full aspect-square" src="/assets/media/labels/{{label.imageFileName}}" alt="A label for the product: {{label.name}}." />
+        </div>
+    </div>
+</div> -->
+
+<div class="font-primary flex marquee-container overflow-hidden whitespace-nowrap border-y border-secondary">
+    <div class="flex animate-marquee my-1">
+        <div *ngFor="let label of labels.concat(labels)" class="flex justify-center items-center text-lg">
+            <div class="{{'text-[' + label.textColor + ']'}}">{{label.name}}</div>
+            <div class="mx-2">&#x2022;</div>
         </div>
     </div>
 </div>
