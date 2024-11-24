@@ -32,8 +32,8 @@ module.exports =
     },
     fontFamily:
     {
-      primary: ["Poiret One", "sans-serif"],
-      secondary: ["Pompiere", "sans-serif"]
+      primary: ["DM Sans", "sans-serif"],
+      secondary: ["Kodchasan", "sans-serif"]
     },
     textColor:
     {

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Label } from '../types/label.type';
+import { BakeryProduct } from '../types/bakery-product.type';
 
 @Component
 ({
@@ -10,14 +11,14 @@ import { Label } from '../types/label.type';
 })
 export class LabelComponent implements OnInit
 {
-  labels: Array<Label> = [];
+  labels: Array<BakeryProduct> = [];
 
   constructor(private httpClient: HttpClient)
   { }
 
   ngOnInit(): void
   {
-    this.httpClient.get<Array<Label>>("/assets/data/Labels.json")
+    this.httpClient.get<Array<BakeryProduct>>("/assets/data/BakeryProducts.json")
                    .subscribe(labels =>
                    {
                      this.labels = labels;

@@ -5,5 +5,6 @@ export type BakeryProduct =
     name: string,
     category: string,
     dietaryOptions: Array<DietaryOption>,
-    imageFileName: string
+    imageFileName: string,
+    textColor?: string
 }
