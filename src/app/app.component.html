@@ -1,85 +1,87 @@
-<nav
-  class="z-10 h-11 fixed top-0 left-0 border-b border-primary bg-neutral flex w-full flex-col md:flex-row gap-y-3 md:gap-y-0 items-stretch md:items-center justify-between px-4 py-2 shadow-md"
->
-  <a href="#" class="text-xl tracking-wide font-bold cursor-pointer">
-    <div>Mick Mack</div>
-  </a>
-
-  <div
-    *ngIf="!isMobileDevice || !isNavBarCollapsed"
-    class="flex flex-col md:flex-row gap-y-3 md:gap-x-6 md:pl-0 font-semibold font-secondary"
+<div>
+  <nav
+    class="fixed left-0 top-0 z-10 flex w-full flex-col items-stretch justify-center gap-y-3 border-b border-primary bg-neutral px-4 py-2 md:flex-row md:items-center md:justify-between md:gap-y-0"
   >
-    <a href="#"
-      (click)="isNavBarCollapsed = true"
-      class="flex cursor-pointer items-center"
-    >
-      <svg class="md:hidden mr-2 w-6 h-6 fill-neutral">
-        <use xlink:href="assets/sprite-sheet.svg#home"></use>
-      </svg>
-      <span class="mt-0.5 md:mt-0">Home</span>
+    <a href="#" class="text-xl tracking-wide font-bold cursor-pointer">
+      <div>Mick Mack</div>
     </a>
 
-    <a href="#homemade-indulgence"
-      (click)="isNavBarCollapsed = true"
-      class="flex cursor-pointer items-center"
+    <div
+      *ngIf="!isMobileDevice || !isNavBarCollapsed"
+      class="flex flex-col gap-y-3 bg-neutral font-secondary font-semibold md:flex-row md:gap-x-6 md:pl-0"
     >
-      <svg class="md:hidden mr-2 w-6 h-6 fill-neutral">
-        <use xlink:href="assets/sprite-sheet.svg#oven"></use>
+      <a href="#"
+        (click)="isNavBarCollapsed = true"
+        class="flex cursor-pointer items-center"
+      >
+        <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
+          <use xlink:href="assets/sprite-sheet.svg#home"></use>
+        </svg>
+        <span class="mt-0.5 md:mt-0">Home</span>
+      </a>
+
+      <a href="#homemade-indulgence"
+        (click)="isNavBarCollapsed = true"
+        class="flex cursor-pointer items-center"
+      >
+        <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
+          <use xlink:href="assets/sprite-sheet.svg#oven"></use>
+        </svg>
+        <span class="mt-0.5 md:mt-0">Indulgences</span>
+      </a>
+
+      <a (click)="isNavBarCollapsed = true; navigateToStore();"
+        class="flex cursor-pointer items-center"
+      >
+        <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
+          <use xlink:href="assets/sprite-sheet.svg#storefront"></use>
+        </svg>
+        <span class="mt-0.5 md:mt-0">Store</span>
+      </a>
+
+      <a href="#about-us"
+        (click)="isNavBarCollapsed = true"
+        class="flex cursor-pointer items-center"
+      >
+        <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
+          <use xlink:href="assets/sprite-sheet.svg#badge"></use>
+        </svg>
+        <span class="mt-0.5 md:mt-0">About Us</span>
+      </a>
+
+      <a href="#contact"
+        (click)="isNavBarCollapsed = true"
+        class="flex cursor-pointer items-center"
+      >
+        <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
+          <use xlink:href="assets/sprite-sheet.svg#call"></use>
+        </svg>
+        <span class="mt-0.5 md:mt-0">Contact</span>
+      </a>
+    </div>
+
+    <div class="fixed top-0 right-0 md:hidden px-4 py-2">
+      <svg
+        *ngIf="isNavBarCollapsed"
+        (click)="isNavBarCollapsed = false"
+        class="md:hidden mr-2 w-6 h-6 fill-secondary"
+      >
+        <use xlink:href="assets/sprite-sheet.svg#menu"></use>
       </svg>
-      <span class="mt-0.5 md:mt-0">Indulgences</span>
-    </a>
-
-    <a (click)="isNavBarCollapsed = true; navigateToStore();"
-      class="flex cursor-pointer items-center"
-    >
-      <svg class="md:hidden mr-2 w-6 h-6 fill-neutral">
-        <use xlink:href="assets/sprite-sheet.svg#storefront"></use>
+      <svg
+        *ngIf="!isNavBarCollapsed"
+        (click)="isNavBarCollapsed = true"
+        class="md:hidden mr-2 w-6 h-6 fill-secondary"
+      >
+        <use xlink:href="assets/sprite-sheet.svg#close"></use>
       </svg>
-      <span class="mt-0.5 md:mt-0">Store</span>
-    </a>
+    </div>
+  </nav>
 
-    <a href="#about-us"
-      (click)="isNavBarCollapsed = true"
-      class="flex cursor-pointer items-center"
-    >
-      <svg class="md:hidden mr-2 w-6 h-6 fill-neutral">
-        <use xlink:href="assets/sprite-sheet.svg#badge"></use>
-      </svg>
-      <span class="mt-0.5 md:mt-0">About Us</span>
-    </a>
-
-    <a href="#contact"
-      (click)="isNavBarCollapsed = true"
-      class="flex cursor-pointer items-center"
-    >
-      <svg class="md:hidden mr-2 w-6 h-6 fill-neutral">
-        <use xlink:href="assets/sprite-sheet.svg#call"></use>
-      </svg>
-      <span class="mt-0.5 md:mt-0">Contact</span>
-    </a>
-  </div>
-
-  <div class="fixed top-0 right-0 md:hidden pr-4 py-2">
-    <svg
-      *ngIf="isNavBarCollapsed"
-      (click)="isNavBarCollapsed = false"
-      class="md:hidden mr-2 w-6 h-6 fill-neutral"
-    >
-      <use xlink:href="assets/sprite-sheet.svg#menu"></use>
-    </svg>
-    <svg
-      *ngIf="!isNavBarCollapsed"
-      (click)="isNavBarCollapsed = true"
-      class="md:hidden mr-2 w-6 h-6 fill-neutral"
-    >
-      <use xlink:href="assets/sprite-sheet.svg#close"></use>
-    </svg>
-  </div>
-</nav>
-
-<span (click)="isNavBarCollapsed = true">
-  <router-outlet></router-outlet>
-</span>
+  <span (click)="isNavBarCollapsed = true">
+    <router-outlet></router-outlet>
+  </span>
+</div>
 
 <ng-container *ngIf="showStorePreviewModal">
   <mm-store-preview
