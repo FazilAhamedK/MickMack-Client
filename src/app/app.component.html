@@ -1,5 +1,5 @@
 <nav
-  class="z-10 h-11 fixed top-0 left-0 border-b border-neutral flex w-full flex-col md:flex-row gap-y-3 md:gap-y-0 items-stretch md:items-center justify-between px-4 py-2 bg-primary text-neutral shadow-md"
+  class="z-10 h-11 fixed top-0 left-0 border-b border-primary bg-neutral flex w-full flex-col md:flex-row gap-y-3 md:gap-y-0 items-stretch md:items-center justify-between px-4 py-2 shadow-md"
 >
   <a href="#" class="text-xl tracking-wide font-bold cursor-pointer">
     <div>Mick Mack</div>
@@ -7,7 +7,7 @@
 
   <div
     *ngIf="!isMobileDevice || !isNavBarCollapsed"
-    class="flex flex-col md:flex-row gap-y-3 md:gap-x-6 md:pl-0"
+    class="flex flex-col md:flex-row gap-y-3 md:gap-x-6 md:pl-0 font-semibold font-secondary"
   >
     <a href="#"
       (click)="isNavBarCollapsed = true"
