@@ -5,10 +5,10 @@
     <h1 class="font-primary">Indulgences</h1>
 
     <div *ngIf="bakeryProducts" class="flex flex-col items-center">
-      <div class="mx-6 my-2 flex justify-around">
+      <div class="mx-6 my-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         <div
           *ngFor="let product of bakeryProducts"
-          class="w-1/5 flex flex-col"
+          class="w-full flex flex-col"
         >
           <img
             src="/assets/media/bakery-products/{{ product.imageFileName }}"
