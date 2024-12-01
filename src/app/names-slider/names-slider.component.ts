@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { BakeryProduct } from '../types/bakery-product.type';
 import { interval, Subscription } from 'rxjs';
+import { DeviceService } from '../services/device.service';
 
 @Component
 ({
@@ -11,18 +12,19 @@ import { interval, Subscription } from 'rxjs';
 })
 export class NamesSliderComponent implements OnInit, OnDestroy
 {
-  bakeryProducts: Array<BakeryProduct> = [];
-
-  public currentOffsetPercentage: number;
-  public visibleCount: number;
-  public slidePercentage: number;
+  private deviceIsMobileSubscription!: Subscription;
   private animationSubscription!: Subscription;
+  
+  public isMobileDevice: boolean = false;
+  public bakeryProducts: Array<BakeryProduct> = [];
+  public currentOffsetPercentage: number;
+  public visibleCount!: number;
+  public slidePercentage!: number;
+  public elementWidth!: string;
 
-  constructor(private httpClient: HttpClient)
+  constructor(private httpClient: HttpClient, private deviceService: DeviceService)
   {
     this.currentOffsetPercentage = 0;
-    this.visibleCount = 4;
-    this.slidePercentage = 100 * this.visibleCount;
   }
 
   ngOnInit(): void
@@ -33,7 +35,38 @@ export class NamesSliderComponent implements OnInit, OnDestroy
                      this.bakeryProducts = bakeryProducts;
                    });
 
-    this.animationSubscription = interval(5000)
+    this.deviceIsMobileSubscription = this.deviceService
+                                          .isMobile
+                                          .subscribe(isMobile =>
+                                          {
+                                            this.isMobileDevice = isMobile;
+                                            this.updateAnimationMetrics();
+                                          });
+  }
+
+  ngOnDestroy(): void
+  {
+    if (this.deviceIsMobileSubscription)
+    {
+      this.deviceIsMobileSubscription.unsubscribe();
+    }
+
+    this.stopAnimation();
+  }
+
+  updateAnimationMetrics(): void
+  {
+    this.visibleCount = this.isMobileDevice ? 1 : 3;
+    this.slidePercentage = 100 * this.visibleCount;
+    this.startAnimation();
+  }
+
+  startAnimation(): void
+  {
+    this.stopAnimation();
+
+    let intervalDuration: number = this.isMobileDevice ? 3000 : 5000;
+    this.animationSubscription = interval(intervalDuration)
                                   .subscribe(() =>
                                   {
                                     let newOffsetPercentage: number = this.currentOffsetPercentage + this.slidePercentage;
@@ -46,14 +79,13 @@ export class NamesSliderComponent implements OnInit, OnDestroy
                                       this.currentOffsetPercentage = newOffsetPercentage;
                                     }
                                   });
-              
   }
 
-  ngOnDestroy(): void
+  stopAnimation(): void
   {
     if (this.animationSubscription)
     {
       this.animationSubscription.unsubscribe();
-    }  
+    }
   }
 }

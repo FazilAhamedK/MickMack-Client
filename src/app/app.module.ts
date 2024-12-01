@@ -1,9 +1,9 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
 import { ProductFilterPipe } from './pipes/product-filter.pipe';
 import { EnumParserPipe } from './pipes/enum-parser.pipe';
 import { DietaryFilterPipe } from './pipes/dietary-filter.pipe';
@@ -14,12 +14,14 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { StorePreviewComponent } from './modals/store-preview/store-preview.component';
 import { BakeryComponent } from './bakery/bakery.component';
-import { TextSliderComponent } from './text-slider/text-slider.component';
 import { IndulgencePreviewComponent } from './indulgence-preview/indulgence-preview.component';
 import { NamesSliderComponent } from './names-slider/names-slider.component';
+import { DeviceService } from './services/device.service';
 
-@NgModule({
-  declarations: [
+@NgModule
+({
+  declarations:
+  [
     AppComponent,
     ProductFilterPipe,
     EnumParserPipe,
@@ -31,16 +33,16 @@ import { NamesSliderComponent } from './names-slider/names-slider.component';
     ContactComponent,
     StorePreviewComponent,
     BakeryComponent,
-    TextSliderComponent,
     IndulgencePreviewComponent,
     NamesSliderComponent
   ],
-  imports: [
+  imports:
+  [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [DeviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

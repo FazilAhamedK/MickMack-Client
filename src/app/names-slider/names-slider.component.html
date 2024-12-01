@@ -4,8 +4,9 @@
     >
         <div
             *ngFor="let bakeryProduct of bakeryProducts.concat(bakeryProducts)"
-            class="sliderElement flex justify-center items-center w-1/4 shrink-0 grow-0 whitespace-nowrap transition-transform duration-1000 ease-in-out"
+            class="flex justify-center items-center shrink-0 grow-0 whitespace-nowrap transition-transform duration-1000 ease-in-out"
             [ngStyle]="{transform: 'translateX(-' + currentOffsetPercentage + '%)'}"
+            [ngClass]="isMobileDevice ? 'sliderElementMobile' : 'sliderElement'"
         >
             <div class="mr-2">&#x2022;</div>
             <div>{{ bakeryProduct.name }}</div>
