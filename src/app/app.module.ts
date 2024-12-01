@@ -15,6 +15,8 @@ import { ContactComponent } from './contact/contact.component';
 import { StorePreviewComponent } from './modals/store-preview/store-preview.component';
 import { BakeryComponent } from './bakery/bakery.component';
 import { TextSliderComponent } from './text-slider/text-slider.component';
+import { IndulgencePreviewComponent } from './indulgence-preview/indulgence-preview.component';
+import { NamesSliderComponent } from './names-slider/names-slider.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { TextSliderComponent } from './text-slider/text-slider.component';
     ContactComponent,
     StorePreviewComponent,
     BakeryComponent,
-    TextSliderComponent
+    TextSliderComponent,
+    IndulgencePreviewComponent,
+    NamesSliderComponent
   ],
   imports: [
     BrowserModule,

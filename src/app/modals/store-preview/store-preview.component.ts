@@ -32,7 +32,7 @@ export class StorePreviewComponent
   navigateToStore(): void
   {
     this.currentModalState = "hide";
-      this.modalHideEvent.emit();
+    this.modalHideEvent.emit();
     this.router.navigateByUrl("store");
   }
 }

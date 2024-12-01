@@ -9,52 +9,40 @@ module.exports =
   {
     backgroundColor:
 		{
-      primary: "#0F182C",
+      primary: "#000000",
       secondary: "#4C421A",
       neutral: "#FFFFFA",
-      trial: "rgba(241, 139, 105, 0.6)"
     },
     borderColor:
 		{
-      primary: "#0F182C",
+      primary: "#000000",
       secondary: "#4C421A",
       neutral: "#FFFFFA"
     },
     colors:
 		{
-      primary: "#0F182C",
+      primary:
+      {
+        50: "rgba(0, 0, 0, 0.5)",
+        100: "rgba(0, 0, 0, 1)"
+      },
       secondary: "#4C421A",
       neutral: "#FFFFFA",
-      black:
-      {
-        50: "rgba(0, 0, 0, 0.5)"
-      }
     },
     fontFamily:
     {
       primary: ["DM Sans", "sans-serif"],
-      secondary: ["Kodchasan", "sans-serif"]
+      secondary: ["Kodchasan", "sans-serif"],
+      "slider-alpha": ["Gochi Hand", "cursive"],
+      "slider-bravo": ["Mynerve", "cursive"],
+      "slider-charlie": ["Audiowide", "sans-serif"],
+      "slider-delta": ["Reenie Beanie", "cursive"]
     },
     textColor:
     {
-      primary: "#0F182C",
+      primary: "#000000",
       secondary: "#4C421A",
       neutral: "#FFFFFA"
-    },
-    extend:
-    {
-      keyframes:
-      {
-        marquee:
-        {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-50%)' },
-        },
-      },
-      animation:
-      {
-        marquee: 'marquee 100s linear infinite',
-      },
     }
   },
   plugins: [],

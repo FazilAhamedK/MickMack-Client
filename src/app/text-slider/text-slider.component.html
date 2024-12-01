@@ -1,7 +1,7 @@
 <div class="font-primary flex marquee-container overflow-hidden whitespace-nowrap border-y border-secondary">
     <div class="flex animate-marquee my-1">
         <div *ngFor="let bakeryProduct of bakeryProducts.concat(bakeryProducts)" class="flex justify-center items-center text-lg">
-            <div>{{bakeryProduct.name}}</div>
+            <div [style.color]="bakeryProduct.textDisplayColour">{{bakeryProduct.name}}</div>
             <div class="mx-2">&#x2022;</div>
         </div>
     </div>
