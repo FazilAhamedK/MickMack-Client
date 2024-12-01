@@ -1,0 +1,22 @@
+.sliderElement
+{
+    &:nth-child(4n + 1)
+    {
+        @apply font-slider-alpha text-2xl;
+    }
+
+    &:nth-child(4n + 2)
+    {
+        @apply font-slider-bravo text-2xl;
+    }
+
+    &:nth-child(4n + 3)
+    {
+        @apply font-slider-charlie text-xl;
+    }
+
+    &:nth-child(4n + 4)
+    {
+        @apply font-slider-delta text-3xl;
+    }
+}

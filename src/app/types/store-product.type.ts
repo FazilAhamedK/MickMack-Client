@@ -1,4 +1,4 @@
-import { DietaryOption } from "./dietary-option.enum"
+import { DietaryOption } from "./dietary-option.enum";
 
 export type StoreProduct =
 {

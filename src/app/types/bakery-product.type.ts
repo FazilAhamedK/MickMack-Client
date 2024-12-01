@@ -1,9 +1,10 @@
-import { DietaryOption } from "./dietary-option.enum"
+type HexColor = `#${string}`;
 
 export type BakeryProduct =
 {
     name: string,
     category: string,
-    dietaryOptions: Array<DietaryOption>,
-    imageFileName: string
+    imageFileName: string,
+    textDisplayColour: HexColor,
+    showInHomePage: boolean
 }

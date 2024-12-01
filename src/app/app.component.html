@@ -8,7 +8,7 @@
 
     <div
       *ngIf="!isMobileDevice || !isNavBarCollapsed"
-      class="flex flex-col gap-y-3 bg-neutral font-secondary font-semibold md:flex-row md:gap-x-6 md:pl-0"
+      class="flex flex-col gap-y-3 font-secondary font-semibold md:flex-row md:gap-x-6 md:pl-0"
     >
       <a href="#"
         (click)="isNavBarCollapsed = true"
@@ -20,7 +20,7 @@
         <span class="mt-0.5 md:mt-0">Home</span>
       </a>
 
-      <a href="#homemade-indulgence"
+      <a href="#homemade-indulgence-preview"
         (click)="isNavBarCollapsed = true"
         class="flex cursor-pointer items-center"
       >
@@ -46,7 +46,7 @@
         <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
           <use xlink:href="assets/sprite-sheet.svg#badge"></use>
         </svg>
-        <span class="mt-0.5 md:mt-0">About Us</span>
+        <span class="mt-0.5 md:mt-0">About</span>
       </a>
 
       <a href="#contact"

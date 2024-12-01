@@ -2,229 +2,253 @@
     {
         "name": "Gulab Jamun Cake",
         "category": "Cakes",
-        "dietaryOptions": ["VEGAN"],
-        "imageFileName": "GulabJamunCake.jpg"
+        "imageFileName": "GulabJamunCake.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": true
     },
     {
         "name": "Tres Leches",
         "category": "Cakes",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
-        "imageFileName": "TresLeches.jpg"
+        "imageFileName": "TresLeches.jpg",
+		"textDisplayColour": "#9A0665",
+		"showInHomePage": true
     },
     {
         "name": "Hazelnut Cake",
         "category": "Cakes",
-        "dietaryOptions": ["EGG"],
-        "imageFileName": "HazelnutCake.jpg"
+        "imageFileName": "HazelnutCake.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Red Velvet Brownie",
         "category": "Cakes",
-        "dietaryOptions": ["VEGAN"],
-        "imageFileName": "RedVelvetBrownie.jpg"
+        "imageFileName": "RedVelvetBrownie.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Rose Milk Cake",
         "category": "Cakes",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
-        "imageFileName": "RoseMilkCake.jpg"
+        "imageFileName": "RoseMilkCake.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": true
     },
     {
         "name": "Strawberry Cake",
         "category": "Cakes",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
-        "imageFileName": "StrawberryCake.jpg"
+        "imageFileName": "StrawberryCake.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": true
     },
     {
         "name": "Orange Cake",
         "category": "Cakes",
-        "dietaryOptions": ["VEGETARIAN", "NON_VEGETARIAN"],
-        "imageFileName": "OrangeCake.jpeg"
+        "imageFileName": "OrangeCake.jpeg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Almond Blueberry Cake",
         "category": "Cakes",
-        "dietaryOptions": ["VEGAN"],
-        "imageFileName": "AlmondBlueberryCake.jpg"
+        "imageFileName": "AlmondBlueberryCake.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Lemon Blueberry Cake",
         "category": "Cakes",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
-        "imageFileName": "LemonBlueberryCake.jpg"
+        "imageFileName": "LemonBlueberryCake.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Tapioca Cake",
         "category": "Cakes",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG"],
-        "imageFileName": "TapiocaCake.jpg"
+        "imageFileName": "TapiocaCake.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Pavlova",
         "category": "Desserts",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
-        "imageFileName": "Pavlova.jpg"
+        "imageFileName": "Pavlova.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Strawberry Cheesecake",
         "category": "Desserts",
-        "dietaryOptions": ["VEGETARIAN"],
-        "imageFileName": "StrawberryCheesecake.jpg"
+        "imageFileName": "StrawberryCheesecake.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Tender Coconut Pudding",
         "category": "Desserts",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN"],
-        "imageFileName": "TenderCoconutPudding.jpg"
+        "imageFileName": "TenderCoconutPudding.jpg",
+		"textDisplayColour": "#496915",
+		"showInHomePage": false
     },
     {
         "name": "Kunafa",
         "category": "Desserts",
-        "dietaryOptions": ["EGG", "NON_VEGETARIAN"],
-        "imageFileName": "Kunafa.jpg"
+        "imageFileName": "Kunafa.jpg",
+		"textDisplayColour": "#7F4B3D",
+		"showInHomePage": false
     },
     {
         "name": "Strawberry Panna Cotta",
         "category": "Desserts",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
-        "imageFileName": "StrawberryPannaCotta.jpg"
+        "imageFileName": "StrawberryPannaCotta.jpg",
+		"textDisplayColour": "#FB2943",
+		"showInHomePage": false
     },
     {
         "name": "Tiramisu",
         "category": "Desserts",
-        "dietaryOptions": ["EGG", "NON_VEGETARIAN"],
-        "imageFileName": "Tiramisu.jpg"
+        "imageFileName": "Tiramisu.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Chicken Spring Roll",
         "category": "Snacks",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
-        "imageFileName": "ChickenSpringRoll.jpg"
+        "imageFileName": "ChickenSpringRoll.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Chicken Samosa",
         "category": "Snacks",
-        "dietaryOptions": ["VEGETARIAN"],
-        "imageFileName": "ChickenSamosa.jpg"
-    },
-    {
-        "name": "Chicken Cutlet",
-        "category": "Snacks",
-        "dietaryOptions": ["EGG"],
-        "imageFileName": "ChickenCutlet.jpg"
+        "imageFileName": "ChickenSamosa.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Chicken Poppers",
         "category": "Snacks",
-        "dietaryOptions": ["VEGETARIAN"],
-        "imageFileName": "ChickenPoppers.jpg"
+        "imageFileName": "ChickenPoppers.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Chicken Cigar",
         "category": "Snacks",
-        "dietaryOptions": ["EGG", "NON_VEGETARIAN"],
-        "imageFileName": "CrispyKebabMax.jpg"
+        "imageFileName": "CrispyKebabMax.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Nutty Chicken",
         "category": "Snacks",
-        "dietaryOptions": ["EGG", "NON_VEGETARIAN"],
-        "imageFileName": "NuttyChicken.jpg"
+        "imageFileName": "NuttyChicken.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Chicken Donut",
         "category": "Snacks",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN"],
-        "imageFileName": "ChickenDonut.jpg"
-    },
-    {
-        "name": "Falafel",
-        "category": "Snacks",
-        "dietaryOptions": ["VEGETARIAN", "EGG", "NON_VEGETARIAN"],
-        "imageFileName": "Falafel.jpg"
+        "imageFileName": "ChickenDonut.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Kashmiri Chicken",
         "category": "Mains",
-        "dietaryOptions": ["VEGAN", "EGG", "NON_VEGETARIAN"],
-        "imageFileName": "KashmiriChicken.jpg"
+        "imageFileName": "KashmiriChicken.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Singapore Rice",
         "category": "Mains",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
-        "imageFileName": "SingaporeRice.jpg"
+        "imageFileName": "SingaporeRice.jpg",
+		"textDisplayColour": "#815111",
+		"showInHomePage": false
     },
     {
         "name": "Ramadan Porridge",
         "category": "Mains",
-        "dietaryOptions": ["VEGETARIAN"],
-        "imageFileName": "RamadanPorridge.jpg"
+        "imageFileName": "RamadanPorridge.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Burger",
         "category": "Mains",
-        "dietaryOptions": ["VEGAN", "EGG"],
-        "imageFileName": "Burger.jpg"
+        "imageFileName": "Burger.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Carrot Halwa Cake",
         "category": "Cakes",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
-        "imageFileName": "CarrotHalwaCake.jpeg"
+        "imageFileName": "CarrotHalwaCake.jpeg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Almond Tea Cake",
         "category": "Cakes",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN", "EGG", "NON_VEGETARIAN"],
-        "imageFileName": "AlmondTeaCake.jpg"
+        "imageFileName": "AlmondTeaCake.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Vanilla Muffin",
         "category": "Cakes",
-        "dietaryOptions": ["VEGAN", "NON_VEGETARIAN"],
-        "imageFileName": "VanillaMuffin.jpg"
+        "imageFileName": "VanillaMuffin.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Brownie",
         "category": "Cakes",
-        "dietaryOptions": ["EGG", "NON_VEGETARIAN"],
-        "imageFileName": "Brownie.jpg"
+        "imageFileName": "Brownie.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Caramel Drops",
         "category": "Cookies",
-        "dietaryOptions": ["VEGAN", "NON_VEGETARIAN"],
-        "imageFileName": "CaramelDrops.jpg"
+        "imageFileName": "CaramelDrops.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Sweet Cigars",
-        "category": "Desserts",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN"],
-        "imageFileName": "SweetCigars.jpg"
+        "category": "Snacks",
+        "imageFileName": "SweetCigars.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Raffaelo Pudding",
         "category": "Desserts",
-        "dietaryOptions": ["EGG", "NON_VEGETARIAN"],
-        "imageFileName": "RaffaeloPudding.jpg"
+        "imageFileName": "RaffaeloPudding.jpg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Korean Cheese Bun",
         "category": "Breads",
-        "dietaryOptions": ["VEGAN", "EGG", "NON_VEGETARIAN"],
-        "imageFileName": "KoreanCheeseBun.jpeg"
+        "imageFileName": "KoreanCheeseBun.jpeg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Butter Cookies",
         "category": "Cookies",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN", "NON_VEGETARIAN"],
-        "imageFileName": "Cookies.jpeg"
+        "imageFileName": "Cookies.jpeg",
+		"textDisplayColour": "#663399",
+		"showInHomePage": false
     },
     {
         "name": "Creamy Crunch",
         "category": "Desserts",
-        "dietaryOptions": ["VEGAN", "VEGETARIAN", "NON_VEGETARIAN"],
-        "imageFileName": "CreamyCrunch.jpg"
+        "imageFileName": "CreamyCrunch.jpg",
+		"textDisplayColour": "#472008",
+		"showInHomePage": false
     }
 ]
