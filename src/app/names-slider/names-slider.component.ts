@@ -32,7 +32,7 @@ export class NamesSliderComponent implements OnInit, OnDestroy
     this.httpClient.get<Array<BakeryProduct>>("/assets/data/BakeryProducts.json")
                    .subscribe(bakeryProducts =>
                    {
-                     this.bakeryProducts = bakeryProducts;
+                     this.bakeryProducts = bakeryProducts?.filter(product => product.showInSlider);
                    });
 
     this.deviceIsMobileSubscription = this.deviceService

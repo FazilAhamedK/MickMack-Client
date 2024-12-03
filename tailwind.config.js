@@ -5,6 +5,13 @@ module.exports =
   [
     "./src/**/*.{html,scss,ts,svg}",
   ],
+  safelist:
+  [
+    {
+      pattern: /order-\d+/,
+    },
+    'order-none',
+  ],
   theme:
   {
     backgroundColor:
@@ -42,8 +49,24 @@ module.exports =
     {
       primary: "#000000",
       secondary: "#4C421A",
-      neutral: "#FFFFFA"
+      neutral: "#FFFFFA",
+      highlight: "#FF46A2"
+    },
+    extend:
+    {
+      keyframes:
+      {
+        wave:
+        {
+          '0%, 100%': {transform: 'rotate(0deg)'},
+          '50%': {transform: 'rotate(20deg)'},
+        },
+      },
+      animation:
+      {
+        wave: 'wave 1s ease-in-out infinite',
+      },
     }
   },
-  plugins: [],
+  plugins: []
 }
