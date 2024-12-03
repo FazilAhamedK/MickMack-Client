@@ -17,6 +17,7 @@ import { BakeryComponent } from './bakery/bakery.component';
 import { IndulgencePreviewComponent } from './indulgence-preview/indulgence-preview.component';
 import { NamesSliderComponent } from './names-slider/names-slider.component';
 import { DeviceService } from './services/device.service';
+import { StudioPreviewComponent } from './modals/studio-preview/studio-preview.component';
 
 @NgModule
 ({
@@ -32,6 +33,7 @@ import { DeviceService } from './services/device.service';
     AboutUsComponent,
     ContactComponent,
     StorePreviewComponent,
+    StudioPreviewComponent,
     BakeryComponent,
     IndulgencePreviewComponent,
     NamesSliderComponent

@@ -8,18 +8,13 @@
       <div class="mx-6 my-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         <div
           *ngFor="let product of bakeryProducts"
-          class="w-full flex flex-col"
+          class="w-full flex flex-col order"
+          [ngClass]="product.displayOrderInSlider ? 'order-' + product.displayOrderInSlider : 'order-none'"
         >
           <img
             src="/assets/media/bakery-products/{{ product.imageFileName }}"
             alt="A photo of the product: {{ product.name }}."
           />
-
-          <div class="flex flex-col h-full">
-            <div class="text-base sm:text-lg font-bold font-primary">
-              {{ product.name }}
-            </div>
-          </div>
         </div>
       </div>
 

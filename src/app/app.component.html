@@ -39,6 +39,15 @@
         <span class="mt-0.5 md:mt-0">Store</span>
       </a>
 
+      <a (click)="isNavBarCollapsed = true; navigateToStudio();"
+        class="flex cursor-pointer items-center"
+      >
+        <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
+          <use xlink:href="assets/sprite-sheet.svg#storefront"></use>
+        </svg>
+        <span class="mt-0.5 md:mt-0">Studio</span>
+      </a>
+
       <a href="#about-us"
         (click)="isNavBarCollapsed = true"
         class="flex cursor-pointer items-center"
@@ -89,4 +98,12 @@
     (modalHideEvent)="showStorePreviewModal = false"
   >
   </mm-store-preview>
+</ng-container>
+
+<ng-container *ngIf="showStudioPreviewModal">
+  <mm-studio-preview
+    [state]="showStudioPreviewModal ? 'show' : 'hide'"
+    (modalHideEvent)="showStudioPreviewModal = false"
+  >
+  </mm-studio-preview>
 </ng-container>
