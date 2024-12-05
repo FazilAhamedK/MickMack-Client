@@ -19,6 +19,7 @@ import { NamesSliderComponent } from './names-slider/names-slider.component';
 import { DeviceService } from './services/device.service';
 import { StudioPreviewComponent } from './modals/studio-preview/studio-preview.component';
 import { FooterComponent } from './footer/footer.component';
+import { MenuCardComponent } from './menu-card/menu-card.component';
 
 @NgModule
 ({
@@ -38,7 +39,8 @@ import { FooterComponent } from './footer/footer.component';
     BakeryComponent,
     IndulgencePreviewComponent,
     NamesSliderComponent,
-    FooterComponent
+    FooterComponent,
+    MenuCardComponent
   ],
   imports:
   [
