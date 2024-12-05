@@ -309,6 +309,95 @@
         "category": "Desserts",
         "imageFileName": "IcyDelight.png",
         "showInHomePage": false,
-        "showInSlider": true
-      }
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Kiwi Panna Cotta",
+        "category": "Desserts",
+        "imageFileName": "KiwiPannaCotta.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Custard Apple Pudding",
+        "category": "Desserts",
+        "imageFileName": "CustardApplePudding.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Dragon Cream Tub",
+        "category": "Desserts",
+        "imageFileName": "DragonCreamTub.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Mango Float",
+        "category": "Desserts",
+        "imageFileName": "MangoFloat.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Pistachio Kunafa Tub",
+        "category": "Desserts",
+        "imageFileName": "PistachioKunafaTub.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Agar Delight",
+        "category": "Desserts",
+        "imageFileName": "AgarDelight.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Chicken Sumuy",
+        "category": "Savouries",
+        "imageFileName": "ChickenSumuy.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Fish Pidi",
+        "category": "Savouries",
+        "imageFileName": "FishPidi.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Prawns Pidi",
+        "category": "Savouries",
+        "imageFileName": "PrawnsPidi.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Chicken Pidi",
+        "category": "Savouries",
+        "imageFileName": "ChickenPidi.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Mutton Pidi",
+        "category": "Savouries",
+        "imageFileName": "MuttonPidi.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    }
 ]
