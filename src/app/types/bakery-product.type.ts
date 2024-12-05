@@ -6,4 +6,5 @@ export type BakeryProduct =
     showInHomePage: boolean,
     showInSlider: boolean,
     displayOrderInSlider?: number
+    isNewArrival?: boolean
 }

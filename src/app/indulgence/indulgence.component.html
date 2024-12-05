@@ -38,11 +38,11 @@
         *ngIf="filteredProducts.length"
       >
         <div
-          class="m-6 flex overflow-x-scroll sm:overflow-x-auto sm:grid sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-6"
+          class="m-6 grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5"
         >
           <div
             *ngFor="let product of filteredProducts"
-            class="w-1/2 shrink-0 sm:w-auto sm:col-span-1 flex flex-col my-2 sm:mb-0"
+            class="relative w-full shrink-0 sm:w-auto sm:col-span-1 flex flex-col my-2 sm:mb-0"
           >
             <img
               src="/assets/media/bakery-products/{{ product.imageFileName }}"
@@ -60,6 +60,10 @@
               >
                 {{ product.category }}
               </div>
+            </div>
+
+            <div *ngIf="product.isNewArrival" class="absolute top-0 right-0 font-semibold text-xs bg-secondary text-neutral rounded-full px-2 py-1">
+              New Arrival
             </div>
           </div>
         </div>
