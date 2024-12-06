@@ -1,0 +1,448 @@
+[
+    {
+        "name": "Gulab Jamun Cake",
+        "category": "Cakes",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "1/2 kg",
+                "price": 1300
+            },
+            {
+                "name": "1 kg",
+                "price": 2600
+            }
+        ],
+        "imageFileName": "GulabJamunCake.jpg"
+    },
+    {
+        "name": "Rosemilk Tres Leches",
+        "category": "Cakes",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "1/2 kg",
+                "price": 1400
+            },
+            {
+                "name": "1 kg",
+                "price": 2800
+            }
+        ],
+        "imageFileName": "TresLeches.jpg"
+    },
+    {
+        "name": "Almond Cake",
+        "category": "Cakes",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "1/2 kg",
+                "price": 870
+            },
+            {
+                "name": "1 kg",
+                "price": 1740
+            }
+        ],
+        "imageFileName": "AlmondTeaCake.jpg"
+    },
+    {
+        "name": "Butter Cake",
+        "category": "Cakes",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "700 g",
+                "price": 820
+            }
+        ],
+        "imageFileName": null
+    },
+    {
+        "name": "Brownie",
+        "category": "Cakes",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "500 g",
+                "price": null
+            }
+        ],
+        "imageFileName": "Brownie.jpg"
+    },
+    {
+        "name": "White Forest",
+        "category": "Cakes",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "1/2 kg",
+                "price": 610
+            },
+            {
+                "name": "1 kg",
+                "price": 1220
+            }
+        ],
+        "imageFileName": null
+    },
+    {
+        "name": "Chocolate Cake [Eggless]",
+        "category": "Cakes",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "1/2 kg",
+                "price": 742.50
+            },
+            {
+                "name": "1 kg",
+                "price": 1485
+            }
+        ],
+        "imageFileName": null
+    },
+    {
+        "name": "Double Chocolate Brownie",
+        "category": "Cakes",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "2 pc",
+                "price": 420
+            },
+            {
+                "name": "6 pc",
+                "price": 1100
+            }
+        ],
+        "imageFileName": null
+    },
+    {
+        "name": "White Chocolate",
+        "category": "Cakes",
+        "description": null,
+        "variants": null,
+        "imageFileName": null
+    },
+    {
+        "name": "Red Velvet",
+        "category": "Cakes",
+        "description": null,
+        "variants": null,
+        "imageFileName": null
+    },
+    {
+        "name": "Pistachio Cake",
+        "category": "Cakes",
+        "description": null,
+        "variants": null,
+        "imageFileName": null
+    },
+    {
+        "name": "Hazelnut Cake",
+        "category": "Cakes",
+        "description": null,
+        "variants": null,
+        "imageFileName": "HazelnutCake.jpg"
+    },
+    {
+        "name": "Chocolate Custard",
+        "category": "Cakes",
+        "description": null,
+        "variants": null,
+        "imageFileName": null
+    },
+    {
+        "name": "Lemon Curd",
+        "category": "Cakes",
+        "description": null,
+        "variants": null,
+        "imageFileName": null
+    },
+    {
+        "name": "Strawberry Panna Cotta",
+        "category": "Desserts",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "Regular",
+                "price": 300
+            }
+        ],
+        "imageFileName": "StrawberryPannaCotta.jpg"
+    },
+    {
+        "name": "Tender Coconut Pudding",
+        "category": "Desserts",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "Regular",
+                "price": 240
+            }
+        ],
+        "imageFileName": "TenderCoconutPudding.jpg"
+    },
+    {
+        "name": "Chocolate Mousse",
+        "category": "Desserts",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "Regular",
+                "price": 150
+            }
+        ],
+        "imageFileName": null
+    },
+    {
+        "name": "Rosemilk Tres Leches",
+        "category": "Desserts",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "Regular",
+                "price": 499
+            }
+        ],
+        "imageFileName": "TresLeches.jpg"
+    },
+    {
+        "name": "Cream Kunafa",
+        "category": "Desserts",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "1 pc",
+                "price": 360
+            }
+        ],
+        "imageFileName": "Kunafa.jpg"
+    },
+    {
+        "name": "Phirni",
+        "category": "Desserts",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "Regular",
+                "price": 275
+            }
+        ],
+        "imageFileName": "Phirni.jpg"
+    },
+    {
+        "name": "Agar Delight",
+        "category": "Desserts",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "Small",
+                "price": 175
+            },
+            {
+                "name": "Medium",
+                "price": 300
+            }
+        ],
+        "imageFileName": null
+    },
+    {
+        "name": "Mithai Bomb",
+        "category": "Desserts",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "Regular",
+                "price": 225
+            }
+        ],
+        "imageFileName": "MithaiBomb.jpg"
+    },
+    {
+        "name": "Layali Lubnan",
+        "category": "Desserts",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "Regular",
+                "price": 200
+            }
+        ],
+        "imageFileName": "LayaliLubnan.jpg"
+    },
+    {
+        "name": "Ferrero Rocher Crunch",
+        "category": "Desserts",
+        "description": null,
+        "variants": null,
+        "imageFileName": "FerreroRocherCrunch.jpg"
+    },
+    {
+        "name": "Banoffee Pie Crunch",
+        "category": "Desserts",
+        "description": null,
+        "variants": null,
+        "imageFileName": "BanoffeeCrunch.jpg"
+    },
+    {
+        "name": "Butterscotch Crunch",
+        "category": "Desserts",
+        "description": null,
+        "variants": null,
+        "imageFileName": "BScotchCrunch.jpg"
+    },
+    {
+        "name": "Granola Crunch",
+        "category": "Desserts",
+        "description": null,
+        "variants": null,
+        "imageFileName": "GranolaCrunch.jpg"
+    },
+    {
+        "name": "Strawberry Crunch",
+        "category": "Desserts",
+        "description": null,
+        "variants": null,
+        "imageFileName": "StrawberryCrunch.jpg"
+    },
+    {
+        "name": "Pavlova",
+        "category": "Desserts",
+        "description": null,
+        "variants": null,
+        "imageFileName": "Pavlova.jpg"
+    },
+    {
+        "name": "Strawberry Cheese Cake",
+        "category": "Desserts",
+        "description": null,
+        "variants": null,
+        "imageFileName": "StrawberryCheesecake.jpg"
+    },
+    {
+        "name": "Raffaelo Pudding",
+        "category": "Desserts",
+        "description": null,
+        "variants": null,
+        "imageFileName": "RaffaeloPudding.jpg"
+    },
+    {
+        "name": "Pistachio Kunafa Tub",
+        "category": "Desserts",
+        "description": null,
+        "variants": null,
+        "imageFileName": null
+    },
+    {
+        "name": "Pistachio Tres Leches",
+        "category": "Desserts",
+        "description": null,
+        "variants": null,
+        "imageFileName": null
+    },
+    {
+        "name": "Vanilla Tres Leches",
+        "category": "Desserts",
+        "description": null,
+        "variants": null,
+        "imageFileName": null
+    },
+    {
+        "name": "Chocolate Tres Leches",
+        "category": "Desserts",
+        "description": null,
+        "variants": null,
+        "imageFileName": null
+    },
+    {
+        "name": "Chicken Cigar",
+        "category": "Savouries",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "3 pc",
+                "price": 220
+            }
+        ],
+        "imageFileName": "CrispyKebabMax.jpg"
+    },
+    {
+        "name": "Manakeesh",
+        "category": "Savouries",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "Paneer / Chicken",
+                "price": 95
+            }
+        ],
+        "imageFileName": null
+    },
+    {
+        "name": "Chicken Donut",
+        "category": "Savouries",
+        "description": null,
+        "variants": null,
+        "imageFileName": "ChickenDonut.jpg"
+    },
+    {
+        "name": "Chicken Kashmiri",
+        "category": "Savouries",
+        "description": null,
+        "variants": null,
+        "imageFileName": "KashmiriChicken.jpg"
+    },
+    {
+        "name": "Chicken Sumuy",
+        "category": "Savouries",
+        "description": null,
+        "variants": null,
+        "imageFileName": null
+    },
+    {
+        "name": "Singapore Rice",
+        "category": "Savouries",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "Single Serve",
+                "price": 499
+            },
+            {
+                "name": "Tub",
+                "price": 1465
+            }
+        ],
+        "imageFileName": "SingaporeRice.jpg"
+    },
+    {
+        "name": "Special Porridge",
+        "category": "Savouries",
+        "description": null,
+        "variants": null,
+        "imageFileName": "RamadanPorridge.jpg"
+    }
+]

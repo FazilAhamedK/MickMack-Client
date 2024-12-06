@@ -365,7 +365,7 @@
         "category": "Savouries",
         "imageFileName": "ChickenSumuy.png",
         "showInHomePage": false,
-        "showInSlider": true,
+        "showInSlider": false,
         "isNewArrival": true
     },
     {
@@ -373,7 +373,7 @@
         "category": "Savouries",
         "imageFileName": "FishPidi.png",
         "showInHomePage": false,
-        "showInSlider": true,
+        "showInSlider": false,
         "isNewArrival": true
     },
     {
@@ -381,7 +381,7 @@
         "category": "Savouries",
         "imageFileName": "PrawnsPidi.png",
         "showInHomePage": false,
-        "showInSlider": true,
+        "showInSlider": false,
         "isNewArrival": true
     },
     {
@@ -389,7 +389,7 @@
         "category": "Savouries",
         "imageFileName": "ChickenPidi.png",
         "showInHomePage": false,
-        "showInSlider": true,
+        "showInSlider": false,
         "isNewArrival": true
     },
     {
@@ -397,7 +397,7 @@
         "category": "Savouries",
         "imageFileName": "MuttonPidi.png",
         "showInHomePage": false,
-        "showInSlider": true,
+        "showInSlider": false,
         "isNewArrival": true
     }
 ]
