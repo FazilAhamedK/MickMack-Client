@@ -64,13 +64,6 @@
         "imageFileName": null
     },
     {
-        "name": "Brownie",
-        "category": "Cakes",
-        "description": null,
-        "variants": null,
-        "imageFileName": "Brownie.jpg"
-    },
-    {
         "name": "White Forest",
         "category": "Cakes",
         "description": null,
@@ -119,7 +112,7 @@
                 "price": 1100
             }
         ],
-        "imageFileName": null
+        "imageFileName": "Brownie.jpg"
     },
     {
         "name": "White Chocolate",
