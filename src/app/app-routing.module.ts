@@ -9,7 +9,6 @@ const routes: Routes =
 [
   {path: "", component: BakeryComponent},
   {path: "indulgence", component: IndulgenceComponent},
-  {path: "store", component: StoreComponent},
   {path: "menu", component: MenuCardComponent},
   {path: "**", redirectTo: "", pathMatch: "full"}
 ];

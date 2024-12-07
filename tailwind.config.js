@@ -18,7 +18,7 @@ module.exports =
 		{
       primary: "#000000",
       secondary: "#4C421A",
-      neutral: "#FFFFFA",
+      neutral: "#FFFFFA"
     },
     borderColor:
 		{

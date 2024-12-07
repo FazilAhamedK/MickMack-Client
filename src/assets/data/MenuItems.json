@@ -67,13 +67,7 @@
         "name": "Brownie",
         "category": "Cakes",
         "description": null,
-        "variants":
-        [
-            {
-                "name": "500 g",
-                "price": null
-            }
-        ],
+        "variants": null,
         "imageFileName": "Brownie.jpg"
     },
     {
@@ -294,35 +288,65 @@
         "name": "Ferrero Rocher Crunch",
         "category": "Desserts",
         "description": null,
-        "variants": null,
+        "variants":  
+        [
+            {
+                "name": "Regular",
+                "price": 320
+            }
+        ],
         "imageFileName": "FerreroRocherCrunch.jpg"
     },
     {
         "name": "Banoffee Pie Crunch",
         "category": "Desserts",
         "description": null,
-        "variants": null,
+        "variants":  
+        [
+            {
+                "name": "Regular",
+                "price": 320
+            }
+        ],
         "imageFileName": "BanoffeeCrunch.jpg"
     },
     {
         "name": "Butterscotch Crunch",
         "category": "Desserts",
         "description": null,
-        "variants": null,
+        "variants":  
+        [
+            {
+                "name": "Regular",
+                "price": 320
+            }
+        ],
         "imageFileName": "BScotchCrunch.jpg"
     },
     {
         "name": "Granola Crunch",
         "category": "Desserts",
         "description": null,
-        "variants": null,
+        "variants":  
+        [
+            {
+                "name": "Regular",
+                "price": 320
+            }
+        ],
         "imageFileName": "GranolaCrunch.jpg"
     },
     {
         "name": "Strawberry Crunch",
         "category": "Desserts",
         "description": null,
-        "variants": null,
+        "variants": 
+        [
+            {
+                "name": "Regular",
+                "price": 320
+            }
+        ],
         "imageFileName": "StrawberryCrunch.jpg"
     },
     {
@@ -398,28 +422,46 @@
                 "price": 95
             }
         ],
-        "imageFileName": null
+        "imageFileName": "Manakeesh.jpg"
     },
     {
         "name": "Chicken Donut",
         "category": "Savouries",
         "description": null,
-        "variants": null,
+        "variants": 
+        [
+            {
+                "name": "0 Tubs",
+                "price": 123.45
+            }
+        ],
         "imageFileName": "ChickenDonut.jpg"
     },
     {
         "name": "Chicken Kashmiri",
         "category": "Savouries",
         "description": null,
-        "variants": null,
+        "variants":  
+        [
+            {
+                "name": "0 Tubs",
+                "price": 123.45
+            }
+        ],
         "imageFileName": "KashmiriChicken.jpg"
     },
     {
         "name": "Chicken Sumuy",
         "category": "Savouries",
         "description": null,
-        "variants": null,
-        "imageFileName": null
+        "variants":  
+        [
+            {
+                "name": "0 Tubs",
+                "price": 123.45
+            }
+        ],
+        "imageFileName": "Sumuy.jpg"
     },
     {
         "name": "Singapore Rice",
@@ -442,7 +484,13 @@
         "name": "Special Porridge",
         "category": "Savouries",
         "description": null,
-        "variants": null,
+        "variants":  
+        [
+            {
+                "name": "0 Tubs",
+                "price": 123.45
+            }
+        ],
         "imageFileName": "RamadanPorridge.jpg"
     }
 ]
