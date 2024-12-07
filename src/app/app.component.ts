@@ -17,6 +17,7 @@ export class AppComponent implements OnInit, OnDestroy
   isNavBarCollapsed: boolean = true;
   showStorePreviewModal: boolean = false;
   showStudioPreviewModal: boolean = false;
+  showKitchenPreviewModal: boolean = false;
 
   constructor(private router: Router, private deviceService: DeviceService)
   { }
@@ -53,6 +54,14 @@ export class AppComponent implements OnInit, OnDestroy
     if (this.router.url !== "/studio")
     {
       this.showStudioPreviewModal = true;
+    }
+  }
+
+  navigateToKitchen(): void
+  {
+    if (this.router.url !== "/kitchen")
+    {
+      this.showKitchenPreviewModal = true;
     }
   }
 }

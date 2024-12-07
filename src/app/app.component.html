@@ -25,7 +25,7 @@
         class="flex cursor-pointer items-center"
       >
         <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
-          <use xlink:href="assets/sprite-sheet.svg#oven"></use>
+          <use xlink:href="assets/sprite-sheet.svg#croissant"></use>
         </svg>
         <span class="mt-0.5 md:mt-0">Indulgences</span>
       </a>
@@ -46,6 +46,15 @@
           <use xlink:href="assets/sprite-sheet.svg#videocam"></use>
         </svg>
         <span class="mt-0.5 md:mt-0">Studio</span>
+      </a>
+
+      <a (click)="isNavBarCollapsed = true; navigateToKitchen();"
+        class="flex cursor-pointer items-center"
+      >
+        <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
+          <use xlink:href="assets/sprite-sheet.svg#oven"></use>
+        </svg>
+        <span class="mt-0.5 md:mt-0">Kitchen</span>
       </a>
 
       <a href="#about-us"
@@ -108,4 +117,12 @@
     (modalHideEvent)="showStudioPreviewModal = false"
   >
   </mm-studio-preview>
+</ng-container>
+
+<ng-container *ngIf="showKitchenPreviewModal">
+  <mm-kitchen-preview
+    [state]="showKitchenPreviewModal ? 'show' : 'hide'"
+    (modalHideEvent)="showKitchenPreviewModal = false"
+  >
+  </mm-kitchen-preview>
 </ng-container>

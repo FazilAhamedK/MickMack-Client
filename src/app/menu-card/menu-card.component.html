@@ -4,37 +4,37 @@
   >
     <h1 class="font-primary">Live Menu</h1>
 
-    <div class="flex flex-col gap-6 w-4/5 md:w-2/5 mt-4">
+    <div class="flex flex-col w-4/5 md:w-2/5 mt-4">
         <div *ngFor="let category of menuItemCategories; let index = index;">
-            <button (click)="toggleAccordion(index)" class="text-xl w-full flex justify-between items-center p-2 font-semibold border-b border-secondary">
+            <button (click)="toggleAccordion(index)" class="bg-[#D3BFB1] text-primary text-xl w-full flex justify-between items-center p-2 font-semibold border-b border-secondary">
               <span>{{category}}</span>
               <span id="icon-1" class="text-slate-800 transition-transform duration-300">
                 <span *ngIf="accordionStates[index] === 'collapsed'">
-                    <svg class="w-6 h-6 fill-secondary">
+                    <svg class="w-6 h-6 fill-primary">
                         <use xlink:href="assets/sprite-sheet.svg#expand"></use>
                     </svg>
                 </span>
                 <span *ngIf="accordionStates[index] === 'expanded'">
-                    <svg class="w-6 h-6 fill-secondary">
+                    <svg class="w-6 h-6 fill-primary">
                         <use xlink:href="assets/sprite-sheet.svg#collapse"></use>
                     </svg>
                 </span>
               </span>
             </button>
-            <div [@accordionState]="accordionStates[index]" class="mt-4 flex flex-col gap-4">
+            <div [@accordionState]="accordionStates[index]" class="my-2 flex flex-col gap-4">
                 <div *ngFor="let menuItem of menuItems | productFilter : 'category' : category" class="flex w-full bg-secondary/5">
-                    <img src="assets/media/bakery-products/{{menuItem.imageFileName}}" alt="" class="h-44 w-auto">
+                    <img src="assets/media/bakery-products/{{menuItem.imageFileName}}" alt="" class="h-24 w-auto">
         
                     <div class="flex flex-col w-full gap-1 p-2">
-                        <div class="flex flex-col grow font-secondary">
+                        <div class="flex flex-col grow font-primary">
                             <div class="font-semibold text-lg">{{menuItem.name}}</div>
                             <div class="text-xs">{{menuItem.description}}</div>
                         </div>
         
-                        <div class="flex flex-col ml-4 font-monospace font-semibold">
-                            <div *ngFor="let variant of menuItem.variants" class="flex justify-between">
-                                <div>{{variant.name}}</div>
-                                <div>{{variant.price | number: "1.2-2"}}</div>
+                        <div class="flex flex-col ml-4 font-monospace">
+                            <div *ngFor="let variant of menuItem.variants" class="flex justify-between items-center">
+                                <div class="text-sm">{{variant.name}}</div>
+                                <div class="font-semibold">{{variant.price | number: "1.2-2"}}</div>
                             </div>
                         </div>
                     </div>

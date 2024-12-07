@@ -37,14 +37,24 @@ export class MenuCardComponent implements OnInit
                    .subscribe(products =>
                    {
                       this.menuItems = products;
-                      this.menuItemCategories.push(...[...new Set(this.menuItems.map(product => product.category))].sort());
+                      this.sortMenuItems();
 
+                      this.menuItemCategories.push(...[...new Set(this.menuItems.map(product => product.category))].sort());
                       if (this.menuItemCategories.length > 0)
                       {
                         this.accordionStates.length = this.menuItemCategories.length;
                         this.accordionStates.fill("collapsed");
                       }
                    });
+  }
+
+  private sortMenuItems(): void
+  {
+    this.menuItems.sort((alpha, bravo) =>
+    {
+      const sortingScore = (element: MenuItem) => (element.variants?.length ? 2 : 0) + (element.imageFileName ? 1 : 0);
+      return sortingScore(bravo) - sortingScore(alpha);
+    });
   }
 
   public toggleAccordion(index: number): void
