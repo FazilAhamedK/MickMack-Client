@@ -2,3 +2,8 @@
 {
     @apply flex flex-col h-full;
 }
+
+nav li.disabled > a
+{
+    @apply text-primary/50 pointer-events-none cursor-not-allowed;
+}
