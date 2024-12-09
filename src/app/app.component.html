@@ -1,82 +1,108 @@
 <div class="grow">
   <nav
-    class="fixed left-0 top-0 z-10 flex w-full flex-col items-stretch justify-center gap-y-3 border-b border-primary bg-neutral px-4 py-2 md:flex-row md:items-center md:justify-between md:gap-y-0"
+    class="fixed left-0 top-0 z-10 flex w-full flex-col items-stretch justify-center gap-y-3 border-b border-primary bg-neutral px-4 md:flex-row md:items-center md:justify-between md:gap-y-0"
   >
-    <a href="#" class="text-xl tracking-wide font-bold cursor-pointer">
+    <a href="#" class="text-xl tracking-wide font-bold cursor-pointer py-2">
       <div>Mick Mack</div>
     </a>
 
-    <div
+    <ul
       *ngIf="!isMobileDevice || !isNavBarCollapsed"
       class="flex flex-col gap-y-3 font-secondary font-semibold md:flex-row md:gap-x-6 md:pl-0"
     >
-      <a href="#"
-        (click)="isNavBarCollapsed = true"
-        class="flex cursor-pointer items-center"
-      >
-        <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
-          <use xlink:href="assets/sprite-sheet.svg#home"></use>
-        </svg>
-        <span class="mt-0.5 md:mt-0">Home</span>
-      </a>
+      <li>
+        <a href="#"
+          (click)="isNavBarCollapsed = true"
+          class="flex cursor-pointer items-center py-2"
+        >
+          <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
+            <use xlink:href="assets/sprite-sheet.svg#home"></use>
+          </svg>
+          <span class="mt-0.5 md:mt-0">Home</span>
+        </a>
+      </li>
 
-      <a href="#homemade-indulgence-preview"
-        (click)="isNavBarCollapsed = true"
-        class="flex cursor-pointer items-center"
-      >
-        <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
-          <use xlink:href="assets/sprite-sheet.svg#croissant"></use>
-        </svg>
-        <span class="mt-0.5 md:mt-0">Indulgences</span>
-      </a>
+      <li>
+        <a href="#homemade-indulgence-preview"
+          (click)="isNavBarCollapsed = true"
+          class="flex cursor-pointer items-center py-2"
+        >
+          <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
+            <use xlink:href="assets/sprite-sheet.svg#croissant"></use>
+          </svg>
+          <span class="mt-0.5 md:mt-0">Indulgences</span>
+        </a>
+      </li>
 
-      <a (click)="isNavBarCollapsed = true; navigateToStore();"
-        class="flex cursor-pointer items-center"
-      >
-        <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
-          <use xlink:href="assets/sprite-sheet.svg#storefront"></use>
-        </svg>
-        <span class="mt-0.5 md:mt-0">Store</span>
-      </a>
+      <li class="group/tiers relative py-2">
+        <div class="flex cursor-default items-center"
+        >
+          <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
+            <use xlink:href="assets/sprite-sheet.svg#tier"></use>
+          </svg>
+          <span class="mt-0.5 md:mt-0">Tiers</span>
+        </div>
 
-      <a (click)="isNavBarCollapsed = true; navigateToStudio();"
-        class="flex cursor-pointer items-center"
-      >
-        <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
-          <use xlink:href="assets/sprite-sheet.svg#videocam"></use>
-        </svg>
-        <span class="mt-0.5 md:mt-0">Studio</span>
-      </a>
+        <ul class="top-[calc(100%+2.5px)] m-3 hidden w-full md:w-max gap-y-3 bg-neutral group-hover/tiers:flex group-hover/tiers:flex-col md:absolute md:-right-3 md:m-auto md:px-6 md:py-3 md:text-right">
+          <li>
+            <a (click)="isNavBarCollapsed = true; navigateToStore();"
+              class="flex cursor-pointer items-center"
+            >
+              <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
+                <use xlink:href="assets/sprite-sheet.svg#storefront"></use>
+              </svg>
+              <span class="mt-0.5 md:mt-0 md:w-full">Store</span>
+            </a>
+          </li>
 
-      <a (click)="isNavBarCollapsed = true; navigateToKitchen();"
-        class="flex cursor-pointer items-center"
-      >
-        <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
-          <use xlink:href="assets/sprite-sheet.svg#oven"></use>
-        </svg>
-        <span class="mt-0.5 md:mt-0">Kitchen</span>
-      </a>
+          <li>
+            <a (click)="isNavBarCollapsed = true; navigateToStudio();"
+              class="flex cursor-pointer items-center"
+            >
+              <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
+                <use xlink:href="assets/sprite-sheet.svg#videocam"></use>
+              </svg>
+              <span class="mt-0.5 md:mt-0 md:w-full">Studio</span>
+            </a>
+          </li>
 
-      <a href="#about-us"
-        (click)="isNavBarCollapsed = true"
-        class="flex cursor-pointer items-center"
-      >
-        <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
-          <use xlink:href="assets/sprite-sheet.svg#badge"></use>
-        </svg>
-        <span class="mt-0.5 md:mt-0">About</span>
-      </a>
+          <li aria-disabled="true" class="disabled">
+            <a (click)="isNavBarCollapsed = true; navigateToKitchen();"
+              class="flex cursor-pointer items-center"
+            >
+              <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
+                <use xlink:href="assets/sprite-sheet.svg#oven"></use>
+              </svg>
+              <span class="mt-0.5 md:mt-0 md:w-full">Kitchen</span>
+            </a>
+          </li>
+        </ul>
+      </li>
 
-      <a href="#contact"
-        (click)="isNavBarCollapsed = true"
-        class="flex cursor-pointer items-center"
-      >
-        <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
-          <use xlink:href="assets/sprite-sheet.svg#call"></use>
-        </svg>
-        <span class="mt-0.5 md:mt-0">Contact</span>
-      </a>
-    </div>
+      <li>
+        <a href="#about-us"
+          (click)="isNavBarCollapsed = true"
+          class="flex cursor-pointer items-center py-2"
+        >
+          <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
+            <use xlink:href="assets/sprite-sheet.svg#badge"></use>
+          </svg>
+          <span class="mt-0.5 md:mt-0">About</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#contact"
+          (click)="isNavBarCollapsed = true"
+          class="flex cursor-pointer items-center py-2"
+        >
+          <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
+            <use xlink:href="assets/sprite-sheet.svg#call"></use>
+          </svg>
+          <span class="mt-0.5 md:mt-0">Contact</span>
+        </a>
+      </li>
+    </ul>
 
     <div class="fixed top-0 right-0 md:hidden px-4 py-2">
       <svg
