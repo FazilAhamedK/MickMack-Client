@@ -18,18 +18,21 @@ module.exports =
 		{
       primary: "#000000",
       secondary: "#4C421A",
+      vanilla: "#D3BFB1",
       neutral: "#FFFFFA"
     },
     borderColor:
 		{
       primary: "#000000",
       secondary: "#4C421A",
+      vanilla: "#D3BFB1",
       neutral: "#FFFFFA"
     },
     colors:
 		{
       primary: "#000000",
       secondary: "#4C421A",
+      vanilla: "#D3BFB1",
       neutral: "#FFFFFA"
     },
     fontFamily:

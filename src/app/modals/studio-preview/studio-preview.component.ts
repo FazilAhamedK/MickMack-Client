@@ -33,6 +33,6 @@ export class StudioPreviewComponent
   {
     this.currentModalState = "hide";
     this.modalHideEvent.emit();
-    this.router.navigateByUrl("store");
+    this.router.navigateByUrl("studio");
   }
 }

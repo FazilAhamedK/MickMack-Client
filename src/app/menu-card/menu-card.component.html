@@ -6,7 +6,7 @@
 
     <div class="flex flex-col w-4/5 md:w-2/5 mt-4">
         <div *ngFor="let category of menuItemCategories; let index = index;">
-            <button (click)="toggleAccordion(index)" class="bg-[#D3BFB1] text-primary text-xl w-full flex justify-between items-center p-2 font-semibold border-b border-secondary">
+            <button (click)="toggleAccordion(index)" class="bg-vanilla text-primary text-xl w-full flex justify-between items-center p-2 font-semibold border-b border-secondary">
               <span>{{category}}</span>
               <span id="icon-1" class="text-slate-800 transition-transform duration-300">
                 <span *ngIf="accordionStates[index] === 'collapsed'">

@@ -1,8 +1,8 @@
 <div class="grow">
   <nav
-    class="fixed left-0 top-0 z-10 flex w-full flex-col items-stretch justify-center gap-y-3 border-b border-primary bg-neutral px-4 md:flex-row md:items-center md:justify-between md:gap-y-0"
+    class="fixed left-0 top-0 z-50 flex w-full flex-col items-stretch justify-center gap-y-3 border-b border-primary bg-neutral px-4 md:flex-row md:items-center md:justify-between md:gap-y-0"
   >
-    <a href="#" class="text-xl tracking-wide font-bold cursor-pointer py-2">
+    <a href="#" class="text-xl tracking-wide font-bold cursor-pointer">
       <div>Mick Mack</div>
     </a>
 
@@ -10,10 +10,8 @@
       *ngIf="!isMobileDevice || !isNavBarCollapsed"
       class="flex flex-col gap-y-3 font-secondary font-semibold md:flex-row md:gap-x-6 md:pl-0"
     >
-      <li>
-        <a href="#"
-          (click)="isNavBarCollapsed = true"
-          class="flex cursor-pointer items-center py-2"
+      <li class="cursor-pointer py-2">
+        <a href="#" (click)="isNavBarCollapsed = true" class="flex items-center"
         >
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
             <use xlink:href="assets/sprite-sheet.svg#home"></use>
@@ -22,10 +20,8 @@
         </a>
       </li>
 
-      <li>
-        <a href="#homemade-indulgence-preview"
-          (click)="isNavBarCollapsed = true"
-          class="flex cursor-pointer items-center py-2"
+      <li class="cursor-pointer py-2">
+        <a href="#homemade-indulgence-preview" (click)="isNavBarCollapsed = true" class="flex items-center"
         >
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
             <use xlink:href="assets/sprite-sheet.svg#croissant"></use>
@@ -43,9 +39,9 @@
           <span class="mt-0.5 md:mt-0">Tiers</span>
         </div>
 
-        <ul class="top-[calc(100%+2.5px)] m-3 hidden w-full md:w-max gap-y-3 bg-neutral group-hover/tiers:flex group-hover/tiers:flex-col md:absolute md:-right-3 md:m-auto md:px-6 md:py-3 md:text-right">
+        <ul class="z-50 top-[calc(100%+0.5px)] m-3 hidden w-full gap-y-3 rounded-sm rounded-t-none border border-t-0 border-primary bg-neutral group-hover/tiers:flex group-hover/tiers:flex-col md:absolute md:-right-3 md:m-auto md:w-max md:px-6 md:py-3 md:text-right">
           <li>
-            <a (click)="isNavBarCollapsed = true; navigateToStore();"
+            <a routerLink="/store"
               class="flex cursor-pointer items-center"
             >
               <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
@@ -56,7 +52,7 @@
           </li>
 
           <li>
-            <a (click)="isNavBarCollapsed = true; navigateToStudio();"
+            <a routerLink="/studio"
               class="flex cursor-pointer items-center"
             >
               <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
@@ -66,8 +62,8 @@
             </a>
           </li>
 
-          <li aria-disabled="true" class="disabled">
-            <a (click)="isNavBarCollapsed = true; navigateToKitchen();"
+          <li aria-disabled="true" class="">
+            <a routerLink="/kitchen"
               class="flex cursor-pointer items-center"
             >
               <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
@@ -79,10 +75,8 @@
         </ul>
       </li>
 
-      <li>
-        <a href="#about-us"
-          (click)="isNavBarCollapsed = true"
-          class="flex cursor-pointer items-center py-2"
+      <li class="cursor-pointer py-2">
+        <a href="#about-us" (click)="isNavBarCollapsed = true" class="flex items-center"
         >
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
             <use xlink:href="assets/sprite-sheet.svg#badge"></use>
@@ -91,10 +85,8 @@
         </a>
       </li>
 
-      <li>
-        <a href="#contact"
-          (click)="isNavBarCollapsed = true"
-          class="flex cursor-pointer items-center py-2"
+      <li class="cursor-pointer py-2">
+        <a href="#contact" (click)="isNavBarCollapsed = true" class="flex items-center"
         >
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
             <use xlink:href="assets/sprite-sheet.svg#call"></use>
