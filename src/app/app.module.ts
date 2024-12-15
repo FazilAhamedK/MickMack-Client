@@ -10,7 +10,6 @@ import { EnumParserPipe } from './pipes/enum-parser.pipe';
 import { DietaryFilterPipe } from './pipes/dietary-filter.pipe';
 import { HomeComponent } from './home/home.component';
 import { IndulgenceComponent } from './indulgence/indulgence.component';
-import { StoreComponent } from './store/store.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { StorePreviewComponent } from './modals/store-preview/store-preview.component';
@@ -33,7 +32,6 @@ import { KitchenPreviewComponent } from './modals/kitchen-preview/kitchen-previe
     DietaryFilterPipe,
     HomeComponent,
     IndulgenceComponent,
-    StoreComponent,
     AboutUsComponent,
     ContactComponent,
     StorePreviewComponent,
