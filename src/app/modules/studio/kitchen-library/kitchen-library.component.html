@@ -1,0 +1,28 @@
+<section class="mt-10">
+    <h1 class="font-primary mt-0 bg-primary text-neutral">Kitchen Library</h1>
+
+    <div class="m-6 grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5">
+        <div *ngFor="let book of libraryBooks" class="flex flex-col">
+            <div class="flex items-end h-56">
+                <img
+                    src="/assets/media/cooking-books/{{book.imageFileName}}" alt="A photo of the product: {{book.name}}."
+                    class="drop-shadow-2xl max-h-full object-contain"
+                />
+            </div>
+
+            <div class="flex flex-col mt-2">
+                <div class="text-sm">{{book.authorName}}</div>
+                <div class="text-base sm:text-lg font-bold font-primary">{{book.name}}</div>
+                <div class="flex gap-x-2 text-sm">
+                    <div
+                        class="font-monospace"
+                        [ngClass]="{'line-through decoration-primary': book.isSoldOut}"
+                    >
+                        &#8377;{{ book.price | number: "1.2-2"}}
+                    </div>
+                    <div *ngIf="book.isSoldOut" class="bg-secondary px-2 py-1 rounded-full text-neutral text-xs">Sold Out</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

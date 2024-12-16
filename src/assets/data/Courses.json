@@ -1,0 +1,38 @@
+[
+    {
+        "type": "CLASS_BAKING",
+        "name": "Bread Making",
+        "duration": "1.5 Hours",
+        "bannerImageFileName": ""
+    },
+    {
+        "type": "CLASS_BAKING",
+        "name": "Bread Making",
+        "duration": "1.5 Hours",
+        "bannerImageFileName": "string"
+    },
+    {
+        "type": "CLASS_BAKING",
+        "name": "Bread Making",
+        "duration": "1.5 Hours",
+        "bannerImageFileName": "string"
+    },
+    {
+        "type": "CLASS_BAKING",
+        "name": "Bread Making",
+        "duration": "1.5 Hours",
+        "bannerImageFileName": "string"
+    },
+    {
+        "type": "CLASS_BAKING",
+        "name": "Bread Making",
+        "duration": "1.5 Hours",
+        "bannerImageFileName": "string"
+    },
+    {
+        "type": "CLASS_BAKING",
+        "name": "Bread Making",
+        "duration": "1.5 Hours",
+        "bannerImageFileName": "string"
+    }
+]

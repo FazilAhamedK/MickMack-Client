@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StudioPreviewComponent } from './studio-preview.component';
+import { BakingClassComponent } from './baking-class.component';
 
-describe('StudioPreviewComponent', () => {
-  let component: StudioPreviewComponent;
-  let fixture: ComponentFixture<StudioPreviewComponent>;
+describe('BakingClassComponent', () => {
+  let component: BakingClassComponent;
+  let fixture: ComponentFixture<BakingClassComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [StudioPreviewComponent]
+      declarations: [BakingClassComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(StudioPreviewComponent);
+    fixture = TestBed.createComponent(BakingClassComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

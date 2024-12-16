@@ -40,28 +40,4 @@ export class AppComponent implements OnInit, OnDestroy
   {
     this.isNavBarCollapsed = true;
   }
-
-  navigateToStore(): void
-  {
-    if (this.router.url !== "/store")
-    {
-      this.showStorePreviewModal = true;
-    }
-  }
-
-  navigateToStudio(): void
-  {
-    if (this.router.url !== "/studio")
-    {
-      this.showStudioPreviewModal = true;
-    }
-  }
-
-  navigateToKitchen(): void
-  {
-    if (this.router.url !== "/kitchen")
-    {
-      this.showKitchenPreviewModal = true;
-    }
-  }
 }

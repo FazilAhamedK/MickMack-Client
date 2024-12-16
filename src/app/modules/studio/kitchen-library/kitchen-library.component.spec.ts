@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { KitchenPreviewComponent } from './kitchen-preview.component';
+import { KitchenLibraryComponent } from './kitchen-library.component';
 
-describe('KitchenPreviewComponent', () => {
-  let component: KitchenPreviewComponent;
-  let fixture: ComponentFixture<KitchenPreviewComponent>;
+describe('KitchenLibraryComponent', () => {
+  let component: KitchenLibraryComponent;
+  let fixture: ComponentFixture<KitchenLibraryComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [KitchenPreviewComponent]
+      declarations: [KitchenLibraryComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(KitchenPreviewComponent);
+    fixture = TestBed.createComponent(KitchenLibraryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

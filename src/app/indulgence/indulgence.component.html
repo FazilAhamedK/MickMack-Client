@@ -33,8 +33,7 @@
 
   <ng-container
     *ngIf="
-      bakeryProducts
-        | productFilter : 'category' : selectedBakeryProductCategory;
+      bakeryProducts | productFilter : 'category' : selectedBakeryProductCategory;
       let filteredProducts = $implicit
     "
   >

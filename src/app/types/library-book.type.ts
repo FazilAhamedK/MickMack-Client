@@ -1,4 +1,4 @@
-export type CookingBook =
+export type LibraryBook =
 {
     name: string,
     authorName: string,

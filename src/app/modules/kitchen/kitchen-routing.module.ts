@@ -4,7 +4,8 @@ import { KitchenComponent } from './kitchen.component';
 
 const routes: Routes =
 [
-  {path: '', component: KitchenComponent}
+  {path: '', component: KitchenComponent},
+  {path: "**", redirectTo: "", pathMatch: "full"}
 ];
 
 @NgModule

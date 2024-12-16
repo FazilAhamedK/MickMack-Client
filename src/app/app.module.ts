@@ -5,52 +5,45 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductFilterPipe } from './pipes/product-filter.pipe';
 import { EnumParserPipe } from './pipes/enum-parser.pipe';
-import { DietaryFilterPipe } from './pipes/dietary-filter.pipe';
 import { HomeComponent } from './home/home.component';
 import { IndulgenceComponent } from './indulgence/indulgence.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
-import { StorePreviewComponent } from './modals/store-preview/store-preview.component';
 import { BakeryComponent } from './bakery/bakery.component';
 import { IndulgencePreviewComponent } from './indulgence-preview/indulgence-preview.component';
 import { NamesSliderComponent } from './names-slider/names-slider.component';
 import { DeviceService } from './services/device.service';
-import { StudioPreviewComponent } from './modals/studio-preview/studio-preview.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuCardComponent } from './menu-card/menu-card.component';
-import { KitchenPreviewComponent } from './modals/kitchen-preview/kitchen-preview.component';
+import { SharedModule } from './modules/shared/shared.module';
 
 @NgModule
 ({
   declarations:
   [
     AppComponent,
-    ProductFilterPipe,
     EnumParserPipe,
-    DietaryFilterPipe,
     HomeComponent,
     IndulgenceComponent,
     AboutUsComponent,
     ContactComponent,
-    StorePreviewComponent,
-    StudioPreviewComponent,
     BakeryComponent,
     IndulgencePreviewComponent,
     NamesSliderComponent,
     FooterComponent,
-    MenuCardComponent,
-    KitchenPreviewComponent
+    MenuCardComponent
   ],
   imports:
   [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [DeviceService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule
+{ }

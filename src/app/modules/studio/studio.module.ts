@@ -3,15 +3,24 @@ import { CommonModule } from '@angular/common';
 
 import { StudioRoutingModule } from './studio-routing.module';
 import { StudioComponent } from './studio.component';
+import { KitchenLibraryComponent } from './kitchen-library/kitchen-library.component';
+import { BakingClassComponent } from './baking-class/baking-class.component';
+import { SharedModule } from '../shared/shared.module';
 
-
-@NgModule({
-  declarations: [
-    StudioComponent
+@NgModule
+({
+  declarations:
+  [
+    StudioComponent,
+    KitchenLibraryComponent,
+    BakingClassComponent
   ],
-  imports: [
+  imports:
+  [
     CommonModule,
-    StudioRoutingModule
+    StudioRoutingModule,
+    SharedModule
   ]
 })
-export class StudioModule { }
+export class StudioModule
+{ }
