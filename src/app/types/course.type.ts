@@ -4,7 +4,6 @@ export type Course =
 {
     type: CourseType,
     name: string,
-    description?: string,
-    duration: string,
+    description: string,
     bannerImageFileName: string
 }

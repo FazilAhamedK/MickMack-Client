@@ -3,7 +3,7 @@
 
     <div class="flex w-full justify-center mt-6">
         <div class="flex overflow-x-scroll gap-x-12 w-3/4">
-            <div *ngFor="let class of bakingClasses | productFilter : 'type' : CourseType.CLASS_BAKING" class="w-1/2 md:w-1/4 flex flex-col items-center shrink-0">
+            <div *ngFor="let class of decoratingClasses | productFilter : 'type' : CourseType.CLASS_CAKE_DECORATING" class="w-1/2 md:w-1/4 flex flex-col items-center shrink-0">
                 <img src="assets/media/course-banners/StudioBravo.jpg" role="presentation" alt="A banner image for {{class.name}}." class="w-full aspect-square object-cover rounded-full"/>
                 <div class="my-4 w-full break-words font-secondary text-xl text-center font-bold">{{class.name}}</div>
                 <div class="w-full break-words text-center text-sm">{{class.description}}</div>

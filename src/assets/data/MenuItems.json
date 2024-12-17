@@ -392,21 +392,8 @@
         "imageFileName": null
     },
     {
-        "name": "Chicken Cigar",
-        "category": "Savouries",
-        "description": null,
-        "variants":
-        [
-            {
-                "name": "3 pc",
-                "price": 220
-            }
-        ],
-        "imageFileName": "CrispyKebabMax.jpg"
-    },
-    {
         "name": "Manakeesh",
-        "category": "Savouries",
+        "category": "Short Eats",
         "description": null,
         "variants":
         [
@@ -418,8 +405,21 @@
         "imageFileName": "Manakeesh.jpg"
     },
     {
+        "name": "Chicken Cigar",
+        "category": "Short Eats",
+        "description": null,
+        "variants":
+        [
+            {
+                "name": "3 pc",
+                "price": 220
+            }
+        ],
+        "imageFileName": "CrispyKebabMax.jpg"
+    },
+    {
         "name": "Chicken Donut",
-        "category": "Savouries",
+        "category": "Short Eats",
         "description": null,
         "variants": 
         [
@@ -431,34 +431,8 @@
         "imageFileName": "ChickenDonut.jpg"
     },
     {
-        "name": "Chicken Kashmiri",
-        "category": "Savouries",
-        "description": null,
-        "variants":  
-        [
-            {
-                "name": "0 Tubs",
-                "price": 123.45
-            }
-        ],
-        "imageFileName": "KashmiriChicken.jpg"
-    },
-    {
-        "name": "Chicken Sumuy",
-        "category": "Savouries",
-        "description": null,
-        "variants":  
-        [
-            {
-                "name": "0 Tubs",
-                "price": 123.45
-            }
-        ],
-        "imageFileName": "Sumuy.jpg"
-    },
-    {
         "name": "Singapore Rice",
-        "category": "Savouries",
+        "category": "Mains",
         "description": null,
         "variants":
         [
@@ -474,8 +448,34 @@
         "imageFileName": "SingaporeRice.jpg"
     },
     {
+        "name": "Chicken Kashmiri",
+        "category": "Mains",
+        "description": null,
+        "variants":  
+        [
+            {
+                "name": "0 Tubs",
+                "price": 123.45
+            }
+        ],
+        "imageFileName": "KashmiriChicken.jpg"
+    },
+    {
+        "name": "Chicken Sumuy",
+        "category": "Mains",
+        "description": null,
+        "variants":  
+        [
+            {
+                "name": "0 Tubs",
+                "price": 123.45
+            }
+        ],
+        "imageFileName": "Sumuy.jpg"
+    },
+    {
         "name": "Special Porridge",
-        "category": "Savouries",
+        "category": "Mains",
         "description": null,
         "variants":  
         [
@@ -485,5 +485,57 @@
             }
         ],
         "imageFileName": "RamadanPorridge.jpg"
+    },
+    {
+        "name": "Chicken Samosa",
+        "category": "Short Eats",
+        "description": null,
+        "variants":  
+        [
+            {
+                "name": "0 Tubs",
+                "price": 123.45
+            }
+        ],
+        "imageFileName": "ChickenSamosa.jpg"
+    },
+    {
+        "name": "Chicken Spring Roll",
+        "category": "Short Eats",
+        "description": null,
+        "variants":  
+        [
+            {
+                "name": "0 Tubs",
+                "price": 123.45
+            }
+        ],
+        "imageFileName": "ChickenSpringRoll.jpg"
+    },
+    {
+        "name": "Chicken Poppers",
+        "category": "Short Eats",
+        "description": null,
+        "variants":  
+        [
+            {
+                "name": "0 Tubs",
+                "price": 123.45
+            }
+        ],
+        "imageFileName": "ChickenPoppers.jpg"
+    },
+    {
+        "name": "Nutty Chicken",
+        "category": "Short Eats",
+        "description": null,
+        "variants":  
+        [
+            {
+                "name": "0 Tubs",
+                "price": 123.45
+            }
+        ],
+        "imageFileName": "NuttyChicken.jpg"
     }
 ]

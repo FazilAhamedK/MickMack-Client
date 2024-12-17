@@ -6,6 +6,7 @@ import { StudioComponent } from './studio.component';
 import { KitchenLibraryComponent } from './kitchen-library/kitchen-library.component';
 import { BakingClassComponent } from './baking-class/baking-class.component';
 import { SharedModule } from '../shared/shared.module';
+import { DecoratingClassComponent } from './decorating-class/decorating-class.component';
 
 @NgModule
 ({
@@ -13,7 +14,8 @@ import { SharedModule } from '../shared/shared.module';
   [
     StudioComponent,
     KitchenLibraryComponent,
-    BakingClassComponent
+    BakingClassComponent,
+    DecoratingClassComponent
   ],
   imports:
   [
