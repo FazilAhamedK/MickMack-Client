@@ -4,6 +4,23 @@
   >
     <h1 class="font-primary">Live Menu</h1>
 
+    <div class="flex flex-col items-center w-4/5 md:w-2/5">
+        <div>All orders must be placed at least 24 hours in advance.</div>
+        <a
+            href="https://wa.me/917619491379?text=Hey%20Mick%20Mack%2C%0AI%20would%20like%20to%20place%20an%20order."
+            target="_blank"
+            class="self-end mt-2"
+            aria-label="Place order via WhatsApp"
+        >
+            <button class="flex bg-primary text-neutral rounded-lg px-2 py-1 items-center">
+                <svg class="w-5 h-5 fill-neutral">
+                    <use xlink:href="assets/sprite-sheet.svg#social-whatsapp"></use>
+                </svg>
+                <span class="ml-2">Place an Order</span>
+            </button>
+        </a>
+    </div>
+
     <div class="flex flex-col w-4/5 md:w-2/5 mt-4">
         <div *ngFor="let category of menuItemCategories; let index = index;">
             <button (click)="toggleAccordion(index)" class="bg-vanilla text-primary text-xl w-full flex justify-between items-center p-2 font-semibold border-b border-secondary">

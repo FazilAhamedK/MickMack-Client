@@ -3,36 +3,30 @@
         "type": "CLASS_BAKING",
         "name": "Bread Baking",
         "description": "Bread baking is a science. It teaches you to fine-tune your baking skills, focus on the smallest of details and strive for perfection, both in visual aesthetics and in flavour.",
-        "bannerImageFileName": ""
+        "bannerImageFileName": "KitchenAlpha.jpg"
     },
     {
         "type": "CLASS_BAKING",
         "name": "Basics of Baking",
         "description": "Bread baking is a science. It teaches you to fine-tune your baking skills, focus on the smallest of details and strive for perfection, both in visual aesthetics and in flavour.",
-        "bannerImageFileName": "string"
-    },
-    {
-        "type": "CLASS_CAKE_DECORATING",
-        "name": "Fondant Workshop",
-        "description": "Fondant cake decoration class enables you to create your own cartoon theme fondant cakes.",
-        "bannerImageFileName": "string"
+        "bannerImageFileName": "StudioAlpha.jpg"
     },
     {
         "type": "CLASS_BAKING",
         "name": "Macarons Workshop",
         "description": "Join us in mastering the delicious and incredibly fashionable Macarons in our Macaron Masterclass.",
-        "bannerImageFileName": "string"
+        "bannerImageFileName": "StudioBravo.jpg"
     },
     {
         "type": "CLASS_BAKING",
         "name": "Brownie Online Course",
         "description": "Master the skill of preparing scrumptious Tarts and Pies in this class.",
-        "bannerImageFileName": "string"
+        "bannerImageFileName": "StudioCharlie.jpg"
     },
     {
         "type": "CLASS_BAKING",
         "name": "Exotic Cakes and Fillings",
         "description": "Master the skill of preparing scrumptious Tarts and Pies in this class.",
-        "bannerImageFileName": "string"
+        "bannerImageFileName": "StudioDelta.jpg"
     }
 ]

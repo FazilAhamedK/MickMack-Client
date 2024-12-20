@@ -56,6 +56,14 @@ module.exports =
     {
       keyframes:
       {
+        fadeOutIn:
+        {
+          '0%': {opacity: 1},
+          '12.5%': {opacity: 1},
+          '50%': {opacity: 0},
+          '62.5%': {opacity: 0},
+          '100%': {opacity: 1}
+        },
         wave:
         {
           '0%, 100%': {transform: 'rotate(0deg)'},
@@ -64,6 +72,7 @@ module.exports =
       },
       animation:
       {
+        fadeOutIn: 'fadeOutIn 5s ease-in-out infinite',
         wave: 'wave 1s ease-in-out infinite',
       },
     }
