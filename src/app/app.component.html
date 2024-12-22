@@ -1,16 +1,19 @@
 <div class="grow">
   <nav
-    class="fixed left-0 top-0 z-50 flex w-full flex-col items-stretch justify-center gap-y-3 border-b border-primary bg-neutral px-4 md:flex-row md:items-center md:justify-between md:gap-y-0"
+    class="fixed h-12 left-0 top-0 z-50 flex w-full flex-col items-stretch justify-center gap-y-3 border-b border-primary bg-neutral px-4 md:flex-row md:items-center md:justify-between md:gap-y-0"
   >
-    <a href="#" class="text-xl tracking-wide font-bold cursor-pointer py-1.5">
-      <div>Mick Mack</div>
+    <a href="#" class="cursor-pointer py-1.5">
+      <img
+        src="assets/Logo.png" alt="The logo, that reads 'Mick Mack Homemade Indulgence'."
+        class="h-10 w-auto"
+      >
     </a>
 
     <ul
       *ngIf="!isMobileDevice || !isNavBarCollapsed"
-      class="flex flex-col gap-y-3 font-secondary font-semibold md:flex-row md:gap-x-6 md:pl-0"
+      class="mb-4 md:mb-0 flex flex-col gap-y-4 font-secondary font-semibold md:flex-row md:gap-x-6 md:pl-0"
     >
-      <li class="cursor-pointer py-2">
+      <li class="cursor-pointer md:py-3">
         <a href="#" (click)="isNavBarCollapsed = true" class="flex items-center"
         >
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
@@ -20,7 +23,7 @@
         </a>
       </li>
 
-      <li class="cursor-pointer py-2">
+      <li class="cursor-pointer md:py-3">
         <a href="#homemade-indulgence-preview" (click)="isNavBarCollapsed = true" class="flex items-center"
         >
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
@@ -30,7 +33,7 @@
         </a>
       </li>
 
-      <li class="group/tiers relative py-2">
+      <li class="group/tiers relative md:py-3">
         <div class="flex cursor-default items-center">
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
             <use xlink:href="assets/sprite-sheet.svg#videocam"></use>
@@ -68,7 +71,7 @@
         </ul>
       </li>
 
-      <li class="py-2 disabled">
+      <li class="md:py-3 disabled">
         <a (click)="isNavBarCollapsed = true" class="flex items-center">
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
             <use xlink:href="assets/sprite-sheet.svg#storefront"></use>
@@ -77,7 +80,7 @@
         </a>
       </li>
 
-      <li class="py-2 disabled">
+      <li class="md:py-3 disabled">
         <a (click)="isNavBarCollapsed = true" class="flex items-center">
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
             <use xlink:href="assets/sprite-sheet.svg#oven"></use>
@@ -86,7 +89,7 @@
         </a>
       </li>
 
-      <li class="cursor-pointer py-2">
+      <li class="cursor-pointer md:py-3">
         <a href="#about-us" (click)="isNavBarCollapsed = true" class="flex items-center">
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
             <use xlink:href="assets/sprite-sheet.svg#badge"></use>
@@ -95,7 +98,7 @@
         </a>
       </li>
 
-      <li class="cursor-pointer py-2">
+      <li class="cursor-pointer md:py-3">
         <a href="#contact" (click)="isNavBarCollapsed = true" class="flex items-center">
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
             <use xlink:href="assets/sprite-sheet.svg#call"></use>
@@ -105,7 +108,7 @@
       </li>
     </ul>
 
-    <div class="fixed top-0 right-0 md:hidden px-4 py-2">
+    <div class="fixed top-0 right-0 md:hidden px-4 py-3">
       <svg
         *ngIf="isNavBarCollapsed"
         (click)="isNavBarCollapsed = false"

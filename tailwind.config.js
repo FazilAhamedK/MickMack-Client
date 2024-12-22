@@ -16,21 +16,21 @@ module.exports =
   {
     backgroundColor:
 		{
-      primary: "#000000",
+      primary: "#253B6F",
       secondary: "#4C421A",
       vanilla: "#D3BFB1",
       neutral: "#FFFFFA"
     },
     borderColor:
 		{
-      primary: "#000000",
+      primary: "#253B6F",
       secondary: "#4C421A",
       vanilla: "#D3BFB1",
       neutral: "#FFFFFA"
     },
     colors:
 		{
-      primary: "#000000",
+      primary: "#253B6F",
       secondary: "#4C421A",
       vanilla: "#D3BFB1",
       neutral: "#FFFFFA"
@@ -47,7 +47,7 @@ module.exports =
     },
     textColor:
     {
-      primary: "#000000",
+      primary: "#253B6F",
       secondary: "#4C421A",
       neutral: "#FFFFFA",
       highlight: "#FF46A2"
