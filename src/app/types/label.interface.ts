@@ -1,4 +1,4 @@
-export type Label =
+export interface Label
 {
     name: string,
     imageFileName: string

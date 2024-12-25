@@ -1,6 +1,6 @@
 import { CourseType } from "./course-type.enum"
 
-export type Course =
+export interface Course
 {
     type: CourseType,
     name: string,

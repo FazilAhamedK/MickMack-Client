@@ -27,12 +27,12 @@ body
 
 h1
 {
-    @apply my-4 text-center text-2xl font-bold;
+    @apply my-4 text-center text-2xl font-bold font-secondary;
 }
 
 h2
 {
-    @apply text-center text-xl font-bold;
+    @apply text-center text-xl font-bold font-secondary;
 }
 
 ::-webkit-scrollbar

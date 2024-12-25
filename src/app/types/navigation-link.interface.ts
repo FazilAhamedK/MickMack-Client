@@ -1,4 +1,4 @@
-export type NavigationLink =
+export interface NavigationLink
 {
     name: string;
     pathURL: string;

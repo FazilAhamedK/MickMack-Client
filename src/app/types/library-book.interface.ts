@@ -1,4 +1,4 @@
-export type LibraryBook =
+export interface LibraryBook
 {
     name: string,
     authorName: string,

@@ -1,4 +1,4 @@
-export type BakeryProduct =
+export interface BakeryProduct
 {
     name: string,
     category: string,

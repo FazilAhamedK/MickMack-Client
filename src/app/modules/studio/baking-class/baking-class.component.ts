@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, HostListener, OnInit } from '@angular/core';
-import { LibraryBook } from '../../../types/library-book.type';
-import { Course } from '../../../types/course.type';
+import { LibraryBook } from '../../../types/library-book.interface';
+import { Course } from '../../../types/course.interface';
 import { ProductFilterPipe } from '../../../pipes/product-filter.pipe';
 import { CourseType } from '../../../types/course-type.enum';
 

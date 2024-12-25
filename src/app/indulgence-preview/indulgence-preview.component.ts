@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { BakeryProduct } from '../types/bakery-product.type';
+import { BakeryProduct } from '../types/bakery-product.interface';
 import { Router } from '@angular/router';
 
 @Component

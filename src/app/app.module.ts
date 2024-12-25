@@ -17,6 +17,7 @@ import { DeviceService } from './services/device.service';
 import { FooterComponent } from './footer/footer.component';
 import { MenuCardComponent } from './menu-card/menu-card.component';
 import { SharedModule } from './modules/shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule
 ({
@@ -40,7 +41,8 @@ import { SharedModule } from './modules/shared/shared.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   providers: [DeviceService],
   bootstrap: [AppComponent]

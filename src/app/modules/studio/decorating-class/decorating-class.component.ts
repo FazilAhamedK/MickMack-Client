@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, HostListener, OnInit } from '@angular/core';
 import { CourseType } from '../../../types/course-type.enum';
-import { Course } from '../../../types/course.type';
+import { Course } from '../../../types/course.interface';
 
 @Component
 ({

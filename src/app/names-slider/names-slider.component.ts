@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { BakeryProduct } from '../types/bakery-product.type';
+import { BakeryProduct } from '../types/bakery-product.interface';
 import { interval, Subscription } from 'rxjs';
 import { DeviceService } from '../services/device.service';
 

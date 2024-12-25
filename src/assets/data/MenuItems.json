@@ -7,11 +7,13 @@
         [
             {
                 "name": "1/2 kg",
-                "price": 1300
+                "price": 1300,
+				"maximumOrderQuantity": 2
             },
             {
                 "name": "1 kg",
-                "price": 2600
+                "price": 2600,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "GulabJamunCake.jpg"
@@ -24,11 +26,13 @@
         [
             {
                 "name": "1/2 kg",
-                "price": 1300
+                "price": 1300,
+				"maximumOrderQuantity": 2
             },
             {
                 "name": "1 kg",
-                "price": 2600
+                "price": 2600,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "RoseTresLechesCake.jpg"
@@ -41,11 +45,13 @@
         [
             {
                 "name": "1/2 kg",
-                "price": 745.00
+                "price": 745,
+				"maximumOrderQuantity": 2
             },
             {
                 "name": "1 kg",
-                "price": 1485
+                "price": 1485,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "ChocolateCake.jpg"
@@ -58,11 +64,13 @@
         [
             {
                 "name": "2 pc",
-                "price": 420
+                "price": 420,
+				"maximumOrderQuantity": 2
             },
             {
                 "name": "6 pc",
-                "price": 1100
+                "price": 1100,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "Brownie.jpg"
@@ -75,11 +83,13 @@
         [
             {
                 "name": "1/2 kg",
-                "price": 610
+                "price": 610,
+				"maximumOrderQuantity": 2
             },
             {
                 "name": "1 kg",
-                "price": 1220
+                "price": 1220,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "WhiteForest.jpg"
@@ -92,7 +102,8 @@
         [
             {
                 "name": "Regular",
-                "price": 300
+                "price": 300,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "StrawberryPannaCotta.jpg"
@@ -105,7 +116,8 @@
         [
             {
                 "name": "Regular",
-                "price": 499
+                "price": 499,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "RoseTresLeches.jpg"
@@ -118,7 +130,8 @@
         [
             {
                 "name": "Regular",
-                "price": 225
+                "price": 225,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "MithaiBomb.jpg"
@@ -131,7 +144,8 @@
         [
             {
                 "name": "Regular",
-                "price": 200
+                "price": 200,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "LayaliLubnan.jpg"
@@ -144,7 +158,8 @@
         [
             {
                 "name": "Regular",
-                "price": 320
+                "price": 320,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "FerreroRocherCrunch.jpg"
@@ -157,7 +172,8 @@
         [
             {
                 "name": "Regular",
-                "price": 320
+                "price": 320,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "BanoffeeCrunch.jpg"
@@ -170,7 +186,8 @@
         [
             {
                 "name": "Regular",
-                "price": 320
+                "price": 320,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "BScotchCrunch.jpg"
@@ -183,7 +200,8 @@
         [
             {
                 "name": "Regular",
-                "price": 320
+                "price": 320,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "GranolaCrunch.jpg"
@@ -195,8 +213,14 @@
         "variants":
         [
             {
-                "name": "Paneer / Chicken",
-                "price": 95
+                "name": "Paneer",
+                "price": 95,
+				"maximumOrderQuantity": 2
+            },
+            {
+                "name": "Chicken",
+                "price": 95,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "Manakeesh.jpg"
@@ -209,7 +233,8 @@
         [
             {
                 "name": "3 pc",
-                "price": 220
+                "price": 220,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "CrispyKebabMax.jpg"
@@ -222,11 +247,13 @@
         [
             {
                 "name": "Small",
-                "price": 240
+                "price": 240,
+				"maximumOrderQuantity": 2
             },
             {
                 "name": "Large",
-                "price": 350
+                "price": 350,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "ChickenPoppers.jpg"
@@ -239,11 +266,13 @@
         [
             {
                 "name": "Small",
-                "price": 280
+                "price": 280,
+				"maximumOrderQuantity": 2
             },
             {
                 "name": "Large",
-                "price": 450
+                "price": 450,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "NuttyChicken.jpg"
@@ -256,7 +285,8 @@
         [
             {
                 "name": "0 Tubs",
-                "price": 0.99
+                "price": 0.99,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "ChickenDonut.jpg"
@@ -269,11 +299,13 @@
         [
             {
                 "name": "Single Serve",
-                "price": 499
+                "price": 499,
+				"maximumOrderQuantity": 2
             },
             {
                 "name": "Tub",
-                "price": 1465
+                "price": 1465,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "SingaporeRice.jpg"
@@ -286,7 +318,8 @@
         [
             {
                 "name": "Large",
-                "price": 295
+                "price": 295,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "KashmiriChicken.jpg"
@@ -299,7 +332,8 @@
         [
             {
                 "name": "Large",
-                "price": 280
+                "price": 280,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "ChickenFry.jpg"
@@ -312,7 +346,8 @@
         [
             {
                 "name": "Large",
-                "price": 320
+                "price": 320,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "ChickenMozambique.jpg"
@@ -325,11 +360,13 @@
         [
             {
                 "name": "Small",
-                "price": 125
+                "price": 125,
+				"maximumOrderQuantity": 2
             },
             {
                 "name": "Large",
-                "price": 225
+                "price": 225,
+				"maximumOrderQuantity": 2
             }
         ],
         "imageFileName": "RamadanPorridge.jpg"

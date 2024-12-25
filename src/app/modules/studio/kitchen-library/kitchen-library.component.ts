@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LibraryBook } from '../../../types/library-book.type';
+import { LibraryBook } from '../../../types/library-book.interface';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
