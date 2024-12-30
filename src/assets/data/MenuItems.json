@@ -64,12 +64,12 @@
         [
             {
                 "name": "2 pc",
-                "price": 420,
+                "price": 335,
 				"maximumOrderQuantity": 2
             },
             {
                 "name": "6 pc",
-                "price": 1100,
+                "price": 900,
 				"maximumOrderQuantity": 2
             }
         ],
