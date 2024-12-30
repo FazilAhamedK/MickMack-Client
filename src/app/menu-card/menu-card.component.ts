@@ -45,7 +45,7 @@ export class MenuCardComponent implements OnInit
     this.cart = new Map<number, CartItem>();
     this.cartItems = [];
     this.isSmallScreenDevice = window.innerWidth < 768;
-    this.cartState = this.isSmallScreenDevice ? "hidden" : "visible";
+    this.cartState = "hidden";
   }
 
   ngOnInit(): void
