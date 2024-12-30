@@ -170,14 +170,17 @@
     
                 <button
                     (click)="placeOrder()"
-                    class="min-w-[33%] md:min-w-full flex gap-x-2 rounded-lg px-2 py-1 justify-center items-center disabled:opacity-50 disabled:pointer-events-none disabled:cursor-not-allowed"
+                    class="min-w-[33%] md:min-w-full flex gap-x-2 rounded-lg px-2 py-1 justify-center items-center disabled:opacity-25 disabled:pointer-events-none disabled:cursor-not-allowed"
                     [ngClass]="!isSmallScreenDevice || cartState === 'visible' ? 'bg-whatsapp text-neutral' : 'bg-neutral text-whatsapp'"
                     [disabled]="cartItems.length === 0"
                 >
                     <svg class="w-4 h-4 md:w-5 md:h-5 fill-current">
                         <use xlink:href="assets/sprite-sheet.svg#social-whatsapp"></use>
                     </svg>
-                    <span>Place Order via WhatsApp</span>
+                    <span>
+                        <span>Place Order</span>
+                        <span *ngIf="!isSmallScreenDevice">&nbsp;via WhatsApp</span>
+                    </span>
                 </button>
             </div>
         </div>

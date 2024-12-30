@@ -54,6 +54,7 @@ module.exports =
       primary: "#000000",
       secondary: "#4C421A",
       neutral: "#FFFFFA",
+      vanilla: "#D3BFB1",
       whatsapp: "#103928",
       highlight: "#FF46A2"
     },
