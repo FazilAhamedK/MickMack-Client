@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { MenuItem } from '../types/menu-item.interface';
 import { HttpClient } from '@angular/common/http';
 import { trigger, state, style, transition, animate } from '@angular/animations';
@@ -23,6 +23,8 @@ import { WhatsAppOrderConstants } from './whatsapp-order-constants.utility';
 })
 export class MenuCardComponent implements OnInit
 {
+  @ViewChild("CartBody") cartBodyElement!: ElementRef;
+
   readonly cartLocalStorageKey: string = "mick-mack-cart-indulgence";
 
   emptyCartModalState: "visible" | "hidden";
@@ -31,6 +33,8 @@ export class MenuCardComponent implements OnInit
   accordionStates: Array<"expanded" | "collapsed">;
   cart: Map<number, CartItem>;
   cartItems: Array<CartItem>;
+  isSmallScreenDevice: boolean;
+  cartState: "visible" | "hidden"
 
   constructor(private httpClient: HttpClient)
   {
@@ -40,6 +44,8 @@ export class MenuCardComponent implements OnInit
     this.accordionStates = [];
     this.cart = new Map<number, CartItem>();
     this.cartItems = [];
+    this.isSmallScreenDevice = window.innerWidth < 768;
+    this.cartState = this.isSmallScreenDevice ? "hidden" : "visible";
   }
 
   ngOnInit(): void
@@ -75,6 +81,16 @@ export class MenuCardComponent implements OnInit
                         this.accordionStates.fill("collapsed");
                       }
                    });
+  }
+
+  @HostListener("window:resize")
+  onWindowResize(): void
+  {
+    this.isSmallScreenDevice = window.innerWidth < 768;
+    if (!this.isSmallScreenDevice)
+    {
+      this.cartState = "hidden";
+    }    
   }
 
   public getQuantity(skuID: number): number
@@ -163,9 +179,9 @@ export class MenuCardComponent implements OnInit
       message = encodeURIComponent(message);
       let url: string = `https://wa.me/${WhatsAppOrderConstants.contactNumber}?text=${message}`;
       window.open(url, "newWindow");
+      this.cartState = "hidden";
     }
   }
-
 
   public hideEmptyCartModal($event: Event): void
   {
@@ -183,6 +199,17 @@ export class MenuCardComponent implements OnInit
     this.cartItems = [];
     localStorage.setItem(this.cartLocalStorageKey, JSON.stringify(Array.from(this.cart)));
     this.emptyCartModalState = "hidden";
+  }
+
+  public toggleCartState(): void
+  {
+    this.cartBodyElement.nativeElement.scrollTop = 0;
+    this.cartState = this.cartState === "hidden" ? "visible" : "hidden";
+  }
+
+  public collapseCart($event: Event)
+  {
+    console.log($event.target)
   }
 
   private sortMenuItems(): void

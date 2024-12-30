@@ -2,7 +2,7 @@
   <nav
     class="fixed h-12 left-0 top-0 z-50 flex w-full flex-col items-stretch justify-center gap-y-3 border-b border-primary bg-neutral pl-1 pr-4 md:flex-row md:items-center md:justify-between md:gap-y-0"
   >
-    <a href="#" class="cursor-pointer py-1.5">
+    <a href="#" class="cursor-pointer max-w-fit">
       <img
         src="assets/Logo.png" alt="The logo, that reads 'Mick Mack Homemade Indulgence'."
         class="h-10 w-auto"
@@ -11,9 +11,9 @@
 
     <ul
       *ngIf="!isMobileDevice || !isNavBarCollapsed"
-      class="mb-4 md:mb-0 flex flex-col gap-y-4 font-secondary font-semibold md:flex-row md:gap-x-6 md:pl-0"
+      class="h-full items-center mb-4 md:mb-0 flex flex-col gap-y-4 font-secondary font-semibold md:flex-row md:gap-x-6 md:pl-0"
     >
-      <li class="cursor-pointer md:py-3">
+      <li class="h-full items-center flex cursor-pointer">
         <a href="#" (click)="isNavBarCollapsed = true" class="flex items-center"
         >
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
@@ -23,7 +23,7 @@
         </a>
       </li>
 
-      <li class="cursor-pointer md:py-3">
+      <li class="h-full items-center flex cursor-pointer">
         <a href="#homemade-indulgence-preview" (click)="isNavBarCollapsed = true" class="flex items-center"
         >
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
@@ -33,7 +33,7 @@
         </a>
       </li>
 
-      <li class="group/tiers relative md:py-3">
+      <li class="h-full items-center flex group/tiers relative">
         <div class="flex cursor-default items-center">
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
             <use xlink:href="assets/sprite-sheet.svg#videocam"></use>
@@ -41,7 +41,7 @@
           <span class="mt-0.5 md:mt-0">Studio</span>
         </div>
 
-        <ul class="z-50 top-[calc(100%+0.5px)] m-3 hidden w-full gap-y-3 md:rounded-sm md:rounded-t-none md:border md:border-t-0 md:border-primary bg-neutral group-hover/tiers:flex group-hover/tiers:flex-col md:absolute md:-right-3 md:m-auto md:w-max md:px-6 md:py-3 md:text-right">
+        <ul class="z-50 top-[calc(100%+0.5px)] p-3 hidden w-full gap-y-3 md:rounded-sm md:rounded-t-none md:border md:border-t-0 md:border-primary bg-neutral group-hover/tiers:flex group-hover/tiers:flex-col md:absolute md:-right-3 md:m-auto md:w-max md:px-6 md:text-right">
           <li>
             <a routerLink="/studio/baking" (click)="isNavBarCollapsed = true" class="flex cursor-pointer items-center">
               <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
@@ -71,7 +71,7 @@
         </ul>
       </li>
 
-      <li class="md:py-3 disabled">
+      <li class="h-full items-center flex disabled">
         <a (click)="isNavBarCollapsed = true" class="flex items-center">
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
             <use xlink:href="assets/sprite-sheet.svg#storefront"></use>
@@ -80,7 +80,7 @@
         </a>
       </li>
 
-      <li class="md:py-3 disabled">
+      <li class="h-full items-center flex disabled">
         <a (click)="isNavBarCollapsed = true" class="flex items-center">
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
             <use xlink:href="assets/sprite-sheet.svg#oven"></use>
@@ -89,7 +89,7 @@
         </a>
       </li>
 
-      <li class="cursor-pointer md:py-3">
+      <li class="h-full items-center flex cursor-pointer">
         <a href="#about-us" (click)="isNavBarCollapsed = true" class="flex items-center">
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
             <use xlink:href="assets/sprite-sheet.svg#badge"></use>
@@ -98,7 +98,7 @@
         </a>
       </li>
 
-      <li class="cursor-pointer md:py-3">
+      <li class="h-full items-center flex cursor-pointer">
         <a href="#contact" (click)="isNavBarCollapsed = true" class="flex items-center">
           <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
             <use xlink:href="assets/sprite-sheet.svg#call"></use>
@@ -126,9 +126,9 @@
     </div>
   </nav>
 
-  <span (click)="isNavBarCollapsed = true">
+  <div (click)="isNavBarCollapsed = true" class="mt-12">
     <router-outlet></router-outlet>
-  </span>
+  </div>
 </div>
 
 <mm-footer (click)="isNavBarCollapsed = true"></mm-footer>

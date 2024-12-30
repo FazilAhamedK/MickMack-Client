@@ -1,15 +1,15 @@
 <section
     id="homemade-indulgence"
-    class="p-4 mt-10 flex flex-col"
+    class="p-4 mt-10 grid grid-cols-5"
   >
-    <h1 class="font-primary">Live Menu</h1>
+    <div class="col-span-5 md:col-span-3">
+        <h1 class="font-primary">Live Menu</h1>
 
-    <div class="flex justify-evenly">
-        <div class="flex flex-col w-4/5 md:w-3/5">
+        <div class="p-4 flex flex-col">
             <div *ngFor="let category of menuItemCategories; let index = index;">
                 <button (click)="toggleAccordion(index)" class="bg-vanilla text-primary text-xl w-full flex justify-between items-center p-2 font-semibold border-b border-secondary">
-                  <span>{{category}}</span>
-                  <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                    <span>{{category}}</span>
+                    <span id="icon-1" class="text-slate-800 transition-transform duration-300">
                     <span *ngIf="accordionStates[index] === 'collapsed'">
                         <svg class="w-6 h-6 fill-primary">
                             <use xlink:href="assets/sprite-sheet.svg#expand"></use>
@@ -20,7 +20,7 @@
                             <use xlink:href="assets/sprite-sheet.svg#collapse"></use>
                         </svg>
                     </span>
-                  </span>
+                    </span>
                 </button>
                 <div [@accordionState]="accordionStates[index]" class="my-2 flex flex-col gap-4">
                     <div *ngFor="let menuItem of menuItems | productFilter : 'category' : category" class="flex w-full bg-secondary/5">
@@ -70,7 +70,7 @@
                                             </svg>
                                         </button>
                                     </ng-container>
-
+    
                                     <ng-template #AddToCart>
                                         <button (click)="increaseQuantity(menuItem, variant)" class="bg-secondary text-center text-neutral w-4/5 rounded-sm">Add</button>
                                     </ng-template>
@@ -81,61 +81,108 @@
                 </div>
             </div>
         </div>
-    
-        <div class="flex flex-col w-4/5 md:w-1/3 bg-primary/5 rounded-md p-4 gap-y-4 h-max sticky top-[7.5rem]">
-            <h2 class="font-secondary">Your Cart</h2>
+    </div>
 
-            <div class="flex flex-col text-sm bg-neutral p-2">
-                <div class="font-semibold">Note</div>
-                <ul class="list-inside list-disc">
-                    <li>All orders must be placed at least 24 hours in advance.</li>
-                    <li>Delivery charges are applicable extra, per actuals.</li>
-                </ul>
-            </div>
-
-            <div
-                *ngIf="cartItems.length > 0"
-                (click)="emptyCartModalState = 'visible'"
-                class="self-end text-sm underline decoration-dotted cursor-pointer"
+    <div class="col-span-2">
+        <div class="flex w-full flex-col rounded-none rounded-b-none bg-primary/5 md:sticky md:bottom-10 md:left-auto md:right-0 md:top-16 md:rounded-md max-h-[calc(100dvh-7rem)]"
+        [ngClass]="isSmallScreenDevice && cartState === 'visible' ? 'rounded-t-xl' : 'rounded-t-none'">
+            <div #CartBody
+                class="fixed bottom-[4.5rem] left-0 right-auto top-auto md:static flex w-full flex-col h-full gap-y-2 md:gap-y-4 p-4 pb-4 text-neutral bg-primary md:bg-[transparent] md:text-[inherit] max-h-[70dvh] overflow-y-auto popover-cart"
+                [ngClass]="isSmallScreenDevice && cartState === 'hidden' ? 'hidden' : 'visible rounded-t-xl'"
             >
-                Empty Cart
-            </div>
-
-            <div class="flex flex-col gap-y-4">
-                <ng-container *ngIf="cartItems.length; else EmptyCart">
-                    <div *ngFor="let item of cartItems">
-                        <div class="text-xs uppercase">{{item.category}}</div>
-                        <div class="flex justify-between font-semibold text-secondary">
-                            <div>{{item.name}}</div>
-                            <div class="font-monospace">{{item.orderCost | number : "1.2-2"}}</div>
+                <h2 class="font-secondary">Your Cart</h2>
+    
+                <div class="flex flex-col text-sm bg-neutral/20 md:bg-neutral p-2">
+                    <div class="font-semibold">Note</div>
+                    <ul class="list-inside list-disc">
+                        <li>All orders must be placed at least 24 hours in advance.</li>
+                        <li>Delivery charges are applicable extra, per actuals.</li>
+                    </ul>
+                </div>
+    
+                <div
+                    *ngIf="cartItems.length > 0"
+                    (click)="emptyCartModalState = 'visible'"
+                    class="self-end text-sm underline decoration-dotted cursor-pointer"
+                >
+                    Empty Cart
+                </div>
+    
+                <div class="flex flex-col grow gap-y-4">
+                    <ng-container *ngIf="cartItems.length; else EmptyCart">
+                        <div *ngFor="let item of cartItems">
+                            <div class="text-xs uppercase">{{item.category}}</div>
+                            <div class="flex justify-between font-semibold md:text-secondary">
+                                <div>{{item.name}}</div>
+                                <div>
+                                    <span>&#8377;&nbsp;</span>
+                                    <span class="font-monospace">{{item.orderCost| number : "1.2-2"}}</span>
+                                </div>
+                            </div>
+                            <div class="flex text-sm font-monospace justify-between">
+                                <div class="w-1/3">{{item.variantName}}</div>
+                                <div class="w-1/3 text-right">x {{item.orderQuantity}}</div>
+                            </div>
                         </div>
-                        <div class="flex text-sm font-monospace justify-between">
-                            <div class="w-1/3">{{item.variantName}}</div>
-                            <div class="w-1/3 text-right">x {{item.orderQuantity}}</div>
-                        </div>
-                    </div>
-                </ng-container>
-
+                    </ng-container>
+                </div>
+                    
                 <ng-template #EmptyCart>
                     <div class="text-center italic">None here yet. Add some indulgences to treat yourself!</div>
                 </ng-template>
             </div>
-
-            <div class="flex justify-between font-semibold border-t border-dashed pt-4">
-                <div>Cart Total</div>
-                <div class="font-monospace">{{getCartValue() | number : "1.2-2"}}</div>
-            </div>
-
-            <button
-                (click)="placeOrder()"
-                class="w-full flex bg-primary text-neutral rounded-lg px-2 py-1 items-center justify-center disabled:opacity-25 disabled:pointer-events-none disabled:cursor-not-allowed"
-                [disabled]="cartItems.length === 0"
+    
+            <div
+                class="fixed bottom-8 left-0 right-auto top-auto flex w-full justify-between items-center p-2 text-sm md:sticky md:bottom-0 md:flex-col md:items-start md:justify-normal md:gap-y-4 md:p-4 md:text-base"
+                [ngClass]="{
+                    'bg-primary text-neutral': isSmallScreenDevice && cartState === 'hidden',
+                    'bg-neutral text-primary': isSmallScreenDevice && cartState === 'visible',
+                    'border-t border-dashed': !isSmallScreenDevice,
+                    'h-10 py-2': isSmallScreenDevice
+                }"
             >
-                <svg class="w-5 h-5 fill-neutral">
-                    <use xlink:href="assets/sprite-sheet.svg#social-whatsapp"></use>
-                </svg>
-                <span class="ml-2">Place Order via WhatsApp</span>
-            </button>
+                <div
+                    (click)="toggleCartState()"
+                    class="max-w-fit whitespace-nowrap md:hidden flex justify-center items-center underline underline-offset-2 decoration-dashed cursor-pointer"
+                >
+                    <ng-container *ngIf="isSmallScreenDevice && cartState === 'hidden'; else HideCartButton">
+                        <svg class="w-4 h-4 fill-current">
+                            <use xlink:href="assets/sprite-sheet.svg#show-cart"></use>
+                        </svg>
+                        <span class="ml-1">Show Cart</span>
+                    </ng-container>
+    
+                    <ng-template #HideCartButton>
+                        <svg class="w-4 h-4 fill-current">
+                            <use xlink:href="assets/sprite-sheet.svg#hide-cart"></use>
+                        </svg>
+                        <span class="ml-1">Hide Cart</span>
+                    </ng-template>
+                </div>
+    
+                <div class="min-w-[33%] max-w-[33%] flex flex-wrap md:flex-nowrap gap-x-2 md:gap-x-0 md:min-w-full justify-center items-center md:items-start md:justify-between font-semibold">
+                    <div class="">Cart Total</div>
+                    <div>
+                        <span>&#8377;&nbsp;</span>
+                        <span class="font-monospace">{{getCartValue() | number : "1.2-2"}}</span>
+                    </div>
+                </div>
+    
+                <button
+                    (click)="placeOrder()"
+                    class="min-w-[33%] md:min-w-full flex gap-x-2 rounded-lg px-2 py-1 justify-center items-center disabled:opacity-25 disabled:pointer-events-none disabled:cursor-not-allowed"
+                    [ngClass]="!isSmallScreenDevice || cartState === 'visible' ? 'bg-whatsapp text-neutral' : 'bg-neutral text-whatsapp'"
+                    [disabled]="cartItems.length === 0"
+                >
+                    <svg class="w-4 h-4 md:w-5 md:h-5 fill-current">
+                        <use xlink:href="assets/sprite-sheet.svg#social-whatsapp"></use>
+                    </svg>
+                    <span>
+                        <span>Place Order</span>
+                        <span *ngIf="!isSmallScreenDevice">&nbsp;via WhatsApp</span>
+                    </span>
+                </button>
+            </div>
         </div>
     </div>
 </section>

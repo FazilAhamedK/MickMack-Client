@@ -19,6 +19,7 @@ module.exports =
       primary: "#000000",
       secondary: "#4C421A",
       vanilla: "#D3BFB1",
+      whatsapp: "#103928",
       neutral: "#FFFFFA"
     },
     borderColor:
@@ -26,6 +27,7 @@ module.exports =
       primary: "#000000",
       secondary: "#4C421A",
       vanilla: "#D3BFB1",
+      whatsapp: "#103928",
       neutral: "#FFFFFA"
     },
     colors:
@@ -33,7 +35,9 @@ module.exports =
       primary: "#000000",
       secondary: "#4C421A",
       vanilla: "#D3BFB1",
-      neutral: "#FFFFFA"
+      neutral: "#FFFFFA",
+      whatsapp: "#103928",
+      current: "currentColor"
     },
     fontFamily:
     {
@@ -50,6 +54,7 @@ module.exports =
       primary: "#000000",
       secondary: "#4C421A",
       neutral: "#FFFFFA",
+      whatsapp: "#103928",
       highlight: "#FF46A2"
     },
     extend:

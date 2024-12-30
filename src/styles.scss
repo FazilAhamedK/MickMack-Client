@@ -50,37 +50,7 @@ h2
     }
 }
 
-::-webkit-scrollbar-thumb:horizontal
-{
-    @apply bg-secondary bg-opacity-50;
-
-    &:hover
-    {
-        @apply bg-opacity-100;
-    }
-}
-
 ::-webkit-scrollbar-track
 {
     @apply bg-primary bg-opacity-25;
-
-    &:horizontal
-    {
-        @apply bg-secondary bg-opacity-25 w-11/12;
-    }
-}
-
-.base-scroll::-webkit-scrollbar-thumb:horizontal
-{
-    @apply bg-secondary bg-opacity-50;
-
-    &:hover
-    {
-        @apply bg-opacity-100;
-    }
-}
-
-.base-scroll::-webkit-scrollbar-track:horizontal
-{
-    @apply bg-secondary bg-opacity-25 w-11/12;
 }
