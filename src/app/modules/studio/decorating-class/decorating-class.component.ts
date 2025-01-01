@@ -35,6 +35,14 @@ export class DecoratingClassComponent implements OnInit
     this.elementWidth = window.innerWidth >= 768 ? 30 : window.innerWidth >= 640 ? 50 : 75;
   }
 
+  placeEnquiry(course: Course): void
+  {
+    let message: string = `Hey Mick Mack,\nI would like to enquire about the course '${course.name}'.`;
+    message = encodeURIComponent(message);
+    let url: string = `https://wa.me/917619491379?text=${message}`;
+    window.open(url, "newWindow");
+  }
+
   previous(): void
   {
     if (this.hasPrevious())
