@@ -23,7 +23,7 @@
             <div
                 *ngFor="let class of bakingClasses"
                 class="flex flex-col items-center shrink-0 gap-y-3"
-                [style.transform]="'translateX(calc(' + (-100 * currentIndex) + '%' + ' - ' + (7 * currentIndex) + 'rem' + ' + ' + ((100 - elementWidth) / 2) + '%' + '))'"
+                [style.transform]="'translateX(calc(' + (-100 * currentIndex) + '%' + ' - ' + (5 * currentIndex) + 'rem' + ' + ' + ((100 - elementWidth) / 2) + '%' + '))'"
             >
                 <img src="assets/media/course-banners/{{class.bannerImageFileName}}" role="presentation" alt="A banner image for {{class.name}}." class="w-4/5 aspect-square object-cover rounded-full"/>
                 <div class="w-full break-words font-secondary text-xl text-center font-bold">{{class.name}}</div>
