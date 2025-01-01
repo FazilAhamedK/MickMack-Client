@@ -13,14 +13,6 @@ const routes: Routes =
     path: 'studio',
     loadChildren: () => import('./modules/studio/studio.module').then(module => module.StudioModule)
   },
-  {
-    path: 'store',
-    loadChildren: () => import('./modules/store/store.module').then(module => module.StoreModule)
-  },
-  {
-    path: 'kitchen',
-    loadChildren: () => import('./modules/kitchen/kitchen.module').then(module => module.KitchenModule)
-  },
   {path: "**", redirectTo: "", pathMatch: "full"}
 ];
 
