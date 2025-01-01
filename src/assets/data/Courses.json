@@ -1,32 +1,32 @@
 [
     {
         "type": "CLASS_BAKING",
-        "name": "Bread Baking",
-        "description": "Bread baking is a science. It teaches you to fine-tune your baking skills, focus on the smallest of details and strive for perfection, both in visual aesthetics and in flavour.",
+        "name": "Basics of Baking",
+        "description": "Welcome to the Basics of Baking course - a curated experience designed to take you from baking enthusiast to pro Bakers.",
+        "bannerImageFileName": "StudioAlpha.jpg"
+    },
+    {
+        "type": "CLASS_CAKE_DECORATING",
+        "name": "Cake Decorating",
+        "description": "Cake decoration has metamorphosed into confectionery high art and the possibilities in this avenue are endless. Our courses are designed to cater to various skill levels, whether you're a home baker looking to enhance your products, or a professional pastry artist adding the latest decoration techniques to your repertoire",
         "bannerImageFileName": "KitchenAlpha.jpg"
     },
     {
         "type": "CLASS_BAKING",
-        "name": "Basics of Baking",
-        "description": "Bread baking is a science. It teaches you to fine-tune your baking skills, focus on the smallest of details and strive for perfection, both in visual aesthetics and in flavour.",
-        "bannerImageFileName": "StudioAlpha.jpg"
-    },
-    {
-        "type": "CLASS_BAKING",
-        "name": "Macarons Workshop",
-        "description": "Join us in mastering the delicious and incredibly fashionable Macarons in our Macaron Masterclass.",
-        "bannerImageFileName": "StudioBravo.jpg"
-    },
-    {
-        "type": "CLASS_BAKING",
         "name": "Brownie Online Course",
-        "description": "Master the skill of preparing scrumptious Tarts and Pies in this class.",
+        "description": "Learn how to make fudgy crinkle top Brownies  that can help you scale up your business during any season.",
         "bannerImageFileName": "StudioCharlie.jpg"
     },
     {
         "type": "CLASS_BAKING",
+        "name": "Macarons Workshop",
+        "description": "Making the tricky macarons is possible for you! Step by step to guide making the perfect French Macarons.",
+        "bannerImageFileName": "StudioBravo.jpg"
+    },
+    {
+        "type": "CLASS_BAKING",
         "name": "Exotic Cakes and Fillings",
-        "description": "Master the skill of preparing scrumptious Tarts and Pies in this class.",
+        "description": "Standout to your audience with the exotic flavorful cakes with delicious layers of fillings.",
         "bannerImageFileName": "StudioDelta.jpg"
     }
 ]

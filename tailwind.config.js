@@ -42,7 +42,7 @@ module.exports =
     fontFamily:
     {
       primary: ["DM Sans", "sans-serif"],
-      secondary: ["Kodchasan", "sans-serif"],
+      secondary: ["Chakra Petch", "serif"],
       monospace: ["Space Mono", "monospace"],
       "slider-alpha": ["Gochi Hand", "cursive"],
       "slider-bravo": ["Mynerve", "cursive"],
