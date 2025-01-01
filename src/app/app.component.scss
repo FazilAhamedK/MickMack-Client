@@ -6,4 +6,9 @@
 nav li.disabled > a
 {
     @apply text-primary/50 pointer-events-none cursor-not-allowed;
+
+    > svg
+    {
+        @apply opacity-50;
+    }
 }

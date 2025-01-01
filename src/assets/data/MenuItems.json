@@ -278,20 +278,6 @@
         "imageFileName": "NuttyChicken.jpg"
     },
     {
-        "name": "Chicken Donut",
-        "category": "Short Eats",
-        "description": null,
-        "variants": 
-        [
-            {
-                "name": "0 Tubs",
-                "price": 0.99,
-				"maximumOrderQuantity": 2
-            }
-        ],
-        "imageFileName": "ChickenDonut.jpg"
-    },
-    {
         "name": "Singapore Rice",
         "category": "Mains",
         "description": null,
@@ -309,6 +295,20 @@
             }
         ],
         "imageFileName": "SingaporeRice.jpg"
+    },
+    {
+        "name": "Korean Cheese Bun",
+        "category": "Short Eats",
+        "description": null,
+        "variants":  
+        [
+            {
+                "name": "1 pc",
+                "price": 240,
+				"maximumOrderQuantity": 2
+            }
+        ],
+        "imageFileName": "KoreanCheeseBun.jpeg"
     },
     {
         "name": "Chicken Kashmiri",
