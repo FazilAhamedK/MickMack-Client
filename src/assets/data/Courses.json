@@ -3,30 +3,30 @@
         "type": "CLASS_BAKING",
         "name": "Basics of Baking",
         "description": "Welcome to the Basics of Baking course - a curated experience designed to take you from baking enthusiast to pro Bakers.",
-        "bannerImageFileName": "StudioAlpha.jpg"
+        "bannerImageFileName": "BakingBasics.jpg"
     },
     {
         "type": "CLASS_CAKE_DECORATING",
         "name": "Cake Decorating",
         "description": "Cake decoration has metamorphosed into confectionery high art and the possibilities in this avenue are endless. Our courses are designed to cater to various skill levels, whether you're a home baker looking to enhance your products, or a professional pastry artist adding the latest decoration techniques to your repertoire",
-        "bannerImageFileName": "KitchenAlpha.jpg"
+        "bannerImageFileName": "CakeDecor.jpg"
     },
     {
         "type": "CLASS_BAKING",
         "name": "Brownie Online Course",
         "description": "Learn how to make fudgy crinkle top Brownies  that can help you scale up your business during any season.",
-        "bannerImageFileName": "StudioCharlie.jpg"
+        "bannerImageFileName": "Brownie.jpg"
     },
     {
         "type": "CLASS_BAKING",
         "name": "Macarons Workshop",
         "description": "Making the tricky macarons is possible for you! Step by step to guide making the perfect French Macarons.",
-        "bannerImageFileName": "StudioBravo.jpg"
+        "bannerImageFileName": "Macaron.jpg"
     },
     {
         "type": "CLASS_BAKING",
         "name": "Exotic Cakes and Fillings",
         "description": "Standout to your audience with the exotic flavorful cakes with delicious layers of fillings.",
-        "bannerImageFileName": "StudioDelta.jpg"
+        "bannerImageFileName": "ExoticCake.jpg"
     }
 ]
