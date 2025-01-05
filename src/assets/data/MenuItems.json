@@ -2,7 +2,7 @@
     {
         "name": "Gulab Jamun Cake",
         "category": "Cakes",
-        "description": null,
+        "description": "With its super moist, plush texture & awesome flavour, this tastes of the classic Gulab Jamun in every bite.",
         "variants":
         [
             {
@@ -21,7 +21,7 @@
     {
         "name": "Rosemilk Tres Leches",
         "category": "Cakes",
-        "description": null,
+        "description": "Rich an fluffy sponge soaked in a rose infused milk mixture, and topped with a velvety whipped cream.",
         "variants":
         [
             {
@@ -40,7 +40,7 @@
     {
         "name": "Chocolate Cake",
         "category": "Cakes",
-        "description": null,
+        "description": "Moist cake made with premium cocoa for a perfect treat.",
         "variants":
         [
             {
@@ -59,7 +59,7 @@
     {
         "name": "Double Chocolate Brownie",
         "category": "Cakes",
-        "description": null,
+        "description": "Rich, fudgy brownie loaded with chocolates for a decadent chocolate experience.",
         "variants":
         [
             {
@@ -76,9 +76,9 @@
         "imageFileName": "Brownie.jpg"
     },
     {
-        "name": "White Forest",
+        "name": "Vanilla Berry-Custard Cake",
         "category": "Cakes",
-        "description": null,
+        "description": "Vanilla sponge cake layered with a delicious blend of homemade strawberry custard and topped with cream cheese frosting.",
         "variants":
         [
             {
@@ -97,7 +97,7 @@
     {
         "name": "Strawberry Panna Cotta",
         "category": "Desserts",
-        "description": null,
+        "description": "A creamy Italian delicacy topped with berry compote.",
         "variants":
         [
             {
@@ -125,7 +125,7 @@
     {
         "name": "Mithai Bomb",
         "category": "Desserts",
-        "description": null,
+        "description": "A delightful combination of bread & milk cream, that reminds you of the childhood days.",
         "variants":
         [
             {
@@ -139,7 +139,7 @@
     {
         "name": "Layali Lubnan",
         "category": "Desserts",
-        "description": null,
+        "description": "'Lebanese Nights': A delicious, creamy semolina pudding.",
         "variants":
         [
             {
