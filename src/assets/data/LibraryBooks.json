@@ -1,12 +1,5 @@
 [
     {
-        "name": "A Kitchen full of Stories",
-        "authorName": "Ummi Abdulla",
-        "imageFileName": "AKitchenFullOfStories.png",
-        "price": 1500,
-        "isSoldOut": true
-    },
-    {
         "name": "Adventures with Mithai",
         "authorName": "Rachel Goenka",
         "imageFileName": "AdventuresWithMithai.png",
