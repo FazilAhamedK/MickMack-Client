@@ -101,7 +101,7 @@
         "variants":
         [
             {
-                "name": "Regular",
+                "name": "",
                 "price": 300,
 				"maximumOrderQuantity": 2
             }
@@ -115,7 +115,7 @@
         "variants":
         [
             {
-                "name": "Regular",
+                "name": "",
                 "price": 499,
 				"maximumOrderQuantity": 2
             }
@@ -129,7 +129,7 @@
         "variants":
         [
             {
-                "name": "Regular",
+                "name": "",
                 "price": 225,
 				"maximumOrderQuantity": 2
             }
@@ -143,7 +143,7 @@
         "variants":
         [
             {
-                "name": "Regular",
+                "name": "",
                 "price": 200,
 				"maximumOrderQuantity": 2
             }
