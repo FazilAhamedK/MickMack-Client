@@ -74,7 +74,7 @@ export class MenuCardComponent implements OnInit
                                                   );
                       this.sortMenuItems();
 
-                      this.menuItemCategories.push(...[...new Set(this.menuItems.map(product => product.category))].sort());
+                      this.menuItemCategories.push(...[...new Set(this.menuItems.map(product => product.category))]);
                       if (this.menuItemCategories.length > 0)
                       {
                         this.accordionStates.length = this.menuItemCategories.length;
