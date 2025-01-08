@@ -101,7 +101,7 @@
         "variants":
         [
             {
-                "name": "",
+                "name": null,
                 "price": 300,
 				"maximumOrderQuantity": 2
             }
@@ -115,7 +115,7 @@
         "variants":
         [
             {
-                "name": "",
+                "name": null,
                 "price": 499,
 				"maximumOrderQuantity": 2
             }
@@ -129,7 +129,7 @@
         "variants":
         [
             {
-                "name": "",
+                "name": null,
                 "price": 225,
 				"maximumOrderQuantity": 2
             }
@@ -143,7 +143,7 @@
         "variants":
         [
             {
-                "name": "",
+                "name": null,
                 "price": 200,
 				"maximumOrderQuantity": 2
             }
@@ -153,11 +153,11 @@
     {
         "name": "Ferrero Rocher Crunch",
         "category": "Desserts",
-        "description": null,
+        "description": "A decadent treat with homemade chocolate crunch, topped with velvety chocolate custard.",
         "variants":  
         [
             {
-                "name": "Regular",
+                "name": null,
                 "price": 320,
 				"maximumOrderQuantity": 2
             }
@@ -167,11 +167,11 @@
     {
         "name": "Banoffee Pie Crunch",
         "category": "Desserts",
-        "description": null,
+        "description": "Rich caramel sauce with creamy custard crunchy base & bananas layered over.",
         "variants":  
         [
             {
-                "name": "Regular",
+                "name": null,
                 "price": 320,
 				"maximumOrderQuantity": 2
             }
@@ -181,11 +181,11 @@
     {
         "name": "Butterscotch Crunch",
         "category": "Desserts",
-        "description": null,
+        "description": "A perfect balance of sweetness & texture with a blend of homemade crunch, rich caramel sauce & crunchy pralines.",
         "variants":  
         [
             {
-                "name": "Regular",
+                "name": null,
                 "price": 320,
 				"maximumOrderQuantity": 2
             }
@@ -195,11 +195,11 @@
     {
         "name": "Granola Crunch",
         "category": "Desserts",
-        "description": null,
+        "description": "Delightful treat with homemade granola, creamy yoghurt and crowned with seasonal fresh fruits or nuts.",
         "variants":  
         [
             {
-                "name": "Regular",
+                "name": null,
                 "price": 320,
 				"maximumOrderQuantity": 2
             }
@@ -209,7 +209,7 @@
     {
         "name": "Manakeesh",
         "category": "Short Eats",
-        "description": null,
+        "description": "A middle-eastern popular soft bread disc topped with flavourful chicken/paneer mix.",
         "variants":
         [
             {
@@ -228,7 +228,7 @@
     {
         "name": "Chicken Cigar",
         "category": "Short Eats",
-        "description": null,
+        "description": "Tender, succulent & flavourful kebab wrapped & fried in rolls.",
         "variants":
         [
             {
@@ -242,7 +242,7 @@
     {
         "name": "Chicken Poppers",
         "category": "Short Eats",
-        "description": null,
+        "description": "Boneless chicken cubes marinated in flavourful flour mixture & fried until crisp.",
         "variants":  
         [
             {
@@ -261,7 +261,7 @@
     {
         "name": "Nutty Chicken",
         "category": "Short Eats",
-        "description": null,
+        "description": "Tender, crispy fried chicken coated with flavourful spices & nuts.",
         "variants":  
         [
             {
@@ -280,7 +280,7 @@
     {
         "name": "Singapore Rice",
         "category": "Mains",
-        "description": null,
+        "description": "A hearty satisfying meal of tender chicken with flavourful sauces layered on top of rice & noodles for a fusion delight.",
         "variants":
         [
             {
@@ -299,7 +299,7 @@
     {
         "name": "Korean Cheese Bun",
         "category": "Short Eats",
-        "description": null,
+        "description": "Soft & fluffy bun filled & topped with creamy, savoury cheese.",
         "variants":  
         [
             {
@@ -313,7 +313,7 @@
     {
         "name": "Chicken Kashmiri",
         "category": "Mains",
-        "description": null,
+        "description": "Succulent chicken slow-cooked in aromatic kashmiri spices, enriched with creamy yoghurt for a flavourful experience.",
         "variants":  
         [
             {
@@ -341,7 +341,7 @@
     {
         "name": "Chicken Mozambique",
         "category": "Mains",
-        "description": null,
+        "description": "Boneless chicken simmered in a zesty peri-peri sauce.",
         "variants":  
         [
             {
@@ -355,7 +355,7 @@
     {
         "name": "Special Porridge",
         "category": "Mains",
-        "description": null,
+        "description": "Comforting & wholesome rice porridge, slow cooked with subtle spices.",
         "variants":  
         [
             {
