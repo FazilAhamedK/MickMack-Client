@@ -325,20 +325,6 @@
         "imageFileName": "KashmiriChicken.jpg"
     },
     {
-        "name": "Chicken Fry",
-        "category": "Mains",
-        "description": null,
-        "variants":  
-        [
-            {
-                "name": "Large",
-                "price": 280,
-				"maximumOrderQuantity": 2
-            }
-        ],
-        "imageFileName": "ChickenFry.jpg"
-    },
-    {
         "name": "Chicken Mozambique",
         "category": "Mains",
         "description": "Boneless chicken simmered in a zesty peri-peri sauce.",
