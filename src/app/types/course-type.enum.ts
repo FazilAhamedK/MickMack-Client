@@ -1,0 +1,5 @@
+export enum CourseType
+{
+    CLASS_BAKING = "CLASS_BAKING",
+    CLASS_CAKE_DECORATING = "CLASS_CAKE_DECORATING"
+}

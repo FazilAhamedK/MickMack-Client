@@ -1,0 +1,23 @@
+<section
+    id="homemade-indulgence-preview"
+    class="p-4 scroll-mt-10"
+  >
+    <h1 class="text-secondary">Indulgences</h1>
+
+    <div *ngIf="bakeryProducts" class="flex flex-col items-center">
+      <div class="mx-6 my-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <div
+          *ngFor="let product of bakeryProducts"
+          class="w-full flex flex-col order"
+          [ngClass]="product.displayOrderInSlider ? 'order-' + product.displayOrderInSlider : 'order-none'"
+        >
+          <img
+            src="/assets/media/bakery-products/{{ product.imageFileName }}"
+            alt="A photo of the product: {{ product.name }}."
+          />
+        </div>
+      </div>
+
+      <button (click)="navigateToIndulgences()" type="button" class="w-max bg-secondary text-neutral font-secondary font-semibold px-10 py-3 mt-4">View All</button>
+    </div>
+</section>

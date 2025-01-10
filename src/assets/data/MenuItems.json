@@ -1,0 +1,378 @@
+[
+    {
+        "name": "Gulab Jamun Cake",
+        "category": "Cakes",
+        "description": "With its super moist, plush texture & awesome flavour, this tastes of the classic Gulab Jamun in every bite.",
+        "variants":
+        [
+            {
+                "name": "1/2 kg",
+                "price": 1300,
+				"maximumOrderQuantity": 5
+            },
+            {
+                "name": "1 kg",
+                "price": 2600,
+				"maximumOrderQuantity": 5
+            }
+        ],
+        "imageFileName": "GulabJamunCake.jpg"
+    },
+    {
+        "name": "Rosemilk Tres Leches",
+        "category": "Cakes",
+        "description": "Rich and fluffy sponge cake soaked in rose infused milk mixture, and topped with velvety whipped cream.",
+        "variants":
+        [
+            {
+                "name": "1/2 kg",
+                "price": 1300,
+				"maximumOrderQuantity": 5
+            },
+            {
+                "name": "1 kg",
+                "price": 2600,
+				"maximumOrderQuantity": 5
+            }
+        ],
+        "imageFileName": "RoseTresLechesCake.jpg"
+    },
+    {
+        "name": "Chocolate Cake",
+        "category": "Cakes",
+        "description": "Moist cake made with premium cocoa for a perfect treat.",
+        "variants":
+        [
+            {
+                "name": "1/2 kg",
+                "price": 745,
+				"maximumOrderQuantity": 5
+            },
+            {
+                "name": "1 kg",
+                "price": 1485,
+				"maximumOrderQuantity": 5
+            }
+        ],
+        "imageFileName": "ChocolateCake.jpg"
+    },
+    {
+        "name": "Double Chocolate Brownie",
+        "category": "Cakes",
+        "description": "Rich, fudgy brownie loaded with couverture chocolate for a decadent chocolate experience.",
+        "variants":
+        [
+            {
+                "name": "2 pc",
+                "price": 335,
+				"maximumOrderQuantity": 5
+            },
+            {
+                "name": "6 pc",
+                "price": 900,
+				"maximumOrderQuantity": 5
+            }
+        ],
+        "imageFileName": "Brownie.jpg"
+    },
+    {
+        "name": "Vanilla Berry-Custard Cake",
+        "category": "Cakes",
+        "description": "Vanilla sponge cake layered with delicious blend of homemade strawberry custard and topped with cream cheese frosting.",
+        "variants":
+        [
+            {
+                "name": "1/2 kg",
+                "price": 610,
+				"maximumOrderQuantity": 5
+            },
+            {
+                "name": "1 kg",
+                "price": 1220,
+				"maximumOrderQuantity": 5
+            }
+        ],
+        "imageFileName": "VanillaBerry.jpg"
+    },
+    {
+        "name": "Strawberry Panna Cotta",
+        "category": "Desserts",
+        "description": "A creamy Italian delicacy topped with berry compote.",
+        "variants":
+        [
+            {
+                "name": null,
+                "price": 300,
+				"maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "StrawberryPannaCotta.jpg"
+    },
+    {
+        "name": "Rosemilk Tres Leches",
+        "category": "Desserts",
+        "description": "Rich and fluffy sponge cake soaked in rose infused milk mixture, and topped with velvety whipped cream.",
+        "variants":
+        [
+            {
+                "name": null,
+                "price": 499,
+				"maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "RoseTresLeches.jpg"
+    },
+    {
+        "name": "Vanilla Tres Leches",
+        "category": "Desserts",
+        "description": "Light and airy vanilla chiffon cake soaked in three milk mixture and topped with freshly whipped cream.",
+        "variants":
+        [
+            {
+                "name": null,
+                "price": 375,
+				"maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "VanillaTL.jpg"
+    },
+    {
+        "name": "Mithai Bomb",
+        "category": "Desserts",
+        "description": "A delightful combination of bread & milk cream, that reminds you of the childhood days.",
+        "variants":
+        [
+            {
+                "name": null,
+                "price": 225,
+				"maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "MithaiBomb.jpg"
+    },
+    {
+        "name": "Layali Lubnan",
+        "category": "Desserts",
+        "description": "'Lebanese Nights': A delicious, creamy semolina pudding.",
+        "variants":
+        [
+            {
+                "name": null,
+                "price": 200,
+				"maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "LayaliLubnan.jpg"
+    },
+    {
+        "name": "Ferrero Rocher Crunch",
+        "category": "Desserts",
+        "description": "A decadent treat with homemade chocolate crunch, topped with velvety chocolate custard.",
+        "variants":  
+        [
+            {
+                "name": null,
+                "price": 320,
+				"maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "FerreroRocherCrunch.jpg"
+    },
+    {
+        "name": "Banoffee Pie Crunch",
+        "category": "Desserts",
+        "description": "Rich caramel sauce with creamy custard, crunchy base & bananas layered over.",
+        "variants":  
+        [
+            {
+                "name": null,
+                "price": 320,
+				"maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "BanoffeeCrunch.jpg"
+    },
+    {
+        "name": "Butterscotch Crunch",
+        "category": "Desserts",
+        "description": "A perfect balance of sweetness & texture with a blend of homemade crunch, rich caramel sauce & crunchy pralines.",
+        "variants":  
+        [
+            {
+                "name": null,
+                "price": 320,
+				"maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "BScotchCrunch.jpg"
+    },
+    {
+        "name": "Granola Crunch",
+        "category": "Desserts",
+        "description": "Delightful treat with homemade granola, creamy yoghurt and crowned with seasonal fresh fruits or nuts.",
+        "variants":  
+        [
+            {
+                "name": null,
+                "price": 320,
+				"maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "GranolaCrunch.jpg"
+    },
+    {
+        "name": "Korean Cheese Bun",
+        "category": "Breads, Cookies & Cupcakes",
+        "description": "Soft & fluffy bun filled & topped with creamy, savoury cheese.",
+        "variants":  
+        [
+            {
+                "name": null,
+                "price": 240,
+				"maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "KoreanCheeseBun.jpeg"
+    },
+    {
+        "name": "Manakeesh",
+        "category": "Short Eats",
+        "description": "A middle-eastern popular soft bread disc topped with flavourful chicken/paneer.",
+        "variants":
+        [
+            {
+                "name": "Paneer",
+                "price": 80,
+				"maximumOrderQuantity": 50
+            },
+            {
+                "name": "Chicken",
+                "price": 95,
+				"maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "Manakeesh.jpg"
+    },
+    {
+        "name": "Chicken Cigar",
+        "category": "Short Eats",
+        "description": "Tender, succulent & flavourful kebab wrapped & fried in rolls.",
+        "variants":
+        [
+            {
+                "name": "3 pc",
+                "price": 220,
+				"maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "CrispyKebabMax.jpg"
+    },
+    {
+        "name": "Chicken Poppers",
+        "category": "Short Eats",
+        "description": "Boneless chicken cubes marinated in flavourful flour mixture & fried until crispy.",
+        "variants":  
+        [
+            {
+                "name": "Small",
+                "price": 240,
+				"maximumOrderQuantity": 50,
+                "isSoldOut": "true"
+            },
+            {
+                "name": "Large",
+                "price": 350,
+				"maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "ChickenPoppers.jpg",
+        "isAvailableNow": false
+    },
+    {
+        "name": "Nutty Chicken",
+        "category": "Short Eats",
+        "description": "Tender, crispy fried chicken coated with flavourful spices & nuts.",
+        "variants":  
+        [
+            {
+                "name": "Small",
+                "price": 280,
+				"maximumOrderQuantity": 50
+            },
+            {
+                "name": "Large",
+                "price": 450,
+				"maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "NuttyChicken.jpg"
+    },
+    {
+        "name": "Singapore Rice",
+        "category": "Mains",
+        "description": "A hearty satisfying meal of tender chicken with flavourful sauces layered on top of rice & noodles for a fusion delight.",
+        "variants":
+        [
+            {
+                "name": "Single Serve",
+                "price": 499,
+				"maximumOrderQuantity": 20
+            },
+            {
+                "name": "Tub",
+                "price": 1465,
+				"maximumOrderQuantity": 20
+            }
+        ],
+        "imageFileName": "SingaporeRice.jpg"
+    },
+    {
+        "name": "Chicken Kashmiri",
+        "category": "Mains",
+        "description": "Succulent chicken slow-cooked in aromatic kashmiri spices, enriched with creamy yoghurt for a flavourful experience.",
+        "variants":  
+        [
+            {
+                "name": null,
+                "price": 295,
+				"maximumOrderQuantity": 20
+            }
+        ],
+        "imageFileName": "KashmiriChicken.jpg"
+    },
+    {
+        "name": "Chicken Mozambique",
+        "category": "Mains",
+        "description": "Boneless chicken simmered in peri-peri sauce.",
+        "variants":  
+        [
+            {
+                "name": null,
+                "price": 320,
+				"maximumOrderQuantity": 20
+            }
+        ],
+        "imageFileName": "ChickenMozambique.jpg",
+        "isAvailableNow": false,
+        "isSoldOut": true
+    },
+    {
+        "name": "Special Porridge",
+        "category": "Mains",
+        "description": "Comforting & wholesome rice porridge, slow cooked with subtle spices.",
+        "variants":  
+        [
+            {
+                "name": "Small",
+                "price": 125,
+				"maximumOrderQuantity": 20
+            },
+            {
+                "name": "Large",
+                "price": 225,
+				"maximumOrderQuantity": 20
+            }
+        ],
+        "imageFileName": "RamadanPorridge.jpg"
+    }
+]

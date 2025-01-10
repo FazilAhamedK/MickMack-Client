@@ -1,0 +1,371 @@
+[
+    {
+        "name": "Gulab Jamun Cake",
+        "category": "Cakes",
+        "imageFileName": "GulabJamunCake.jpg",
+		"showInHomePage": true,
+		"showInSlider": false,
+        "displayOrderInSlider": 1
+    },
+    {
+        "name": "Tres Leches",
+        "category": "Cakes",
+        "imageFileName": "RoseTresLechesCake.jpg",
+		"showInHomePage": true,
+        "showInSlider": false,
+        "displayOrderInSlider": 3
+    },
+    {
+        "name": "Hazelnut Cake",
+        "category": "Cakes",
+        "imageFileName": "HazelnutCake.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Red Velvet Brownie",
+        "category": "Cakes",
+        "imageFileName": "RedVelvetBrownie.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Rose Milk Cake",
+        "category": "Cakes",
+        "imageFileName": "RoseMilkCake.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Strawberry Cake",
+        "category": "Cakes",
+        "imageFileName": "StrawberryCake.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Orange Cake",
+        "category": "Cakes",
+        "imageFileName": "OrangeCake.jpeg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Almond Blueberry Cake",
+        "category": "Cakes",
+        "imageFileName": "AlmondBlueberryCake.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Lemon Blueberry Cake",
+        "category": "Cakes",
+        "imageFileName": "LemonBlueberryCake.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Tapioca Cake",
+        "category": "Cakes",
+        "imageFileName": "TapiocaCake.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Pavlova",
+        "category": "Desserts",
+        "imageFileName": "Pavlova.jpg",
+		"showInHomePage": false,
+		"showInSlider": true
+    },
+    {
+        "name": "Strawberry Cheesecake",
+        "category": "Desserts",
+        "imageFileName": "StrawberryCheesecake.jpg",
+		"showInHomePage": false,
+		"showInSlider": true
+    },
+    {
+        "name": "Kunafa",
+        "category": "Desserts",
+        "imageFileName": "Kunafa.jpg",
+		"showInHomePage": false,
+		"showInSlider": true
+    },
+    {
+        "name": "Tender Coconut Pudding",
+        "category": "Desserts",
+        "imageFileName": "TenderCoconutPudding.jpg",
+		"showInHomePage": false,
+		"showInSlider": true
+    },
+    {
+        "name": "Strawberry Panna Cotta",
+        "category": "Desserts",
+        "imageFileName": "StrawbsPanna.jpg",
+		"showInHomePage": false,
+		"showInSlider": true
+    },
+    {
+        "name": "Tiramisu",
+        "category": "Desserts",
+        "imageFileName": "Tiramisu.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Chicken Spring Roll",
+        "category": "Savouries",
+        "imageFileName": "ChickenSpringRoll.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Chicken Samosa",
+        "category": "Savouries",
+        "imageFileName": "ChickenSamosa.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Chicken Poppers",
+        "category": "Savouries",
+        "imageFileName": "ChickenPoppers.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Chicken Cigar",
+        "category": "Savouries",
+        "imageFileName": "CrispyKebabMax.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Nutty Chicken",
+        "category": "Savouries",
+        "imageFileName": "NuttyChicken.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Chicken Donut",
+        "category": "Savouries",
+        "imageFileName": "ChickenDonut.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Kashmiri Chicken",
+        "category": "Savouries",
+        "imageFileName": "KashmiriChicken.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Singapore Rice",
+        "category": "Savouries",
+        "imageFileName": "SingaporeRice.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Special Porridge",
+        "category": "Savouries",
+        "imageFileName": "RamadanPorridge.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Burger",
+        "category": "Savouries",
+        "imageFileName": "Burger.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Carrot Halwa Cake",
+        "category": "Cakes",
+        "imageFileName": "CarrotHalwaCake.jpeg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Almond Tea Cake",
+        "category": "Cakes",
+        "imageFileName": "AlmondTeaCake.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Vanilla Muffin",
+        "category": "Cakes",
+        "imageFileName": "VanillaMuffin.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Brownie",
+        "category": "Cakes",
+        "imageFileName": "Brownie.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Caramel Drops",
+        "category": "Cookies",
+        "imageFileName": "CaramelDrops.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Sweet Cigars",
+        "category": "Desserts",
+        "imageFileName": "SweetCigars.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Raffaelo Pudding",
+        "category": "Desserts",
+        "imageFileName": "RaffaeloPudding.jpg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Korean Cheese Bun",
+        "category": "Breads",
+        "imageFileName": "KoreanCheeseBun.jpeg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Butter Cookies",
+        "category": "Cookies",
+        "imageFileName": "Cookies.jpeg",
+		"showInHomePage": false,
+		"showInSlider": false
+    },
+    {
+        "name": "Ferrero Rocher Crunch",
+        "category": "Desserts",
+        "imageFileName": "FerreroRocherCrunch.jpg",
+		"showInHomePage": false,
+		"showInSlider": true
+    },
+    {
+        "name": "Banoffee Pie Crunch",
+        "category": "Desserts",
+        "imageFileName": "BanoffeeCrunch.jpg",
+		"showInHomePage": false,
+		"showInSlider": true
+    },
+    {
+        "name": "Butter Scotch Crunch",
+        "category": "Desserts",
+        "imageFileName": "BScotchCrunch.jpg",
+		"showInHomePage": false,
+		"showInSlider": true
+    },
+    {
+        "name": "Granola Crunch",
+        "category": "Desserts",
+        "imageFileName": "GranolaCrunch.jpg",
+		"showInHomePage": true,
+		"showInSlider": true,
+        "displayOrderInSlider": 2
+    },
+    {
+        "name": "Strawberry Crunch",
+        "category": "Desserts",
+        "imageFileName": "StrawberryCrunch.jpg",
+		"showInHomePage": false,
+		"showInSlider": true
+    },
+    {
+        "name": "Layali Lubnan",
+        "category": "Desserts",
+        "imageFileName": "LayaliLubnan.jpg",
+		"showInHomePage": true,
+		"showInSlider": true,
+        "displayOrderInSlider": 4
+    },
+    {
+        "name": "Mithai Bomb",
+        "category": "Desserts",
+        "imageFileName": "MithaiBomb.jpg",
+		"showInHomePage": false,
+		"showInSlider": true
+    },
+    {
+        "name": "Phirni",
+        "category": "Desserts",
+        "imageFileName": "Phirni.jpg",
+		"showInHomePage": false,
+		"showInSlider": true
+    },
+    {
+        "name": "Agar Delight",
+        "category": "Desserts",
+        "imageFileName": "AgarDelight.jpg",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": false
+    },
+    {
+        "name": "Icy Delight",
+        "category": "Desserts",
+        "imageFileName": "IcyDelight.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Kiwi Panna Cotta",
+        "category": "Desserts",
+        "imageFileName": "KiwiPannaCotta.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Pistachio Kunafa Tub",
+        "category": "Desserts",
+        "imageFileName": "PistachioKunafaTub.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Custard Apple Pudding",
+        "category": "Desserts",
+        "imageFileName": "CustardApplePudding.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Dragon Cream Tub",
+        "category": "Desserts",
+        "imageFileName": "DragonCreamTub.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    },
+    {
+        "name": "Chicken Sumuy",
+        "category": "Savouries",
+        "imageFileName": "ChickenSumuy.png",
+        "showInHomePage": false,
+        "showInSlider": false,
+        "isNewArrival": true
+    },
+    {
+        "name": "Mango Float",
+        "category": "Desserts",
+        "imageFileName": "MangoFloat.png",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": true
+    }
+]

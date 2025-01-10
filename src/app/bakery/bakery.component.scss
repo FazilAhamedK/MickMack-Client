@@ -1,0 +1,10 @@
+.strip
+{
+    --s: 12px;
+    --c: #000;
+    padding: calc(var(--s)*1.5) calc(var(--s)*1.5);
+    border: var(--s) solid var(--c);
+    background: 
+    conic-gradient(at 50% var(--s),var(--c) 75%,#fff 0) 
+    0 0/calc(2*var(--s)) calc(100% - var(--s)) padding-box;
+}

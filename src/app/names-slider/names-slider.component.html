@@ -1,0 +1,16 @@
+<div class="font-primary bg-vanilla flex border-y border-secondary w-full">
+    <div
+        class="flex w-full my-1 overflow-x-hidden"
+    >
+        <div
+            *ngFor="let bakeryProduct of bakeryProducts.concat(bakeryProducts)"
+            class="flex justify-center items-center shrink-0 grow-0 whitespace-nowrap transition-transform duration-1000 ease-in-out"
+            [ngStyle]="{transform: 'translateX(-' + currentOffsetPercentage + '%)'}"
+            [ngClass]="isMobileDevice ? 'sliderElementMobile' : 'sliderElement'"
+        >
+            <div class="mr-2">&#x2022;</div>
+            <div>{{ bakeryProduct.name }}</div>
+            <div class="ml-2">&#x2022;</div>
+        </div>
+    </div>
+</div>

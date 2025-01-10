@@ -1,0 +1,57 @@
+<section class="my-12">
+    <h1 class="font-primary mt-0 bg-primary text-neutral">Decorating</h1>
+
+    <div class="flex my-4 justify-center">
+        <div class="w-3/4 text-center font-secondary">
+            All classes are well illustrated with detailed step by step explanatory videos. Recipes are thoughtfully designed for easy understanding and learning. Simple and easy to follow steps with clear focus on planning, preparation, process and methodology.
+        </div>
+    </div>
+
+    <div class="flex w-full justify-around mt-6 items-center min-h-[50vh]">
+        <div
+            (click)="previous()"
+            class="slider-navigation flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-secondary text-2xl font-bold text-neutral"
+            [ngClass]="{'disabled': !hasPrevious()}"
+        >
+            <span>&lt;</span>
+        </div>
+
+        <div
+            *ngIf="decoratingClasses.length; else NoClassAvailable"
+            class="w-3/4 grid grid-flow-col grid-rows-1 gap-x-20 overflow-x-hidden auto-cols-[75%] sm:auto-cols-[50%] md:auto-cols-[30%]"
+        >
+            <div
+                *ngFor="let class of decoratingClasses"
+                class="flex flex-col items-center shrink-0 gap-y-3"
+                [style.transform]="'translateX(calc(' + (-100 * currentIndex) + '%' + ' - ' + (7 * currentIndex) + 'rem' + ' + ' + ((100 - elementWidth) / 2) + '%' + '))'"
+            >
+                <img src="assets/media/course-banners/{{class.bannerImageFileName}}" role="presentation" alt="A banner image for {{class.name}}." class="w-4/5 aspect-square object-cover rounded-full"/>
+                <div class="w-full break-words font-secondary text-xl text-center font-bold">{{class.name}}</div>
+                <button
+                    (click)="placeEnquiry(class)"
+                    class="flex justify-center items-center rounded-lg w-full px-2 py-1 border-2 border-whatsapp text-whatsapp hover:bg-whatsapp hover:text-neutral hover:font-semibold gap-x-2"
+                >
+                    <svg class="w-4 h-4 md:w-5 md:h-5 fill-current">
+                        <use xlink:href="assets/sprite-sheet.svg#social-whatsapp"></use>
+                    </svg>
+                    <span>Enquire via WhatsApp</span>
+                </button>
+                <div class="w-full break-words text-justify">{{class.description}}</div>
+            </div>
+        </div>
+
+        <div
+            (click)="next()"
+            class="slider-navigation flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-secondary text-2xl font-bold text-neutral"
+            [ngClass]="{'disabled': !hasNext()}"
+        >
+            <span>&gt;</span>
+        </div>
+    </div>
+
+    <ng-template #NoClassAvailable>
+        <div class="w-1/2 border-2 border-vanilla  text-vanilla p-6 text-center uppercase text-lg font-semibold bg-vanilla/15">
+            No classes are available for this month. Kindly check again later.
+        </div>
+    </ng-template>
+</section>

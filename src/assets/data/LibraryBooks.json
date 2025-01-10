@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Adventures with Mithai",
+        "authorName": "Rachel Goenka",
+        "imageFileName": "AdventuresWithMithai.png",
+        "price": 363.10
+    },
+    {
+        "name": "Nigella Express",
+        "authorName": "Nigella Lawson",
+        "imageFileName": "NigellaExpress.png",
+        "price": 993
+    },
+    {
+        "name": "How To Photograph Food",
+        "authorName": "Beata Lubas",
+        "imageFileName": "HowToPhotographFood.png",
+        "price": 1614
+    },
+    {
+        "name": "200 Juices & Smoothies",
+        "authorName": "Hamlyn",
+        "imageFileName": "200JuicesSmoothies.png",
+        "price": 1925.52
+    },
+    {
+        "name": "Pantry to Plate",
+        "authorName": "Heather Crosby",
+        "imageFileName": "PantryToPlate.png",
+        "price": 1590.00
+    },
+    {
+        "name": "Classic Desserts",
+        "authorName": "Kate Eddison",
+        "imageFileName": "Desserts.png",
+        "price": 278
+    },
+    {
+        "name": "500 ice creams, sorbets & gelatos",
+        "authorName": "Alex Barker",
+        "imageFileName": "500IceCreams.png",
+        "price": 2337.19
+    },
+    {
+        "name": "Our Sweet Kitchen",
+        "authorName": "Chi Anh Dao & Hoang Anh Nguyen",
+        "imageFileName": "OurSweetKitchen.png",
+        "price": 1942.19
+    }
+]
