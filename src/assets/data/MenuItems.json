@@ -21,7 +21,7 @@
     {
         "name": "Rosemilk Tres Leches",
         "category": "Cakes",
-        "description": "Rich and fluffy sponge soaked in rose infused milk mixture, and topped with velvety whipped cream.",
+        "description": "Rich and fluffy sponge cake soaked in rose infused milk mixture, and topped with velvety whipped cream.",
         "variants":
         [
             {
@@ -59,7 +59,7 @@
     {
         "name": "Double Chocolate Brownie",
         "category": "Cakes",
-        "description": "Rich, fudgy brownie loaded with chocolate for a decadent chocolate experience.",
+        "description": "Rich, fudgy brownie loaded with couverture chocolate for a decadent chocolate experience.",
         "variants":
         [
             {
@@ -111,7 +111,7 @@
     {
         "name": "Rosemilk Tres Leches",
         "category": "Desserts",
-        "description": "Rich and fluffy sponge soaked in rose infused milk mixture, and topped with velvety whipped cream.",
+        "description": "Rich and fluffy sponge cake soaked in rose infused milk mixture, and topped with velvety whipped cream.",
         "variants":
         [
             {
@@ -272,7 +272,7 @@
             }
         ],
         "imageFileName": "ChickenPoppers.jpg",
-        "isAvailableNow": true
+        "isAvailableNow": false
     },
     {
         "name": "Nutty Chicken",
@@ -339,7 +339,7 @@
             }
         ],
         "imageFileName": "ChickenMozambique.jpg",
-        "isAvailableNow": true,
+        "isAvailableNow": false,
         "isSoldOut": true
     },
     {

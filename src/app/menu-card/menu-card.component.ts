@@ -85,7 +85,7 @@ export class MenuCardComponent implements OnInit
                       this.menuItemCategories.push(...[...new Set(this.menuItems.map(product => product.category))]);
                       if (this.menuItemCategories.length > 0)
                       {
-                        this.accordionStates.length = this.menuItemCategories.length;
+                        this.accordionStates.length = this.menuItemCategories.length + 1;
                         this.accordionStates.fill("collapsed");
                       }
                    });

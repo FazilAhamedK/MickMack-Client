@@ -2,10 +2,10 @@
     id="homemade-indulgence"
     class="p-4 mt-10 grid grid-cols-5"
   >
-    <div class="col-span-5 md:col-span-3">
+    <div class="col-span-5 md:col-span-3 mx-4">
         <h1 class="font-primary">Live Menu</h1>
 
-        <div class="m-4 flex flex-col text-sm bg-vanilla/20 p-2">
+        <div class="flex flex-col text-sm bg-vanilla/20 p-4">
             <div class="font-semibold">Note</div>
             <ul class="list-inside list-disc">
                 <li>All orders must be placed at least 24 hours in advance, except for items under "Today's Specials".</li>
@@ -13,10 +13,24 @@
             </ul>
         </div>
 
-        <div class="p-4 pt-0 flex flex-col">
-            <div class="border border-dashed flex flex-col gap-y-4 mb-4 p-4">
-                <div class="-m-4 mb-2 p-2 bg-vanilla text-primary text-xl font-semibold flex items-center">Today's Specials</div>
+        <div class="mt-4 flex flex-col">
+            <button (click)="toggleAccordion(0)" class="bg-primary text-vanilla text-xl w-full flex justify-between items-center p-2 font-semibold border-b border-secondary">
+                <span>Today's Specials</span>
+                <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                <span *ngIf="accordionStates[0] === 'collapsed'">
+                    <svg class="w-6 h-6 fill-vanilla">
+                        <use xlink:href="assets/sprite-sheet.svg#expand"></use>
+                    </svg>
+                </span>
+                <span *ngIf="accordionStates[0] === 'expanded'">
+                    <svg class="w-6 h-6 fill-vanilla">
+                        <use xlink:href="assets/sprite-sheet.svg#collapse"></use>
+                    </svg>
+                </span>
+                </span>
+            </button>
 
+            <div [@accordionState]="accordionStates[0]" class="my-2 flex flex-col gap-4">
                 <ng-container *ngIf="currentlyAvailableItems.length; else NoCurrentAvailability">
                     <div *ngFor="let menuItem of currentlyAvailableItems" class="flex w-full bg-secondary/5">
                         <div class="flex flex-col w-4/5">
@@ -89,81 +103,81 @@
                         </div>
                     </div>
                 </ng-container>
-
-                <ng-template #NoCurrentAvailability>
-                    <div class="mt-2 text-center">There are no items currently available!</div>
-                </ng-template>
             </div>
 
-            <div *ngFor="let category of menuItemCategories; let index = index;">
-                <button (click)="toggleAccordion(index)" class="bg-vanilla text-primary text-xl w-full flex justify-between items-center p-2 font-semibold border-b border-secondary">
-                    <span>{{category}}</span>
-                    <span id="icon-1" class="text-slate-800 transition-transform duration-300">
-                    <span *ngIf="accordionStates[index] === 'collapsed'">
-                        <svg class="w-6 h-6 fill-primary">
-                            <use xlink:href="assets/sprite-sheet.svg#expand"></use>
-                        </svg>
-                    </span>
-                    <span *ngIf="accordionStates[index] === 'expanded'">
-                        <svg class="w-6 h-6 fill-primary">
-                            <use xlink:href="assets/sprite-sheet.svg#collapse"></use>
-                        </svg>
-                    </span>
-                    </span>
-                </button>
-                <div [@accordionState]="accordionStates[index]" class="my-2 flex flex-col gap-4">
-                    <div *ngFor="let menuItem of menuItems | productFilter : 'category' : category" class="flex w-full bg-secondary/5">
-                        <div class="flex flex-col w-4/5">
-                            <div class="flex gap-1 ">
-                                <img src="assets/media/bakery-products/{{menuItem.imageFileName}}" alt="" class="h-24 w-auto">
+            <ng-template #NoCurrentAvailability>
+                <div class="my-2 text-center">There are no items currently available!</div>
+            </ng-template>
+        </div>
 
-                                <div class="p-2 w-full flex flex-col grow font-primary">
-                                    <div class="font-semibold text-lg">{{menuItem.name}}</div>
-                                    <div class="text-xs md:text-sm font-secondary">{{menuItem.description}}</div>
-                                </div>
-                            </div>
-            
-                            <div class="flex flex-col m-2 font-monospace gap-y-2">
-                                <div *ngFor="let variant of menuItem.variants" class="flex justify-between items-center">
-                                    <div class="text-sm">{{variant.name}}</div>
-                                    <div class="font-semibold">{{variant.price | number: "1.2-2"}}</div>
-                                </div>
+        <div *ngFor="let category of menuItemCategories; let index = index;">
+            <button (click)="toggleAccordion(index + 1)" class="bg-vanilla text-primary text-xl w-full flex justify-between items-center p-2 font-semibold border-b border-secondary">
+                <span>{{category}}</span>
+                <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                <span *ngIf="accordionStates[index + 1] === 'collapsed'">
+                    <svg class="w-6 h-6 fill-primary">
+                        <use xlink:href="assets/sprite-sheet.svg#expand"></use>
+                    </svg>
+                </span>
+                <span *ngIf="accordionStates[index + 1] === 'expanded'">
+                    <svg class="w-6 h-6 fill-primary">
+                        <use xlink:href="assets/sprite-sheet.svg#collapse"></use>
+                    </svg>
+                </span>
+                </span>
+            </button>
+            <div [@accordionState]="accordionStates[index + 1]" class="my-2 flex flex-col gap-4">
+                <div *ngFor="let menuItem of menuItems | productFilter : 'category' : category" class="flex w-full bg-secondary/5">
+                    <div class="flex flex-col w-4/5">
+                        <div class="flex gap-1 ">
+                            <img src="assets/media/bakery-products/{{menuItem.imageFileName}}" alt="" class="h-24 w-auto">
+
+                            <div class="p-2 w-full flex flex-col grow font-primary">
+                                <div class="font-semibold text-lg">{{menuItem.name}}</div>
+                                <div class="text-xs md:text-sm font-secondary">{{menuItem.description}}</div>
                             </div>
                         </div>
-    
-                        <div class="border-l border-dashed flex flex-col gap-1 p-2 w-1/5 min-w-fit justify-end">
-                            <div class="flex flex-col font-monospace gap-y-2 items-center">
-                                <div *ngFor="let variant of menuItem.variants;" class="flex justify-center items-center w-full">
-                                    <ng-container *ngIf="getQuantity(variant.skuID) > 0; else AddToCart">
-                                        <button
-                                            (click)="decreaseQuantity(variant.skuID)"
-                                            class="bg-secondary/15 font-semibold min-w-8 rounded-sm flex justify-center items-center disabled:pointer-events-none disabled:opacity-25"
-                                            [disabled]="isQuantityMinimum(variant.skuID)"
-                                        >
-                                            <svg class="w-6 h-6 fill-secondary">
-                                                <use xlink:href="assets/sprite-sheet.svg#subtract"></use>
-                                            </svg>
-                                        </button>
-                                        <input
-                                            type="number" readonly
-                                            [value]="getQuantity(variant.skuID)"
-                                            class="w-10 text-center outline-none ring-0"
-                                        >
-                                        <button
-                                            (click)="increaseQuantity(menuItem, variant)"
-                                            class="bg-secondary/15 font-semibold min-w-8 rounded-sm flex justify-center items-center disabled:pointer-events-none disabled:opacity-25"
-                                            [disabled]="isQuantityMaximum(variant)"
-                                        >
-                                            <svg class="w-6 h-6 fill-secondary">
-                                                <use xlink:href="assets/sprite-sheet.svg#add"></use>
-                                            </svg>
-                                        </button>
-                                    </ng-container>
-    
-                                    <ng-template #AddToCart>
-                                        <button (click)="increaseQuantity(menuItem, variant)" class="bg-secondary text-center text-neutral w-4/5 rounded-sm">Add</button>
-                                    </ng-template>
-                                </div>
+        
+                        <div class="flex flex-col m-2 font-monospace gap-y-2">
+                            <div *ngFor="let variant of menuItem.variants" class="flex justify-between items-center">
+                                <div class="text-sm">{{variant.name}}</div>
+                                <div class="font-semibold">{{variant.price | number: "1.2-2"}}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-l border-dashed flex flex-col gap-1 p-2 w-1/5 min-w-fit justify-end">
+                        <div class="flex flex-col font-monospace gap-y-2 items-center">
+                            <div *ngFor="let variant of menuItem.variants;" class="flex justify-center items-center w-full">
+                                <ng-container *ngIf="getQuantity(variant.skuID) > 0; else AddToCart">
+                                    <button
+                                        (click)="decreaseQuantity(variant.skuID)"
+                                        class="bg-secondary/15 font-semibold min-w-8 rounded-sm flex justify-center items-center disabled:pointer-events-none disabled:opacity-25"
+                                        [disabled]="isQuantityMinimum(variant.skuID)"
+                                    >
+                                        <svg class="w-6 h-6 fill-secondary">
+                                            <use xlink:href="assets/sprite-sheet.svg#subtract"></use>
+                                        </svg>
+                                    </button>
+                                    <input
+                                        type="number" readonly
+                                        [value]="getQuantity(variant.skuID)"
+                                        class="w-10 text-center outline-none ring-0"
+                                    >
+                                    <button
+                                        (click)="increaseQuantity(menuItem, variant)"
+                                        class="bg-secondary/15 font-semibold min-w-8 rounded-sm flex justify-center items-center disabled:pointer-events-none disabled:opacity-25"
+                                        [disabled]="isQuantityMaximum(variant)"
+                                    >
+                                        <svg class="w-6 h-6 fill-secondary">
+                                            <use xlink:href="assets/sprite-sheet.svg#add"></use>
+                                        </svg>
+                                    </button>
+                                </ng-container>
+
+                                <ng-template #AddToCart>
+                                    <button (click)="increaseQuantity(menuItem, variant)" class="bg-secondary text-center text-neutral w-4/5 rounded-sm">Add</button>
+                                </ng-template>
                             </div>
                         </div>
                     </div>
