@@ -8,4 +8,6 @@ export interface MenuItem
     description?: string;
     variants: Array<MenuItemVariant>;
     imageFileName?: string;
+    isAvailableNow?: boolean;
+    isSoldOut?: boolean;
 }

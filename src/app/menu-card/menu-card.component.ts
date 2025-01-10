@@ -30,6 +30,7 @@ export class MenuCardComponent implements OnInit
   emptyCartModalState: "visible" | "hidden";
   menuItems: Array<MenuItem>;
   menuItemCategories: Array<string>;
+  currentlyAvailableItems: Array<MenuItem>;
   accordionStates: Array<"expanded" | "collapsed">;
   cart: Map<number, CartItem>;
   cartItems: Array<CartItem>;
@@ -41,6 +42,7 @@ export class MenuCardComponent implements OnInit
     this.emptyCartModalState = "hidden";
     this.menuItems = [];
     this.menuItemCategories = [];
+    this.currentlyAvailableItems = [];
     this.accordionStates = [];
     this.cart = new Map<number, CartItem>();
     this.cartItems = [];
@@ -69,6 +71,12 @@ export class MenuCardComponent implements OnInit
                                                                               return variant;
                                                                             }
                                                                           );
+                                                      
+                                                      if (product.isAvailableNow)
+                                                      {
+                                                        this.currentlyAvailableItems.push(product);
+                                                      }
+
                                                       return product;
                                                     }
                                                   );
@@ -210,6 +218,21 @@ export class MenuCardComponent implements OnInit
   public collapseCart($event: Event)
   {
     console.log($event.target)
+  }
+
+  public isSoldOut(menuItem: MenuItem): boolean
+  {
+    if (menuItem.isSoldOut)
+    {
+      return true;
+    }
+
+    if (menuItem.variants?.length)
+    {
+      return menuItem.variants.every(item => item.isSoldOut);
+    }
+
+    return false;
   }
 
   private sortMenuItems(): void

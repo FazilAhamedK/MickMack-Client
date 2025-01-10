@@ -305,6 +305,14 @@
 		"showInSlider": true
     },
     {
+        "name": "Agar Delight",
+        "category": "Desserts",
+        "imageFileName": "AgarDelight.jpg",
+        "showInHomePage": false,
+        "showInSlider": true,
+        "isNewArrival": false
+    },
+    {
         "name": "Icy Delight",
         "category": "Desserts",
         "imageFileName": "IcyDelight.png",
@@ -332,14 +340,6 @@
         "name": "Custard Apple Pudding",
         "category": "Desserts",
         "imageFileName": "CustardApplePudding.png",
-        "showInHomePage": false,
-        "showInSlider": true,
-        "isNewArrival": true
-    },
-    {
-        "name": "Agar Delight",
-        "category": "Desserts",
-        "imageFileName": "AgarDelight.png",
         "showInHomePage": false,
         "showInSlider": true,
         "isNewArrival": true

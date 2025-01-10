@@ -4,4 +4,5 @@ export interface MenuItemVariant
     name: string;
     price: number;
     maximumOrderQuantity: number;
+    isSoldOut?: boolean;
 }
