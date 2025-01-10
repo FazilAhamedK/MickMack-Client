@@ -123,6 +123,20 @@
         "imageFileName": "RoseTresLeches.jpg"
     },
     {
+        "name": "Vanilla Tres Leches",
+        "category": "Desserts",
+        "description": "Light and airy vanilla chiffon cake soaked in three milk mixture and topped with freshly whipped cream.",
+        "variants":
+        [
+            {
+                "name": null,
+                "price": 375,
+				"maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "VanillaTL.jpg"
+    },
+    {
         "name": "Mithai Bomb",
         "category": "Desserts",
         "description": "A delightful combination of bread & milk cream, that reminds you of the childhood days.",
