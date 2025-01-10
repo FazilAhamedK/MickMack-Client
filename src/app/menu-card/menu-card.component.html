@@ -38,10 +38,7 @@
                                 </ng-container>
 
                                 <ng-template #ItemSoldOut>
-                                    <button class="self-center border border-secondary text-center text-secondary w-4/5 rounded-sm cursor-not-allowed">
-                                        <span>Sold</span>
-                                        <span *ngIf="!isSmallScreenDevice"> Out</span>
-                                    </button>
+                                    <button class="self-center border border-secondary text-center text-secondary w-4/5 rounded-sm cursor-not-allowed">Sold Out</button>
                                 </ng-template>
                             </div>
                         </div>
@@ -81,7 +78,10 @@
                                         </ng-container>
     
                                         <ng-container *ngIf="variant.isSoldOut">
-                                            <button class="border border-secondary text-center text-secondary w-4/5 rounded-sm cursor-not-allowed">Sold Out</button>
+                                            <button class="border border-secondary text-center text-secondary w-4/5 rounded-sm cursor-not-allowed">
+                                                <span>Sold</span>
+                                                <span *ngIf="!isSmallScreenDevice"> Out</span>
+                                            </button>
                                         </ng-container>
                                     </div>
                                 </ng-container>
