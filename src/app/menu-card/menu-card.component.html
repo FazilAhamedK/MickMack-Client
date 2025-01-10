@@ -8,7 +8,7 @@
         <div class="m-4 flex flex-col text-sm bg-vanilla/20 p-2">
             <div class="font-semibold">Note</div>
             <ul class="list-inside list-disc">
-                <li>All orders must be placed at least 24 hours in advance, except those under "Today's Specials".</li>
+                <li>All orders must be placed at least 24 hours in advance, except for items under "Today's Specials".</li>
                 <li>Delivery charges are applicable extra, per actuals.</li>
             </ul>
         </div>
@@ -38,7 +38,10 @@
                                 </ng-container>
 
                                 <ng-template #ItemSoldOut>
-                                    <button class="self-center border border-secondary text-center text-secondary w-4/5 rounded-sm cursor-not-allowed">Sold Out</button>
+                                    <button class="self-center border border-secondary text-center text-secondary w-4/5 rounded-sm cursor-not-allowed">
+                                        <span>Sold</span>
+                                        <span *ngIf="!isSmallScreenDevice"> Out</span>
+                                    </button>
                                 </ng-template>
                             </div>
                         </div>
