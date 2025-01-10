@@ -242,7 +242,7 @@
         [
             {
                 "name": "Paneer",
-                "price": 110,
+                "price": 80,
 				"maximumOrderQuantity": 50
             },
             {
