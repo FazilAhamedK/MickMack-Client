@@ -227,7 +227,7 @@
         "variants":  
         [
             {
-                "name": null,
+                "name": "1pc",
                 "price": 240,
 				"maximumOrderQuantity": 50
             }
@@ -236,17 +236,17 @@
     },
     {
         "name": "Manakeesh",
-        "category": "Short Eats",
+        "category": "Breads, Cookies & Cupcakes",
         "description": "A middle-eastern popular soft bread disc topped with flavourful chicken/paneer.",
         "variants":
         [
             {
-                "name": "Paneer",
+                "name": "Paneer 1pc",
                 "price": 80,
 				"maximumOrderQuantity": 50
             },
             {
-                "name": "Chicken",
+                "name": "Chicken 1pc",
                 "price": 95,
 				"maximumOrderQuantity": 50
             }
