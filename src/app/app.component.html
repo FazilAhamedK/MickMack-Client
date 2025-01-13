@@ -61,8 +61,8 @@
       </div>
 
       <ul class="z-50 top-[calc(100%+0.5px)] p-3 hidden w-full gap-y-3 md:rounded-sm md:rounded-t-none md:border md:border-t-0 md:border-primary bg-neutral group-hover/tiers:flex group-hover/tiers:flex-col group-focus/tiers:flex group-focus/tiers:flex-col md:absolute md:-right-3 md:m-auto md:w-max md:px-6 md:text-right">
-        <li>
-          <a routerLink="/studio/baking" (click)="isNavBarCollapsed = true" class="flex cursor-pointer items-center">
+        <li class="disabled">
+          <a class="flex cursor-pointer items-center">
             <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
               <use xlink:href="assets/sprite-sheet.svg#baking"></use>
             </svg>
@@ -70,8 +70,8 @@
           </a>
         </li>
 
-        <li>
-          <a routerLink="/studio/decoration" (click)="isNavBarCollapsed = true" class="flex cursor-pointer items-center">
+        <li class="disabled">
+          <a class="flex cursor-pointer items-center">
             <svg class="md:hidden mr-2 w-6 h-6 fill-secondary">
               <use xlink:href="assets/sprite-sheet.svg#cake"></use>
             </svg>
