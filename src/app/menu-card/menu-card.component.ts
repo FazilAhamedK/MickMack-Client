@@ -72,7 +72,11 @@ export class MenuCardComponent implements OnInit
                                                                             }
                                                                           );
                                                       
-                                                      if (product.isAvailableNow)
+                                                      let now: Date = new Date();
+                                                      if (product.isAvailableNow ||
+                                                        (product.readyAvailabilityFrom && product.readyAvailabilityTill
+                                                          && new Date(product.readyAvailabilityFrom).getTime() <= now.getTime()
+                                                          && new Date(product.readyAvailabilityTill).getTime() >= now.getTime()))
                                                       {
                                                         this.currentlyAvailableItems.push(product);
                                                       }

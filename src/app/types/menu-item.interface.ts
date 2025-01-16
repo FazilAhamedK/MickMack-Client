@@ -9,5 +9,7 @@ export interface MenuItem
     variants: Array<MenuItemVariant>;
     imageFileName?: string;
     isAvailableNow?: boolean;
+    readyAvailabilityFrom?: Date;
+    readyAvailabilityTill?: Date;
     isSoldOut?: boolean;
 }
