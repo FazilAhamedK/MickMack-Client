@@ -76,25 +76,6 @@
         "imageFileName": "Brownie.jpg"
     },
     {
-        "name": "Vanilla Berry-Custard Cake",
-        "category": "Cakes",
-        "description": "Vanilla sponge cake layered with delicious blend of homemade strawberry custard and topped with cream cheese frosting.",
-        "variants":
-        [
-            {
-                "name": "1/2 kg",
-                "price": 610,
-				"maximumOrderQuantity": 5
-            },
-            {
-                "name": "1 kg",
-                "price": 1220,
-				"maximumOrderQuantity": 5
-            }
-        ],
-        "imageFileName": "VanillaBerry.jpg"
-    },
-    {
         "name": "Strawberry Panna Cotta",
         "category": "Desserts",
         "description": "A creamy Italian delicacy topped with berry compote.",
@@ -227,7 +208,7 @@
         "variants":  
         [
             {
-                "name": null,
+                "name": "1pc",
                 "price": 240,
 				"maximumOrderQuantity": 50
             }
@@ -236,17 +217,17 @@
     },
     {
         "name": "Manakeesh",
-        "category": "Short Eats",
+        "category": "Breads, Cookies & Cupcakes",
         "description": "A middle-eastern popular soft bread disc topped with flavourful chicken/paneer.",
         "variants":
         [
             {
-                "name": "Paneer",
+                "name": "Paneer 1pc",
                 "price": 80,
 				"maximumOrderQuantity": 50
             },
             {
-                "name": "Chicken",
+                "name": "Chicken 1pc",
                 "price": 95,
 				"maximumOrderQuantity": 50
             }

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, MickMackTitleStrategy } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EnumParserPipe } from './pipes/enum-parser.pipe';
 import { HomeComponent } from './home/home.component';
@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuCardComponent } from './menu-card/menu-card.component';
 import { SharedModule } from './modules/shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import { TitleStrategy } from '@angular/router';
 
 @NgModule
 ({
@@ -44,7 +45,11 @@ import { FormsModule } from '@angular/forms';
     SharedModule,
     FormsModule
   ],
-  providers: [DeviceService],
+  providers:
+  [
+    DeviceService,
+    {provide: TitleStrategy, useClass: MickMackTitleStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule
