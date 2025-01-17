@@ -97,7 +97,7 @@
         [
             {
                 "name": null,
-                "price": 499,
+                "price": 495,
 				"maximumOrderQuantity": 50
             }
         ],
@@ -215,7 +215,8 @@
         ],
         "imageFileName": "KoreanCheeseBun.jpeg",
         "readyAvailabilityFrom": "2025-01-16T23:00:00.000",
-        "readyAvailabilityTill": "2025-01-17T23:59:59.999"
+        "readyAvailabilityTill": "2025-01-17T23:59:59.999",
+        "isSoldOut": true
     },
     {
         "name": "Manakeesh",
@@ -298,7 +299,7 @@
         [
             {
                 "name": "Single Serve",
-                "price": 499,
+                "price": 495,
 				"maximumOrderQuantity": 20
             },
             {
