@@ -97,7 +97,7 @@
         [
             {
                 "name": null,
-                "price": 499,
+                "price": 495,
 				"maximumOrderQuantity": 50
             }
         ],
@@ -299,7 +299,7 @@
         [
             {
                 "name": "Single Serve",
-                "price": 499,
+                "price": 495,
 				"maximumOrderQuantity": 20
             },
             {
