@@ -214,9 +214,9 @@
             }
         ],
         "imageFileName": "KoreanCheeseBun.jpeg",
-        "readyAvailabilityFrom": "2025-01-16T23:00:00.000",
-        "readyAvailabilityTill": "2025-01-17T23:59:59.999",
-        "isSoldOut": true
+        "readyAvailabilityFrom": "2025-01-21T00:00:00.000",
+        "readyAvailabilityTill": "2025-01-21T23:59:59.999",
+        "isSoldOut": false
     },
     {
         "name": "Manakeesh",
