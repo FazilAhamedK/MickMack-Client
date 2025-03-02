@@ -369,6 +369,7 @@
         "variants":  
         [
             {
+                "name": "1 pc",
                 "price": 40,
 				"maximumOrderQuantity": 10
             }
@@ -384,6 +385,7 @@
         "variants":  
         [
             {
+                "name": "1 pc",
                 "price": 40,
 				"maximumOrderQuantity":10
             }
@@ -399,7 +401,13 @@
         "variants":  
         [
             {
+                "name": "Small",
                 "price": 125,
+				"maximumOrderQuantity": 6
+            },
+            {
+                "name": "Large",
+                "price": 180,
 				"maximumOrderQuantity": 6
             }
         ],
