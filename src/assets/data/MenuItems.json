@@ -89,7 +89,9 @@
 				"maximumOrderQuantity": 50
             }
         ],
-        "imageFileName": "StrawberryPannaCotta.jpg"
+        "imageFileName": "StrawberryPannaCotta.jpg",
+        "readyAvailabilityFrom": "2025-03-03T00:00:00.000",
+        "readyAvailabilityTill": "2025-03-05T23:59:59.999"
     },
     {
         "name": "Rosemilk Tres Leches",
@@ -145,7 +147,9 @@
 				"maximumOrderQuantity": 50
             }
         ],
-        "imageFileName": "LayaliLubnan.jpg"
+        "imageFileName": "LayaliLubnan.jpg",
+        "readyAvailabilityFrom": "2025-03-03T00:00:00.000",
+        "readyAvailabilityTill": "2025-03-05T23:59:59.999"
     },
     {
         "name": "Ferrero Rocher Crunch",
@@ -359,9 +363,23 @@
 				"maximumOrderQuantity": 20
             }
         ],
-        "imageFileName": "RamadanPorridge.jpg",
+        "imageFileName": "RamadanPorridge.jpg"
+    },
+    {
+        "name": "Mutton Samosa",
+        "category": "Short Eats",
+        "variants":  
+        [
+            {
+                "name": "1 pc",
+                "price": 55,
+				"maximumOrderQuantity": 10
+            }
+        ],
+        "imageFileName": "MuttonSamosa.jpg",
         "readyAvailabilityFrom": "2025-03-02T12:00:00.000",
-        "readyAvailabilityTill": "2025-03-12T23:59:59.999"
+        "readyAvailabilityTill": "2025-03-12T23:59:59.999",
+        "shouldHideOnMenu": true
     },
     {
         "name": "Chicken Samosa",
@@ -412,6 +430,28 @@
             }
         ],
         "imageFileName": "AgarDelight.jpg",
+        "readyAvailabilityFrom": "2025-03-02T12:00:00.000",
+        "readyAvailabilityTill": "2025-03-12T23:59:59.999",
+        "shouldHideOnMenu": true
+    },
+    {
+        "name": "Ramadan Special Porridge",
+        "category": "Mains",
+        "description": "Comforting & wholesome rice porridge, slow cooked with subtle spices.",
+        "variants":  
+        [
+            {
+                "name": "Small",
+                "price": 125,
+				"maximumOrderQuantity": 20
+            },
+            {
+                "name": "Large",
+                "price": 225,
+				"maximumOrderQuantity": 20
+            }
+        ],
+        "imageFileName": "RamadanPorridge.jpg",
         "readyAvailabilityFrom": "2025-03-02T12:00:00.000",
         "readyAvailabilityTill": "2025-03-12T23:59:59.999",
         "shouldHideOnMenu": true
