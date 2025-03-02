@@ -12,4 +12,5 @@ export interface MenuItem
     readyAvailabilityFrom?: Date;
     readyAvailabilityTill?: Date;
     isSoldOut?: boolean;
+    shouldHideOnMenu?: boolean
 }
