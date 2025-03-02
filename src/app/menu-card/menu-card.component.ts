@@ -84,6 +84,7 @@ export class MenuCardComponent implements OnInit
                                                       return product;
                                                     }
                                                   );
+                      this.menuItems = this.menuItems.filter(item => !item.shouldHideOnMenu);
                       this.sortMenuItems();
 
                       this.menuItemCategories.push(...[...new Set(this.menuItems.map(product => product.category))]);
