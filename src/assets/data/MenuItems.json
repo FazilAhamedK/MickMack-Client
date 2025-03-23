@@ -416,10 +416,10 @@
             }
         ],
         "imageFileName": "ChickenCutlet.jpg",
-        "readyAvailabilityFrom": "2025-03-02T12:00:00.000",
-        "readyAvailabilityTill": "2025-03-12T23:59:59.999",
+        "readyAvailabilityFrom": "2025-03-23T12:00:00.000",
+        "readyAvailabilityTill": "2025-03-26T23:59:59.999",
         "shouldHideOnMenu": true,
-        "isSoldOut": true
+        "isSoldOut": false
     },
     {
         "name": "Agar Delight",
@@ -455,8 +455,8 @@
             }
         ],
         "imageFileName": "ChickenSamosa.jpg",
-        "readyAvailabilityFrom": "2025-03-19T00:00:00.000",
-        "readyAvailabilityTill": "2025-03-22T23:59:59.999",
+        "readyAvailabilityFrom": "2025-03-23T12:00:00.000",
+        "readyAvailabilityTill": "2025-03-26T23:59:59.999",
         "shouldHideOnMenu": true,
         "isSoldOut": false
     }
