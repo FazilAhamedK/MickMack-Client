@@ -377,10 +377,10 @@
             }
         ],
         "imageFileName": "MuttonSamosa.jpg",
-        "readyAvailabilityFrom": "2025-03-08T00:00:00.000",
-        "readyAvailabilityTill": "2025-03-11T23:59:59.999",
+        "readyAvailabilityFrom": "2025-03-27T00:00:00.000",
+        "readyAvailabilityTill": "2025-03-31T23:59:59.999",
         "shouldHideOnMenu": true,
-        "isSoldOut": false
+        "isSoldOut": true
     },
     {
         "name": "Ramadan Special Porridge",
@@ -400,9 +400,10 @@
             }
         ],
         "imageFileName": "RamadanPorridge.jpg",
-        "readyAvailabilityFrom": "2025-03-19T00:00:00.000",
-        "readyAvailabilityTill": "2025-03-22T23:59:59.999",
-        "shouldHideOnMenu": true
+        "readyAvailabilityFrom": "2025-03-27T00:00:00.000",
+        "readyAvailabilityTill": "2025-03-31T23:59:59.999",
+        "shouldHideOnMenu": true,
+        "isSoldOut": true
     },
     {
         "name": "Chicken Cutlet",
@@ -416,10 +417,10 @@
             }
         ],
         "imageFileName": "ChickenCutlet.jpg",
-        "readyAvailabilityFrom": "2025-03-23T12:00:00.000",
-        "readyAvailabilityTill": "2025-03-26T23:59:59.999",
+        "readyAvailabilityFrom": "2025-03-27T00:00:00.000",
+        "readyAvailabilityTill": "2025-03-31T23:59:59.999",
         "shouldHideOnMenu": true,
-        "isSoldOut": false
+        "isSoldOut": true
     },
     {
         "name": "Agar Delight",
@@ -438,10 +439,10 @@
             }
         ],
         "imageFileName": "AgarDelight.jpg",
-        "readyAvailabilityFrom": "2025-03-19T00:00:00.000",
-        "readyAvailabilityTill": "2025-03-22T23:59:59.999",
+        "readyAvailabilityFrom": "2025-03-27T00:00:00.000",
+        "readyAvailabilityTill": "2025-03-31T23:59:59.999",
         "shouldHideOnMenu": true,
-        "isSoldOut": false
+        "isSoldOut": true
     },
     {
         "name": "Chicken Samosa",
@@ -455,9 +456,9 @@
             }
         ],
         "imageFileName": "ChickenSamosa.jpg",
-        "readyAvailabilityFrom": "2025-03-23T12:00:00.000",
-        "readyAvailabilityTill": "2025-03-26T23:59:59.999",
+        "readyAvailabilityFrom": "2025-03-27T00:00:00.000",
+        "readyAvailabilityTill": "2025-03-31T23:59:59.999",
         "shouldHideOnMenu": true,
-        "isSoldOut": false
+        "isSoldOut": true
     }
 ]
