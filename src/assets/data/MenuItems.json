@@ -380,7 +380,24 @@
         "readyAvailabilityFrom": "2025-03-27T00:00:00.000",
         "readyAvailabilityTill": "2025-03-31T23:59:59.999",
         "shouldHideOnMenu": true,
-        "isSoldOut": true
+        "isSoldOut": false
+    },
+    {
+        "name": "Chicken Samosa",
+        "category": "Short Eats",
+        "variants":  
+        [
+            {
+                "name": "1 pc",
+                "price": 40,
+				"maximumOrderQuantity": 10
+            }
+        ],
+        "imageFileName": "ChickenSamosa.jpg",
+        "readyAvailabilityFrom": "2025-03-27T00:00:00.000",
+        "readyAvailabilityTill": "2025-03-31T23:59:59.999",
+        "shouldHideOnMenu": true,
+        "isSoldOut": false
     },
     {
         "name": "Ramadan Special Porridge",
@@ -403,7 +420,7 @@
         "readyAvailabilityFrom": "2025-03-27T00:00:00.000",
         "readyAvailabilityTill": "2025-03-31T23:59:59.999",
         "shouldHideOnMenu": true,
-        "isSoldOut": true
+        "isSoldOut": false
     },
     {
         "name": "Chicken Cutlet",
@@ -439,23 +456,6 @@
             }
         ],
         "imageFileName": "AgarDelight.jpg",
-        "readyAvailabilityFrom": "2025-03-27T00:00:00.000",
-        "readyAvailabilityTill": "2025-03-31T23:59:59.999",
-        "shouldHideOnMenu": true,
-        "isSoldOut": true
-    },
-    {
-        "name": "Chicken Samosa",
-        "category": "Short Eats",
-        "variants":  
-        [
-            {
-                "name": "1 pc",
-                "price": 40,
-				"maximumOrderQuantity": 10
-            }
-        ],
-        "imageFileName": "ChickenSamosa.jpg",
         "readyAvailabilityFrom": "2025-03-27T00:00:00.000",
         "readyAvailabilityTill": "2025-03-31T23:59:59.999",
         "shouldHideOnMenu": true,
