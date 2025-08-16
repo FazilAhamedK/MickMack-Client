@@ -8,8 +8,6 @@ const routes: Routes =
 [
   {path: "", redirectTo: "baking", pathMatch: "full"},
   {path: "baking", component: BakingClassComponent},
-  {path: "decoration", component: DecoratingClassComponent},
-  {path: "library", component: KitchenLibraryComponent},
   {path: "**", redirectTo: "", pathMatch: "full"}
 ];
 
