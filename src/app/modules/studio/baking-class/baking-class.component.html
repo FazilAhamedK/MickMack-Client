@@ -1,12 +1,6 @@
 <section class="my-12">
     <h1 class="font-primary mt-0 bg-primary text-neutral">Baking</h1>
 
-    <div class="flex my-4 justify-center">
-        <div class="w-3/4 text-center font-secondary">
-            All classes are well illustrated with detailed step by step explanatory videos. Recipes are thoughtfully designed for easy understanding and learning. Simple and easy to follow steps with clear focus on planning, preparation, process and methodology.
-        </div>
-    </div>
-
     <div class="flex w-full justify-around mt-6 items-center min-h-[50vh]">
         <div
             (click)="previous()"
@@ -16,27 +10,55 @@
             <span>&lt;</span>
         </div>
 
-        <div
-            *ngIf="bakingClasses.length; else NoClassAvailable"
-            class="w-3/4 grid grid-flow-col grid-rows-1 gap-x-20 overflow-x-hidden auto-cols-[75%] sm:auto-cols-[50%] md:auto-cols-[30%]"
-        >
+        <div class="w-3/4 grid grid-flow-col grid-rows-1 gap-x-20 overflow-x-hidden auto-cols-[75%] sm:auto-cols-[50%] md:auto-cols-[30%]">
             <div
-                *ngFor="let class of bakingClasses"
                 class="flex flex-col items-center shrink-0 gap-y-3"
                 [style.transform]="'translateX(calc(' + (-100 * currentIndex) + '%' + ' - ' + (5 * currentIndex) + 'rem' + ' + ' + ((100 - elementWidth) / 2) + '%' + '))'"
             >
-                <img src="assets/media/course-banners/{{class.bannerImageFileName}}" role="presentation" alt="A banner image for {{class.name}}." class="w-4/5 aspect-square object-cover rounded-full"/>
-                <div class="w-full break-words font-secondary text-xl text-center font-bold">{{class.name}}</div>
-                <button
-                    (click)="placeEnquiry(class)"
-                    class="flex justify-center items-center rounded-lg w-full px-2 py-1 border-2 border-whatsapp text-whatsapp hover:bg-whatsapp hover:text-neutral hover:font-semibold gap-x-2"
-                >
-                    <svg class="w-4 h-4 md:w-5 md:h-5 fill-current">
-                        <use xlink:href="assets/sprite-sheet.svg#social-whatsapp"></use>
-                    </svg>
-                    <span>Enquire via WhatsApp</span>
-                </button>
-                <div class="w-full break-words text-justify">{{class.description}}</div>
+                <img src="assets/media/course-banners/Cookies.jpg" role="presentation" alt="A banner image for Classic & Double Choco Chip Cookies Recipes." class="w-4/5 aspect-square object-cover rounded-full"/>
+                <div class="w-full break-words font-secondary text-xl text-center font-bold">Classic Chocolate Chip Cookies & Double Chocolate Chip Cookies</div>
+                <div class="w-full break-words">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col">
+                            <b>🍪 Selling my best-selling Cookie Recipes! 🍪</b>
+                            <div>Now you can bake both <b>Chocolate Chip</b> & <b>Double Chocolate Chip Cookies</b> right at home!</div>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <b>📖 What you get:</b>
+                            <ul class="ml-7 list-inside list-['✅']">
+                                <li>Detailed step-by-step written recipe (easy language)</li>
+                                <li>Egg-based recipe using premium ingredients</li>
+                                <li>No videos — simple written guide</li>
+                                <li>1-month WhatsApp support for your doubts</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <b>🧑‍🍳 What you'll need:</b>
+                            <ul class="ml-7 list-inside list-disc">
+                                <li>Hand beater or hand whisk</li>
+                                <li>Spatula</li>
+                                <li>Mixing bowl</li>
+                                <li>Weighing machine</li>
+                                <li>Oven</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <b>💬 How to get it:</b>
+                            <ol class="ml-7 list-inside list-decimal">
+                                <li>Make the payment via UPI to 7619491379</li>
+                                <li>Send the screenshot via WhatsApp</li>
+                                <li>Get the recipes via WhatsApp</li>
+                            </ol>
+                        </div>
+
+                        <div>💰 <b>Fee:</b> 400 INR only</div>
+
+                        <em>Grab your recipes now & bake like a pro! 🍫🍪</em>
+                    </div>
+                </div>
             </div>
         </div>
 

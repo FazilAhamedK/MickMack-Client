@@ -4,6 +4,7 @@ export interface Course
 {
     type: CourseType,
     name: string,
-    description: string,
-    bannerImageFileName: string
+    description: string | Array<string>,
+    bannerImageFileName: string,
+    price: number
 }

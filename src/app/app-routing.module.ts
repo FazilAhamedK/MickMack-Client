@@ -9,6 +9,11 @@ const routes: Routes =
 [
   {path: "", component: BakeryComponent},
   {path: "indulgence", component: IndulgenceComponent, title: "Indulgences"},
+  {
+    path: "studio",
+    title: "Studio",
+    loadChildren: () => import("./modules/studio/studio.module").then(module => module.StudioModule)
+  },
   {path: "menu", component: MenuCardComponent, title: "Menu"},
   {path: "**", redirectTo: "", pathMatch: "full"}
 ];
