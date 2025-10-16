@@ -69,7 +69,7 @@
                                             <button
                                                 (click)="decreaseQuantity(variant.skuID)"
                                                 class="bg-secondary/15 font-semibold min-w-8 rounded-sm flex justify-center items-center disabled:pointer-events-none disabled:opacity-25"
-                                                [disabled]="isQuantityMinimum(variant.skuID)"
+                                                [disabled]="isQuantityMinimum(variant)"
                                             >
                                                 <svg class="w-6 h-6 fill-secondary">
                                                     <use xlink:href="assets/sprite-sheet.svg#subtract"></use>
@@ -104,29 +104,118 @@
                     </div>
                 </ng-container>
             </div>
+        </div>
 
-            <ng-template #NoCurrentAvailability>
-                <div class="my-2 text-center">There are no items currently available!</div>
-            </ng-template>
+        <div class="flex flex-col">
+            <button (click)="toggleAccordion(1)" class="bg-primary text-vanilla text-xl w-full flex justify-between items-center p-2 font-semibold border-b border-secondary">
+                <span>All India Delivery</span>
+                <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                <span *ngIf="accordionStates[1] === 'collapsed'">
+                    <svg class="w-6 h-6 fill-vanilla">
+                        <use xlink:href="assets/sprite-sheet.svg#expand"></use>
+                    </svg>
+                </span>
+                <span *ngIf="accordionStates[1] === 'expanded'">
+                    <svg class="w-6 h-6 fill-vanilla">
+                        <use xlink:href="assets/sprite-sheet.svg#collapse"></use>
+                    </svg>
+                </span>
+                </span>
+            </button>
+
+            <div [@accordionState]="accordionStates[1]" class="my-2 flex flex-col gap-4">
+                <ng-container *ngIf="countrywideDeliverables.length; else NoCurrentAvailability">
+                    <div *ngFor="let menuItem of countrywideDeliverables" class="flex w-full bg-secondary/5">
+                        <div class="flex flex-col w-4/5">
+                            <div class="flex gap-1 ">
+                                <img src="assets/media/bakery-products/{{menuItem.imageFileName}}" alt="" class="h-24 w-auto">
+    
+                                <div class="p-2 w-full flex flex-col grow font-primary">
+                                    <div class="font-semibold text-lg">{{menuItem.name}}</div>
+                                    <div class="text-xs md:text-sm font-secondary">{{menuItem.description}}</div>
+                                </div>
+                            </div>
+            
+                            <div class="flex flex-col m-2 font-monospace gap-y-2">
+                                <ng-container *ngIf="!isSoldOut(menuItem); else ItemSoldOut">
+                                    <div *ngFor="let variant of menuItem.variants" class="flex justify-between items-center">
+                                        <div class="text-sm">{{variant.name}}</div>
+                                        <div class="font-semibold">{{variant.price | number: "1.2-2"}}</div>
+                                    </div>
+                                </ng-container>
+
+                                <ng-template #ItemSoldOut>
+                                    <button class="self-center border border-secondary text-center text-secondary w-4/5 rounded-sm cursor-not-allowed">Sold Out</button>
+                                </ng-template>
+                            </div>
+                        </div>
+    
+                        <div class="border-l border-dashed flex flex-col gap-1 p-2 w-1/5 min-w-fit justify-end">
+                            <div class="flex flex-col font-monospace gap-y-2 items-center">
+                                <ng-container *ngIf="!isSoldOut(menuItem)">
+                                    <div *ngFor="let variant of menuItem.variants;" class="flex justify-center items-center w-full">
+                                        <ng-container *ngIf="!variant.isSoldOut && getQuantity(variant.skuID) === 0">
+                                            <button (click)="increaseQuantity(menuItem, variant)" class="bg-secondary text-center text-neutral w-4/5 rounded-sm">Add</button>
+                                        </ng-container>
+    
+                                        <ng-container *ngIf="!variant.isSoldOut && getQuantity(variant.skuID) > 0">
+                                            <button
+                                                (click)="decreaseQuantity(variant.skuID)"
+                                                class="bg-secondary/15 font-semibold min-w-8 rounded-sm flex justify-center items-center disabled:pointer-events-none disabled:opacity-25"
+                                                [disabled]="isQuantityMinimum(variant)"
+                                            >
+                                                <svg class="w-6 h-6 fill-secondary">
+                                                    <use xlink:href="assets/sprite-sheet.svg#subtract"></use>
+                                                </svg>
+                                            </button>
+                                            <input
+                                                type="number" readonly
+                                                [value]="getQuantity(variant.skuID)"
+                                                class="w-10 text-center outline-none ring-0"
+                                            >
+                                            <button
+                                                (click)="increaseQuantity(menuItem, variant)"
+                                                class="bg-secondary/15 font-semibold min-w-8 rounded-sm flex justify-center items-center disabled:pointer-events-none disabled:opacity-25"
+                                                [disabled]="isQuantityMaximum(variant)"
+                                            >
+                                                <svg class="w-6 h-6 fill-secondary">
+                                                    <use xlink:href="assets/sprite-sheet.svg#add"></use>
+                                                </svg>
+                                            </button>
+                                        </ng-container>
+    
+                                        <ng-container *ngIf="variant.isSoldOut">
+                                            <button class="border border-secondary text-center text-secondary w-4/5 rounded-sm cursor-not-allowed px-1 min-w-fit">
+                                                <span>Sold</span>
+                                                <span *ngIf="!isSmallScreenDevice"> Out</span>
+                                            </button>
+                                        </ng-container>
+                                    </div>
+                                </ng-container>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
         </div>
 
         <div *ngFor="let category of menuItemCategories; let index = index;">
-            <button (click)="toggleAccordion(index + 1)" class="bg-vanilla text-primary text-xl w-full flex justify-between items-center p-2 font-semibold border-b border-secondary">
+            <button (click)="toggleAccordion(index + 2)" class="bg-vanilla text-primary text-xl w-full flex justify-between items-center p-2 font-semibold border-b border-secondary">
                 <span>{{category}}</span>
                 <span id="icon-1" class="text-slate-800 transition-transform duration-300">
-                <span *ngIf="accordionStates[index + 1] === 'collapsed'">
+                <span *ngIf="accordionStates[index + 2] === 'collapsed'">
                     <svg class="w-6 h-6 fill-primary">
                         <use xlink:href="assets/sprite-sheet.svg#expand"></use>
                     </svg>
                 </span>
-                <span *ngIf="accordionStates[index + 1] === 'expanded'">
+                <span *ngIf="accordionStates[index + 2] === 'expanded'">
                     <svg class="w-6 h-6 fill-primary">
                         <use xlink:href="assets/sprite-sheet.svg#collapse"></use>
                     </svg>
                 </span>
                 </span>
             </button>
-            <div [@accordionState]="accordionStates[index + 1]" class="my-2 flex flex-col gap-4">
+            <div [@accordionState]="accordionStates[index + 2]" class="my-2 flex flex-col gap-4">
                 <div *ngFor="let menuItem of menuItems | productFilter : 'category' : category" class="flex w-full bg-secondary/5">
                     <div class="flex flex-col w-4/5">
                         <div class="flex gap-1 ">
@@ -153,7 +242,7 @@
                                     <button
                                         (click)="decreaseQuantity(variant.skuID)"
                                         class="bg-secondary/15 font-semibold min-w-8 rounded-sm flex justify-center items-center disabled:pointer-events-none disabled:opacity-25"
-                                        [disabled]="isQuantityMinimum(variant.skuID)"
+                                        [disabled]="isQuantityMinimum(variant)"
                                     >
                                         <svg class="w-6 h-6 fill-secondary">
                                             <use xlink:href="assets/sprite-sheet.svg#subtract"></use>
@@ -184,6 +273,10 @@
                 </div>
             </div>
         </div>
+
+        <ng-template #NoCurrentAvailability>
+            <div class="my-2 text-center">There are no items currently available!</div>
+        </ng-template>
     </div>
 
     <div class="col-span-2">
