@@ -208,8 +208,38 @@
         "imageFileName": "GranolaCrunch.jpg"
     },
     {
+        "name": "NYC Chunky Pistachio Cookies",
+        "category": "Cookies",
+        "description": "",
+        "variants":
+        [
+            {
+                "price": 145,
+				"minimumOrderQuantity": 4,
+                "maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "NYCPista.jpg",
+        "hasAllIndiaShipping": true
+    },
+    {
+        "name": "NYC Chunky Hazelnut Cookies",
+        "category": "Cookies",
+        "description": "",
+        "variants":
+        [
+            {
+                "price": 125,
+				"minimumOrderQuantity": 4,
+                "maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "NYCHazelnut.jpg",
+        "hasAllIndiaShipping": true
+    },
+    {
         "name": "Korean Cheese Bun",
-        "category": "Breads, Cookies & Cupcakes",
+        "category": "Breads & Buns",
         "description": "Soft & fluffy bun filled & topped with creamy, savoury cheese.",
         "variants":  
         [
@@ -226,7 +256,7 @@
     },
     {
         "name": "Manakeesh",
-        "category": "Breads, Cookies & Cupcakes",
+        "category": "Breads & Buns",
         "description": "A middle-eastern popular soft bread disc topped with flavourful chicken/paneer.",
         "variants":
         [
@@ -460,35 +490,5 @@
         "readyAvailabilityTill": "2025-03-31T23:59:59.999",
         "shouldHideOnMenu": true,
         "isSoldOut": true
-    },
-    {
-        "name": "NYC Chunky Pistachio Cookies",
-        "category": "Breads, Cookies & Cupcakes",
-        "description": "",
-        "variants":
-        [
-            {
-                "price": 145,
-				"minimumOrderQuantity": 4,
-                "maximumOrderQuantity": 50
-            }
-        ],
-        "imageFileName": "NYCPista.jpg",
-        "hasAllIndiaShipping": true
-    },
-    {
-        "name": "NYC Chunky Hazelnut Cookies",
-        "category": "Breads, Cookies & Cupcakes",
-        "description": "",
-        "variants":
-        [
-            {
-                "price": 125,
-				"minimumOrderQuantity": 4,
-                "maximumOrderQuantity": 50
-            }
-        ],
-        "imageFileName": "NYCHazelnut.jpg",
-        "hasAllIndiaShipping": true
     }
 ]
