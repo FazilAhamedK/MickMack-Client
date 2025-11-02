@@ -75,7 +75,8 @@
         ],
         "imageFileName": "Brownie.jpg",
         "readyAvailabilityFrom": "2025-02-14T17:00:00.000",
-        "readyAvailabilityTill": "2025-02-15T12:00:00.000"
+        "readyAvailabilityTill": "2025-02-15T12:00:00.000",
+        "hasAllIndiaShipping": true
     },
     {
         "name": "Strawberry Panna Cotta",
