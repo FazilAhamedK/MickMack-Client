@@ -367,5 +367,21 @@
         "showInHomePage": false,
         "showInSlider": true,
         "isNewArrival": true
+    },
+    {
+        "name": "NYC Chunky Pistachio Cookies",
+        "category": "Cookies",
+        "imageFileName": "NYCPista.jpg",
+        "showInHomePage": false,
+        "showInSlider": false,
+        "isNewArrival": false
+    },
+    {
+        "name": "NYC Chunky Hazelnut Cookies",
+        "category": "Cookies",
+        "imageFileName": "NYCHazelnut.jpg",
+        "showInHomePage": false,
+        "showInSlider": false,
+        "isNewArrival": false
     }
 ]

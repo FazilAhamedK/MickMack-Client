@@ -8,8 +8,8 @@
         <div class="flex flex-col text-sm bg-vanilla/20 p-4">
             <div class="font-semibold">Note</div>
             <ul class="list-inside list-disc">
-                <li>All orders must be placed at least 24 hours in advance, except for items under "Today's Specials".</li>
-                <li>Delivery charges are applicable extra, per actuals.</li>
+                <li>💛 Each order is handcrafted with care. So kindly place yours at least 24 hours in advance (except for Today's Specials).</li>
+                <li>Delivery charges apply as per location.</li>
             </ul>
         </div>
 
@@ -69,7 +69,7 @@
                                             <button
                                                 (click)="decreaseQuantity(variant.skuID)"
                                                 class="bg-secondary/15 font-semibold min-w-8 rounded-sm flex justify-center items-center disabled:pointer-events-none disabled:opacity-25"
-                                                [disabled]="isQuantityMinimum(variant.skuID)"
+                                                [disabled]="isQuantityMinimum(variant)"
                                             >
                                                 <svg class="w-6 h-6 fill-secondary">
                                                     <use xlink:href="assets/sprite-sheet.svg#subtract"></use>
@@ -104,29 +104,25 @@
                     </div>
                 </ng-container>
             </div>
-
-            <ng-template #NoCurrentAvailability>
-                <div class="my-2 text-center">There are no items currently available!</div>
-            </ng-template>
         </div>
 
         <div *ngFor="let category of menuItemCategories; let index = index;">
-            <button (click)="toggleAccordion(index + 1)" class="bg-vanilla text-primary text-xl w-full flex justify-between items-center p-2 font-semibold border-b border-secondary">
+            <button (click)="toggleAccordion(index + 2)" class="bg-vanilla text-primary text-xl w-full flex justify-between items-center p-2 font-semibold border-b border-secondary">
                 <span>{{category}}</span>
                 <span id="icon-1" class="text-slate-800 transition-transform duration-300">
-                <span *ngIf="accordionStates[index + 1] === 'collapsed'">
+                <span *ngIf="accordionStates[index + 2] === 'collapsed'">
                     <svg class="w-6 h-6 fill-primary">
                         <use xlink:href="assets/sprite-sheet.svg#expand"></use>
                     </svg>
                 </span>
-                <span *ngIf="accordionStates[index + 1] === 'expanded'">
+                <span *ngIf="accordionStates[index + 2] === 'expanded'">
                     <svg class="w-6 h-6 fill-primary">
                         <use xlink:href="assets/sprite-sheet.svg#collapse"></use>
                     </svg>
                 </span>
                 </span>
             </button>
-            <div [@accordionState]="accordionStates[index + 1]" class="my-2 flex flex-col gap-4">
+            <div [@accordionState]="accordionStates[index + 2]" class="my-2 flex flex-col gap-4">
                 <div *ngFor="let menuItem of menuItems | productFilter : 'category' : category" class="flex w-full bg-secondary/5">
                     <div class="flex flex-col w-4/5">
                         <div class="flex gap-1 ">
@@ -153,7 +149,7 @@
                                     <button
                                         (click)="decreaseQuantity(variant.skuID)"
                                         class="bg-secondary/15 font-semibold min-w-8 rounded-sm flex justify-center items-center disabled:pointer-events-none disabled:opacity-25"
-                                        [disabled]="isQuantityMinimum(variant.skuID)"
+                                        [disabled]="isQuantityMinimum(variant)"
                                     >
                                         <svg class="w-6 h-6 fill-secondary">
                                             <use xlink:href="assets/sprite-sheet.svg#subtract"></use>
@@ -184,6 +180,10 @@
                 </div>
             </div>
         </div>
+
+        <ng-template #NoCurrentAvailability>
+            <div class="my-2 text-center">There are no items currently available!</div>
+        </ng-template>
     </div>
 
     <div class="col-span-2">

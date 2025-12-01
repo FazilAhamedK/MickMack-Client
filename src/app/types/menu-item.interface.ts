@@ -12,5 +12,6 @@ export interface MenuItem
     readyAvailabilityFrom?: Date;
     readyAvailabilityTill?: Date;
     isSoldOut?: boolean;
-    shouldHideOnMenu?: boolean
+    shouldHideOnMenu?: boolean;
+    hasAllIndiaShipping?: boolean;
 }

@@ -75,7 +75,8 @@
         ],
         "imageFileName": "Brownie.jpg",
         "readyAvailabilityFrom": "2025-02-14T17:00:00.000",
-        "readyAvailabilityTill": "2025-02-15T12:00:00.000"
+        "readyAvailabilityTill": "2025-02-15T12:00:00.000",
+        "hasAllIndiaShipping": true
     },
     {
         "name": "Strawberry Panna Cotta",
@@ -208,8 +209,38 @@
         "imageFileName": "GranolaCrunch.jpg"
     },
     {
+        "name": "NYC Chunky Pistachio Cookies",
+        "category": "Cookies",
+        "description": "A melt-in-your-mouth mix of roasted pistachios & couverture chocolates with no artificial flavors. Naturally irresistible.",
+        "variants":
+        [
+            {
+                "price": 145,
+				"minimumOrderQuantity": 4,
+                "maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "NYCPista.jpg",
+        "hasAllIndiaShipping": true
+    },
+    {
+        "name": "NYC Chunky Hazelnut Cookies",
+        "category": "Cookies",
+        "description": "Decadent chunks of chocolate and toasted hazelnuts. Pure and natural indulgence with no artificial flavors.",
+        "variants":
+        [
+            {
+                "price": 125,
+				"minimumOrderQuantity": 4,
+                "maximumOrderQuantity": 50
+            }
+        ],
+        "imageFileName": "NYCHazelnut.jpg",
+        "hasAllIndiaShipping": true
+    },
+    {
         "name": "Korean Cheese Bun",
-        "category": "Breads, Cookies & Cupcakes",
+        "category": "Breads & Buns",
         "description": "Soft & fluffy bun filled & topped with creamy, savoury cheese.",
         "variants":  
         [
@@ -226,7 +257,7 @@
     },
     {
         "name": "Manakeesh",
-        "category": "Breads, Cookies & Cupcakes",
+        "category": "Breads & Buns",
         "description": "A middle-eastern popular soft bread disc topped with flavourful chicken/paneer.",
         "variants":
         [
@@ -366,19 +397,20 @@
         "imageFileName": "RamadanPorridge.jpg"
     },
     {
-        "name": "Mutton Samosa",
+        "name": "Mutton Kheema Samosa",
         "category": "Short Eats",
         "variants":  
         [
             {
                 "name": "1 pc",
                 "price": 55,
-				"maximumOrderQuantity": 10
+				"minimumOrderQuantity": 3,
+                "maximumOrderQuantity": 500
             }
         ],
         "imageFileName": "MuttonSamosa.jpg",
-        "readyAvailabilityFrom": "2025-03-27T00:00:00.000",
-        "readyAvailabilityTill": "2025-03-31T23:59:59.999",
+        "readyAvailabilityFrom": "2025-12-01T00:00:00.000",
+        "readyAvailabilityTill": "2025-12-31T23:59:59.999",
         "shouldHideOnMenu": true,
         "isSoldOut": false
     },

@@ -31,6 +31,7 @@ export class MenuCardComponent implements OnInit
   menuItems: Array<MenuItem>;
   menuItemCategories: Array<string>;
   currentlyAvailableItems: Array<MenuItem>;
+  countrywideDeliverables: Array<MenuItem>;
   accordionStates: Array<"expanded" | "collapsed">;
   cart: Map<number, CartItem>;
   cartItems: Array<CartItem>;
@@ -43,6 +44,7 @@ export class MenuCardComponent implements OnInit
     this.menuItems = [];
     this.menuItemCategories = [];
     this.currentlyAvailableItems = [];
+    this.countrywideDeliverables = [];
     this.accordionStates = [];
     this.cart = new Map<number, CartItem>();
     this.cartItems = [];
@@ -81,6 +83,11 @@ export class MenuCardComponent implements OnInit
                                                         this.currentlyAvailableItems.push(product);
                                                       }
 
+                                                      if (product.hasAllIndiaShipping)
+                                                      {
+                                                        this.countrywideDeliverables.push(product);
+                                                      }
+
                                                       return product;
                                                     }
                                                   );
@@ -90,7 +97,7 @@ export class MenuCardComponent implements OnInit
                       this.menuItemCategories.push(...[...new Set(this.menuItems.map(product => product.category))]);
                       if (this.menuItemCategories.length > 0)
                       {
-                        this.accordionStates.length = this.menuItemCategories.length + 1;
+                        this.accordionStates.length = this.menuItemCategories.length + 2;
                         this.accordionStates.fill("collapsed");
                       }
                    });
@@ -133,7 +140,14 @@ export class MenuCardComponent implements OnInit
       };
     }
 
-    cartItem.orderQuantity = Math.min(cartItem.orderQuantity + 1, variant.maximumOrderQuantity);
+    if (variant.minimumOrderQuantity && !cartItem.orderQuantity)
+    {
+      cartItem.orderQuantity = variant.minimumOrderQuantity;
+    }
+    else
+    {
+      cartItem.orderQuantity = Math.min(cartItem.orderQuantity + 1, variant.maximumOrderQuantity);
+    }
     cartItem.orderCost = cartItem.orderQuantity * cartItem.variantCost;
     
     this.cart.set(variant.skuID, cartItem);
@@ -147,7 +161,15 @@ export class MenuCardComponent implements OnInit
     
     if (cartItem !== undefined)
     {
-      cartItem.orderQuantity = Math.max(cartItem.orderQuantity - 1, 0);
+      let variant: MenuItemVariant | undefined = this.menuItems.flatMap(item => item.variants).find(variant => variant.skuID === skuID);
+      if (variant && variant.minimumOrderQuantity == cartItem.orderQuantity)
+      {
+        cartItem.orderQuantity = 0
+      }
+      else
+      {
+        cartItem.orderQuantity = Math.max(cartItem.orderQuantity - 1, 0);
+      }
       cartItem.orderCost = cartItem.orderQuantity * cartItem.variantCost;
     
       if (cartItem.orderQuantity === 0)
@@ -164,9 +186,9 @@ export class MenuCardComponent implements OnInit
     }
   }
 
-  public isQuantityMinimum(skuID: number): boolean
+  public isQuantityMinimum(variant: MenuItemVariant): boolean
   {
-    return !(this.cart.has(skuID));
+    return !this.cart.has(variant.skuID);
   }
 
   public isQuantityMaximum(variant: MenuItemVariant): boolean
